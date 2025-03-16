@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\.NET\\Harsha ASP.NET Complete Guide\\Http Section\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EB03E382-7883-461D-AA6C-98A26845DAFA}|Section 2 Harsha\\Section 2 Harsha.csproj|c:\\users\\user\\source\\repos\\.net\\harsha asp.net complete guide\\http section\\section 2 harsha\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB03E382-7883-461D-AA6C-98A26845DAFA}|Section 2 Harsha\\Section 2 Harsha.csproj|solutionrelative:section 2 harsha\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB03E382-7883-461D-AA6C-98A26845DAFA}|Section 2 Harsha\\Section 2 Harsha.csproj|c:\\users\\user\\source\\repos\\.net\\harsha asp.net complete guide\\http section\\section 2 harsha\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB03E382-7883-461D-AA6C-98A26845DAFA}|Section 2 Harsha\\Section 2 Harsha.csproj|solutionrelative:section 2 harsha\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB03E382-7883-461D-AA6C-98A26845DAFA}|Section 2 Harsha\\Section 2 Harsha.csproj|c:\\users\\user\\source\\repos\\.net\\harsha asp.net complete guide\\http section\\section 2 harsha\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EB03E382-7883-461D-AA6C-98A26845DAFA}|Section 2 Harsha\\Section 2 Harsha.csproj|solutionrelative:section 2 harsha\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha ASP.NET Complete Guide\\Http Section\\Section 2 Harsha\\Program.cs",
+              "RelativeDocumentMoniker": "Section 2 Harsha\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha ASP.NET Complete Guide\\Http Section\\Section 2 Harsha\\Program.cs",
+              "RelativeToolTip": "Section 2 Harsha\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T21:59:10.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha ASP.NET Complete Guide\\Http Section\\Section 2 Harsha\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Section 2 Harsha\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha ASP.NET Complete Guide\\Http Section\\Section 2 Harsha\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Section 2 Harsha\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-09T21:50:08.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha ASP.NET Complete Guide\\Http Section\\Section 2 Harsha\\appsettings.json",
+              "RelativeDocumentMoniker": "Section 2 Harsha\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha ASP.NET Complete Guide\\Http Section\\Section 2 Harsha\\appsettings.json",
+              "RelativeToolTip": "Section 2 Harsha\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-09T21:50:02.146Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

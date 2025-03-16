@@ -1,0 +1,29 @@
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\bin\Debug\net8.0\appsettings.json
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\bin\Debug\net8.0\Http Task.staticwebassets.endpoints.json
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\bin\Debug\net8.0\Http Task.exe
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\bin\Debug\net8.0\Http Task.deps.json
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\bin\Debug\net8.0\Http Task.runtimeconfig.json
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\bin\Debug\net8.0\Http Task.dll
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\bin\Debug\net8.0\Http Task.pdb
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\Http Task.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\Http Task.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\Http Task.AssemblyInfo.cs
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\Http Task.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\Http Task.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\scopedcss\bundle\Http Task.styles.css
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\staticwebassets\msbuild.Http Task.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\staticwebassets\msbuild.Http Task.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\staticwebassets\msbuild.build.Http Task.props
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Http Task.props
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Http Task.props
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\Http Task.dll
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\refint\Http Task.dll
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\Http Task.pdb
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\Http Task.genruntimeconfig.cache
+C:\Users\user\source\repos\.NET\Harsha ASP.NET Complete Guide\Http Task\Http Task\obj\Debug\net8.0\ref\Http Task.dll
