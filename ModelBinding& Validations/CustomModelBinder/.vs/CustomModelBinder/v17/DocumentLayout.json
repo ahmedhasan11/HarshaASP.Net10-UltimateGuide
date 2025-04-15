@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\CustomModelBinder\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{34F15ABD-20B6-4307-A0BB-AF12219F307D}|CustomModelBinder\\CustomModelBinder.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\modelbinding\u0026 validations\\custommodelbinder\\custommodelbinder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34F15ABD-20B6-4307-A0BB-AF12219F307D}|CustomModelBinder\\CustomModelBinder.csproj|solutionrelative:custommodelbinder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34F15ABD-20B6-4307-A0BB-AF12219F307D}|CustomModelBinder\\CustomModelBinder.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\modelbinding\u0026 validations\\custommodelbinder\\custommodelbinder\\modelbindercustomclass\\personmodelbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34F15ABD-20B6-4307-A0BB-AF12219F307D}|CustomModelBinder\\CustomModelBinder.csproj|solutionrelative:custommodelbinder\\modelbindercustomclass\\personmodelbinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34F15ABD-20B6-4307-A0BB-AF12219F307D}|CustomModelBinder\\CustomModelBinder.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\modelbinding\u0026 validations\\custommodelbinder\\custommodelbinder\\controller\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34F15ABD-20B6-4307-A0BB-AF12219F307D}|CustomModelBinder\\CustomModelBinder.csproj|solutionrelative:custommodelbinder\\controller\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34F15ABD-20B6-4307-A0BB-AF12219F307D}|CustomModelBinder\\CustomModelBinder.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\modelbinding\u0026 validations\\custommodelbinder\\custommodelbinder\\modelbindercustomclass\\modelbinderprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34F15ABD-20B6-4307-A0BB-AF12219F307D}|CustomModelBinder\\CustomModelBinder.csproj|solutionrelative:custommodelbinder\\modelbindercustomclass\\modelbinderprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34F15ABD-20B6-4307-A0BB-AF12219F307D}|CustomModelBinder\\CustomModelBinder.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\modelbinding\u0026 validations\\custommodelbinder\\custommodelbinder\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34F15ABD-20B6-4307-A0BB-AF12219F307D}|CustomModelBinder\\CustomModelBinder.csproj|solutionrelative:custommodelbinder\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ModelBinderProvider.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\CustomModelBinder\\CustomModelBinder\\ModelBinderCustomClass\\ModelBinderProvider.cs",
+              "RelativeDocumentMoniker": "CustomModelBinder\\ModelBinderCustomClass\\ModelBinderProvider.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\CustomModelBinder\\CustomModelBinder\\ModelBinderCustomClass\\ModelBinderProvider.cs",
+              "RelativeToolTip": "CustomModelBinder\\ModelBinderCustomClass\\ModelBinderProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T18:09:47.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\CustomModelBinder\\CustomModelBinder\\Program.cs",
+              "RelativeDocumentMoniker": "CustomModelBinder\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\CustomModelBinder\\CustomModelBinder\\Program.cs",
+              "RelativeToolTip": "CustomModelBinder\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T16:47:16.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\CustomModelBinder\\CustomModelBinder\\Controller\\HomeController.cs",
+              "RelativeDocumentMoniker": "CustomModelBinder\\Controller\\HomeController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\CustomModelBinder\\CustomModelBinder\\Controller\\HomeController.cs",
+              "RelativeToolTip": "CustomModelBinder\\Controller\\HomeController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T15:56:23.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\CustomModelBinder\\CustomModelBinder\\Models\\Person.cs",
+              "RelativeDocumentMoniker": "CustomModelBinder\\Models\\Person.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\CustomModelBinder\\CustomModelBinder\\Models\\Person.cs",
+              "RelativeToolTip": "CustomModelBinder\\Models\\Person.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwBsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T15:56:21.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PersonModelBinder.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\CustomModelBinder\\CustomModelBinder\\ModelBinderCustomClass\\PersonModelBinder.cs",
+              "RelativeDocumentMoniker": "CustomModelBinder\\ModelBinderCustomClass\\PersonModelBinder.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\CustomModelBinder\\CustomModelBinder\\ModelBinderCustomClass\\PersonModelBinder.cs",
+              "RelativeToolTip": "CustomModelBinder\\ModelBinderCustomClass\\PersonModelBinder.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAcwEcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T15:56:15.347Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

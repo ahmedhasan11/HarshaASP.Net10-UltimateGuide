@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "PFTO+lgiLQ9Nyb0fGhUQ8AtWsdiIvyluOHXEGhMTNmA=",
+  "Source": "CustomValidation",
+  "BasePath": "_content/CustomValidation",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

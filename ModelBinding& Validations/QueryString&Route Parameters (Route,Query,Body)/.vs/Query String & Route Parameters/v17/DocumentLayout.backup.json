@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\Query String \u0026 Route Parameters ([FromRoute,Query,Body])\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EE3A2F0B-8523-48C0-B817-01F24821B512}|Query String \u0026 Route Parameters\\Query String \u0026 Route Parameters.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\modelbinding\u0026 validations\\query string \u0026 route parameters ([fromroute,query,body])\\query string \u0026 route parameters\\controller\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE3A2F0B-8523-48C0-B817-01F24821B512}|Query String \u0026 Route Parameters\\Query String \u0026 Route Parameters.csproj|solutionrelative:query string \u0026 route parameters\\controller\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE3A2F0B-8523-48C0-B817-01F24821B512}|Query String \u0026 Route Parameters\\Query String \u0026 Route Parameters.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\modelbinding\u0026 validations\\query string \u0026 route parameters ([fromroute,query,body])\\query string \u0026 route parameters\\controller\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE3A2F0B-8523-48C0-B817-01F24821B512}|Query String \u0026 Route Parameters\\Query String \u0026 Route Parameters.csproj|solutionrelative:query string \u0026 route parameters\\controller\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE3A2F0B-8523-48C0-B817-01F24821B512}|Query String \u0026 Route Parameters\\Query String \u0026 Route Parameters.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\modelbinding\u0026 validations\\query string \u0026 route parameters ([fromroute,query,body])\\query string \u0026 route parameters\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE3A2F0B-8523-48C0-B817-01F24821B512}|Query String \u0026 Route Parameters\\Query String \u0026 Route Parameters.csproj|solutionrelative:query string \u0026 route parameters\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\Query String \u0026 Route Parameters ([FromRoute,Query,Body])\\Query String \u0026 Route Parameters\\Program.cs",
+              "RelativeDocumentMoniker": "Query String \u0026 Route Parameters\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\Query String \u0026 Route Parameters ([FromRoute,Query,Body])\\Query String \u0026 Route Parameters\\Program.cs",
+              "RelativeToolTip": "Query String \u0026 Route Parameters\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T17:35:07.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StoreController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\Query String \u0026 Route Parameters ([FromRoute,Query,Body])\\Query String \u0026 Route Parameters\\Controller\\StoreController.cs",
+              "RelativeDocumentMoniker": "Query String \u0026 Route Parameters\\Controller\\StoreController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\Query String \u0026 Route Parameters ([FromRoute,Query,Body])\\Query String \u0026 Route Parameters\\Controller\\StoreController.cs",
+              "RelativeToolTip": "Query String \u0026 Route Parameters\\Controller\\StoreController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T17:36:13.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\Query String \u0026 Route Parameters ([FromRoute,Query,Body])\\Query String \u0026 Route Parameters\\Controller\\HomeController.cs",
+              "RelativeDocumentMoniker": "Query String \u0026 Route Parameters\\Controller\\HomeController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\ModelBinding\u0026 Validations\\Query String \u0026 Route Parameters ([FromRoute,Query,Body])\\Query String \u0026 Route Parameters\\Controller\\HomeController.cs",
+              "RelativeToolTip": "Query String \u0026 Route Parameters\\Controller\\HomeController.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAAAGoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T17:35:06.289Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

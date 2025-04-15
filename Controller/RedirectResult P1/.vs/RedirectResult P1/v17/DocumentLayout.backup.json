@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Controller\\RedirectResult P1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6123270C-5172-4178-AFCB-9D19E52A8443}|RedirectResult P1\\RedirectResult P1.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\controller\\redirectresult p1\\redirectresult p1\\controller\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6123270C-5172-4178-AFCB-9D19E52A8443}|RedirectResult P1\\RedirectResult P1.csproj|solutionrelative:redirectresult p1\\controller\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6123270C-5172-4178-AFCB-9D19E52A8443}|RedirectResult P1\\RedirectResult P1.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\controller\\redirectresult p1\\redirectresult p1\\controller\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6123270C-5172-4178-AFCB-9D19E52A8443}|RedirectResult P1\\RedirectResult P1.csproj|solutionrelative:redirectresult p1\\controller\\storecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6123270C-5172-4178-AFCB-9D19E52A8443}|RedirectResult P1\\RedirectResult P1.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\controller\\redirectresult p1\\redirectresult p1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6123270C-5172-4178-AFCB-9D19E52A8443}|RedirectResult P1\\RedirectResult P1.csproj|solutionrelative:redirectresult p1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Controller\\RedirectResult P1\\RedirectResult P1\\Program.cs",
+              "RelativeDocumentMoniker": "RedirectResult P1\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Controller\\RedirectResult P1\\RedirectResult P1\\Program.cs",
+              "RelativeToolTip": "RedirectResult P1\\Program.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:38:01.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StoreController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Controller\\RedirectResult P1\\RedirectResult P1\\Controller\\StoreController.cs",
+              "RelativeDocumentMoniker": "RedirectResult P1\\Controller\\StoreController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Controller\\RedirectResult P1\\RedirectResult P1\\Controller\\StoreController.cs",
+              "RelativeToolTip": "RedirectResult P1\\Controller\\StoreController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:37:26.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Controller\\RedirectResult P1\\RedirectResult P1\\Controller\\HomeController.cs",
+              "RelativeDocumentMoniker": "RedirectResult P1\\Controller\\HomeController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Controller\\RedirectResult P1\\RedirectResult P1\\Controller\\HomeController.cs",
+              "RelativeToolTip": "RedirectResult P1\\Controller\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-20T17:36:28.361Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

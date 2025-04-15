@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Routing\\RouteParameters\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{78CC023D-BF19-46C2-B9E9-5EBCC5431EC5}|RouteParameters\\RouteParameters.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\routing\\routeparameters\\routeparameters\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78CC023D-BF19-46C2-B9E9-5EBCC5431EC5}|RouteParameters\\RouteParameters.csproj|solutionrelative:routeparameters\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Routing\\RouteParameters\\RouteParameters\\Program.cs",
+              "RelativeDocumentMoniker": "RouteParameters\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Routing\\RouteParameters\\RouteParameters\\Program.cs",
+              "RelativeToolTip": "RouteParameters\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T20:58:19.954Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
