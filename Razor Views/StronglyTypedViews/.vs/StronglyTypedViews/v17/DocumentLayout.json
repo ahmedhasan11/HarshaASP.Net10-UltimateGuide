@@ -42,8 +42,7 @@
               "RelativeToolTip": "StronglyTypedViews\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T18:49:57.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T18:49:57.055Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "StronglyTypedViews\\Views\\Home\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-20T18:37:33.45Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T18:37:33.45Z"
             },
             {
               "$type": "Document",
@@ -66,7 +64,7 @@
               "RelativeDocumentMoniker": "StronglyTypedViews\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\StronglyTypedViews\\StronglyTypedViews\\Controllers\\HomeController.cs",
               "RelativeToolTip": "StronglyTypedViews\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCcAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAxwCcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-20T18:12:44.183Z",
               "EditorCaption": ""
@@ -81,8 +79,7 @@
               "RelativeToolTip": "StronglyTypedViews\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-20T18:12:38.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T18:12:38.5Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "StronglyTypedViews\\Models\\Person.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-20T18:12:10.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T18:12:10.328Z"
             }
           ]
         }

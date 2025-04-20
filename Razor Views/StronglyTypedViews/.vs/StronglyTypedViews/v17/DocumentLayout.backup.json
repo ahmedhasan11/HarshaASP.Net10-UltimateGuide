@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\StronglyTypedViews\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2395DE7-2744-4368-ACD5-1E510406B41A}|StronglyTypedViews\\StronglyTypedViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\razor views\\stronglytypedviews\\stronglytypedviews\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F2395DE7-2744-4368-ACD5-1E510406B41A}|StronglyTypedViews\\StronglyTypedViews.csproj|solutionrelative:stronglytypedviews\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F2395DE7-2744-4368-ACD5-1E510406B41A}|StronglyTypedViews\\StronglyTypedViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\razor views\\stronglytypedviews\\stronglytypedviews\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2395DE7-2744-4368-ACD5-1E510406B41A}|StronglyTypedViews\\StronglyTypedViews.csproj|solutionrelative:stronglytypedviews\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2395DE7-2744-4368-ACD5-1E510406B41A}|StronglyTypedViews\\StronglyTypedViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\razor views\\stronglytypedviews\\stronglytypedviews\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F2395DE7-2744-4368-ACD5-1E510406B41A}|StronglyTypedViews\\StronglyTypedViews.csproj|solutionrelative:stronglytypedviews\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F2395DE7-2744-4368-ACD5-1E510406B41A}|StronglyTypedViews\\StronglyTypedViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\razor views\\stronglytypedviews\\stronglytypedviews\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2395DE7-2744-4368-ACD5-1E510406B41A}|StronglyTypedViews\\StronglyTypedViews.csproj|solutionrelative:stronglytypedviews\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2395DE7-2744-4368-ACD5-1E510406B41A}|StronglyTypedViews\\StronglyTypedViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\razor views\\stronglytypedviews\\stronglytypedviews\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2395DE7-2744-4368-ACD5-1E510406B41A}|StronglyTypedViews\\StronglyTypedViews.csproj|solutionrelative:stronglytypedviews\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2395DE7-2744-4368-ACD5-1E510406B41A}|StronglyTypedViews\\StronglyTypedViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\razor views\\stronglytypedviews\\stronglytypedviews\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2395DE7-2744-4368-ACD5-1E510406B41A}|StronglyTypedViews\\StronglyTypedViews.csproj|solutionrelative:stronglytypedviews\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2395DE7-2744-4368-ACD5-1E510406B41A}|StronglyTypedViews\\StronglyTypedViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\razor views\\stronglytypedviews\\stronglytypedviews\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F2395DE7-2744-4368-ACD5-1E510406B41A}|StronglyTypedViews\\StronglyTypedViews.csproj|solutionrelative:stronglytypedviews\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,11 +30,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\StronglyTypedViews\\StronglyTypedViews\\Program.cs",
+              "RelativeDocumentMoniker": "StronglyTypedViews\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\StronglyTypedViews\\StronglyTypedViews\\Program.cs",
+              "RelativeToolTip": "StronglyTypedViews\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T18:49:57.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\StronglyTypedViews\\StronglyTypedViews\\Views\\Home\\Details.cshtml",
               "RelativeDocumentMoniker": "StronglyTypedViews\\Views\\Home\\Details.cshtml",
@@ -43,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\StronglyTypedViews\\StronglyTypedViews\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "StronglyTypedViews\\Controllers\\HomeController.cs",
@@ -56,7 +73,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\StronglyTypedViews\\StronglyTypedViews\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "StronglyTypedViews\\Views\\Home\\Index.cshtml",
@@ -69,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\StronglyTypedViews\\StronglyTypedViews\\Models\\Person.cs",
               "RelativeDocumentMoniker": "StronglyTypedViews\\Models\\Person.cs",
