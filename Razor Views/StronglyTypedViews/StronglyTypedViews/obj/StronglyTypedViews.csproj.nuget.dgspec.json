@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\ViewData&ViewBag\\ViewData\\ViewData.csproj": {}
+    "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\StronglyTypedViews\\StronglyTypedViews\\StronglyTypedViews.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\ViewData&ViewBag\\ViewData\\ViewData.csproj": {
+    "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\StronglyTypedViews\\StronglyTypedViews\\StronglyTypedViews.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\ViewData&ViewBag\\ViewData\\ViewData.csproj",
-        "projectName": "ViewData",
-        "projectPath": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\ViewData&ViewBag\\ViewData\\ViewData.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\StronglyTypedViews\\StronglyTypedViews\\StronglyTypedViews.csproj",
+        "projectName": "StronglyTypedViews",
+        "projectPath": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\StronglyTypedViews\\StronglyTypedViews\\StronglyTypedViews.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\ViewData&ViewBag\\ViewData\\obj\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Razor Views\\StronglyTypedViews\\StronglyTypedViews\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
