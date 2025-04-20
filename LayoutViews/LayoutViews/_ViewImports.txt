@@ -1,0 +1,10 @@
+﻿_ViewImport.cshtml -->this view is just used to share the namespaces
+like @using namespace.Models etc...
+
+//1-can be in the shared file across all the controllers
+
+//2-or you can make it local inside a specific on ctroller so it will
+be used only in the views of this specific controller
+
+
+//dont make any data or access any data on it bcs thats not for this purpose

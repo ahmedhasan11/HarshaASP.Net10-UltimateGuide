@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\layoutviews\\layoutviews\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|solutionrelative:layoutviews\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\layoutviews\\layoutviews\\_viewstart.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|solutionrelative:layoutviews\\_viewstart.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "LayoutViews\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "LayoutViews\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-20T23:23:06.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ViewStart.txt",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\_ViewStart.txt",
+              "RelativeDocumentMoniker": "LayoutViews\\_ViewStart.txt",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\_ViewStart.txt",
+              "RelativeToolTip": "LayoutViews\\_ViewStart.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-20T23:20:26.283Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
