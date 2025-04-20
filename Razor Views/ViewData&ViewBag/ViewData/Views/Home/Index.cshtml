@@ -1,0 +1,46 @@
+﻿@using ViewData.Models;
+@*
+	you can call this local function anywhere in the view
+	we use it when there is a function or code that we want to use a lot in the same view
+*@
+
+@{
+    //method
+    List<Person> people = new List<Person>();
+    double? GetAge(DateTime? dateOfBirth)
+    {
+        if (dateOfBirth is not null)
+        {
+            return Math.Round((DateTime.Now - dateOfBirth.Value).TotalDays / 365.25);
+        }
+        else
+        {
+            return null;
+        }
+    }
+
+    @*the problem in the ViewData that it returns a object type , which we can't iterate at it
+    until we make casting for the specific key *@
+    foreach (var person in (List<Person>)ViewData["personlist"])
+    {
+        @person.ID
+
+        @person.name
+    }
+    @*you can solve that problem using ViewBag*@
+
+    foreach (var person in ViewBag.personlist)
+    {
+        @person.ID
+
+        @person.name
+    }
+}
+
+<h1>@ViewData["alertmesage"]</h1>
+
+@ViewBag.alert
+@ViewBag.alertmessage
+
+
+
