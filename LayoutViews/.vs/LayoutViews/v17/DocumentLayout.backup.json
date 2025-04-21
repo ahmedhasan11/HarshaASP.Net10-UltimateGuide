@@ -3,6 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\layoutviews\\layoutviews\\layoutsections.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|solutionrelative:layoutviews\\layoutsections.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\layoutviews\\layoutviews\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|solutionrelative:layoutviews\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\layoutviews\\layoutviews\\views\\shared\\_productslayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|solutionrelative:layoutviews\\views\\shared\\_productslayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\layoutviews\\layoutviews\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|solutionrelative:layoutviews\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\layoutviews\\layoutviews\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|solutionrelative:layoutviews\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\layoutviews\\layoutviews\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|solutionrelative:layoutviews\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\layoutviews\\layoutviews\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|solutionrelative:layoutviews\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\layoutviews\\layoutviews\\views\\product\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|solutionrelative:layoutviews\\views\\product\\order.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\layoutviews\\layoutviews\\views\\product\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|solutionrelative:layoutviews\\views\\product\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\layoutviews\\layoutviews\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{151BF037-D459-488E-9E98-13E80EB464B0}|LayoutViews\\LayoutViews.csproj|solutionrelative:layoutviews\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -18,11 +54,124 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "LayoutViews\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "LayoutViews\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-21T17:41:00.314Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_ProductsLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\Shared\\_ProductsLayout.cshtml",
+              "RelativeDocumentMoniker": "LayoutViews\\Views\\Shared\\_ProductsLayout.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\Shared\\_ProductsLayout.cshtml",
+              "RelativeToolTip": "LayoutViews\\Views\\Shared\\_ProductsLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-21T17:46:26.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LayoutSections.txt",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\LayoutSections.txt",
+              "RelativeDocumentMoniker": "LayoutViews\\LayoutSections.txt",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\LayoutSections.txt",
+              "RelativeToolTip": "LayoutViews\\LayoutSections.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-21T17:37:17.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "LayoutViews\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "LayoutViews\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-20T23:25:04.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "LayoutViews\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "LayoutViews\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-20T23:24:57.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "LayoutViews\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "LayoutViews\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-20T23:24:47.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Search.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\Product\\Search.cshtml",
+              "RelativeDocumentMoniker": "LayoutViews\\Views\\Product\\Search.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\Product\\Search.cshtml",
+              "RelativeToolTip": "LayoutViews\\Views\\Product\\Search.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-20T23:24:23.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Order.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\Product\\Order.cshtml",
+              "RelativeDocumentMoniker": "LayoutViews\\Views\\Product\\Order.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\Product\\Order.cshtml",
+              "RelativeToolTip": "LayoutViews\\Views\\Product\\Order.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-20T23:24:15.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "LayoutViews\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "LayoutViews\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-20T23:23:33.641Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\Views\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "LayoutViews\\Views\\_ViewStart.cshtml",
@@ -30,12 +179,11 @@
               "RelativeToolTip": "LayoutViews\\Views\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-20T23:23:06.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T23:23:06.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "_ViewStart.txt",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\LayoutViews\\LayoutViews\\_ViewStart.txt",
               "RelativeDocumentMoniker": "LayoutViews\\_ViewStart.txt",
@@ -43,8 +191,7 @@
               "RelativeToolTip": "LayoutViews\\_ViewStart.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-04-20T23:20:26.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-20T23:20:26.283Z"
             }
           ]
         }
