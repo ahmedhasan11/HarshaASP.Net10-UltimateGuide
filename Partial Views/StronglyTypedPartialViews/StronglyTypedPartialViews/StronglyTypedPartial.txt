@@ -1,0 +1,18 @@
+﻿(*) here we need to make the partial view as strong typed as we didin the normal View 
+, so asbefore we should pass a model to the partial view to use it 
+
+first of all , (*) you have to make a model calss with all properties that you want the partial view to access
+//so for example we here are talking about 2properties which is ViewBag.ListTitle &&ViewBag.ListOfCountries
+--> 1-so make a new model class with these 2 properties
+--> 2-go to your view and open a code block
+--> 3-inside code block make a object of the model class
+--> 4-give some values to the object's properties 
+--> 5-in partial tag helper give te tag helper the property model --><partial name="" model="name of model object you did"></partial>
+--> 6-go to your partial view and make the  @model model_Class_name 
+--> 7-then as we said before you can access your properties with the Model property
+
+,so thereis some questions
+
+1-how can we pass the model to the partial view??
+answer--> in your view , in the tag helper of partial <partial name=""></partial> you have a property called Model
+can be typedlikethis <partial name="name of partial view" model="name of the model clss you will pass"></partial>

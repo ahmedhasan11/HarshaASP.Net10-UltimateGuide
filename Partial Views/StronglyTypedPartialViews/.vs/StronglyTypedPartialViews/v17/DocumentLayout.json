@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\StronglyTypedPartialViews\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{95350C3E-0410-4D7A-888A-F3F273AFB23D}|StronglyTypedPartialViews\\StronglyTypedPartialViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\partial views\\stronglytypedpartialviews\\stronglytypedpartialviews\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95350C3E-0410-4D7A-888A-F3F273AFB23D}|StronglyTypedPartialViews\\StronglyTypedPartialViews.csproj|solutionrelative:stronglytypedpartialviews\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95350C3E-0410-4D7A-888A-F3F273AFB23D}|StronglyTypedPartialViews\\StronglyTypedPartialViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\partial views\\stronglytypedpartialviews\\stronglytypedpartialviews\\views\\shared\\_listpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95350C3E-0410-4D7A-888A-F3F273AFB23D}|StronglyTypedPartialViews\\StronglyTypedPartialViews.csproj|solutionrelative:stronglytypedpartialviews\\views\\shared\\_listpartialview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95350C3E-0410-4D7A-888A-F3F273AFB23D}|StronglyTypedPartialViews\\StronglyTypedPartialViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\partial views\\stronglytypedpartialviews\\stronglytypedpartialviews\\stronglytypedpartial.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{95350C3E-0410-4D7A-888A-F3F273AFB23D}|StronglyTypedPartialViews\\StronglyTypedPartialViews.csproj|solutionrelative:stronglytypedpartialviews\\stronglytypedpartial.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95350C3E-0410-4D7A-888A-F3F273AFB23D}|StronglyTypedPartialViews\\StronglyTypedPartialViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\partial views\\stronglytypedpartialviews\\stronglytypedpartialviews\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95350C3E-0410-4D7A-888A-F3F273AFB23D}|StronglyTypedPartialViews\\StronglyTypedPartialViews.csproj|solutionrelative:stronglytypedpartialviews\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95350C3E-0410-4D7A-888A-F3F273AFB23D}|StronglyTypedPartialViews\\StronglyTypedPartialViews.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\partial views\\stronglytypedpartialviews\\stronglytypedpartialviews\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{95350C3E-0410-4D7A-888A-F3F273AFB23D}|StronglyTypedPartialViews\\StronglyTypedPartialViews.csproj|solutionrelative:stronglytypedpartialviews\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_ListPartialView.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\StronglyTypedPartialViews\\StronglyTypedPartialViews\\Views\\Shared\\_ListPartialView.cshtml",
+              "RelativeDocumentMoniker": "StronglyTypedPartialViews\\Views\\Shared\\_ListPartialView.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\StronglyTypedPartialViews\\StronglyTypedPartialViews\\Views\\Shared\\_ListPartialView.cshtml",
+              "RelativeToolTip": "StronglyTypedPartialViews\\Views\\Shared\\_ListPartialView.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-22T20:22:39.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\StronglyTypedPartialViews\\StronglyTypedPartialViews\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "StronglyTypedPartialViews\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\StronglyTypedPartialViews\\StronglyTypedPartialViews\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "StronglyTypedPartialViews\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-22T20:13:08.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StronglyTypedPartial.txt",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\StronglyTypedPartialViews\\StronglyTypedPartialViews\\StronglyTypedPartial.txt",
+              "RelativeDocumentMoniker": "StronglyTypedPartialViews\\StronglyTypedPartial.txt",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\StronglyTypedPartialViews\\StronglyTypedPartialViews\\StronglyTypedPartial.txt",
+              "RelativeToolTip": "StronglyTypedPartialViews\\StronglyTypedPartial.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAB5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-22T20:02:13.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\StronglyTypedPartialViews\\StronglyTypedPartialViews\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "StronglyTypedPartialViews\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\StronglyTypedPartialViews\\StronglyTypedPartialViews\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "StronglyTypedPartialViews\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-22T17:54:57.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\StronglyTypedPartialViews\\StronglyTypedPartialViews\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "StronglyTypedPartialViews\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\StronglyTypedPartialViews\\StronglyTypedPartialViews\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "StronglyTypedPartialViews\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T17:54:41.544Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
