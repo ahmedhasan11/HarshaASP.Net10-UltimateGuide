@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\PartialViewResult\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6D6F75D3-0D2D-474A-A401-34D27B637CAE}|PartialViewResult\\PartialViewResult.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\partial views\\partialviewresult\\partialviewresult\\wwwroot\\stylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{6D6F75D3-0D2D-474A-A401-34D27B637CAE}|PartialViewResult\\PartialViewResult.csproj|solutionrelative:partialviewresult\\wwwroot\\stylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D6F75D3-0D2D-474A-A401-34D27B637CAE}|PartialViewResult\\PartialViewResult.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\partial views\\partialviewresult\\partialviewresult\\partialviewresult.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6D6F75D3-0D2D-474A-A401-34D27B637CAE}|PartialViewResult\\PartialViewResult.csproj|solutionrelative:partialviewresult\\partialviewresult.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D6F75D3-0D2D-474A-A401-34D27B637CAE}|PartialViewResult\\PartialViewResult.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\partial views\\partialviewresult\\partialviewresult\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6D6F75D3-0D2D-474A-A401-34D27B637CAE}|PartialViewResult\\PartialViewResult.csproj|solutionrelative:partialviewresult\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D6F75D3-0D2D-474A-A401-34D27B637CAE}|PartialViewResult\\PartialViewResult.csproj|c:\\users\\user\\source\\repos\\.net\\harsha-asp.net-complete-guide\\partial views\\partialviewresult\\partialviewresult\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D6F75D3-0D2D-474A-A401-34D27B637CAE}|PartialViewResult\\PartialViewResult.csproj|solutionrelative:partialviewresult\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StyleSheet.css",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\PartialViewResult\\PartialViewResult\\wwwroot\\StyleSheet.css",
+              "RelativeDocumentMoniker": "PartialViewResult\\wwwroot\\StyleSheet.css",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\PartialViewResult\\PartialViewResult\\wwwroot\\StyleSheet.css",
+              "RelativeToolTip": "PartialViewResult\\wwwroot\\StyleSheet.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-04-26T19:01:14.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\PartialViewResult\\PartialViewResult\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "PartialViewResult\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\PartialViewResult\\PartialViewResult\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "PartialViewResult\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-26T19:00:39.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\PartialViewResult\\PartialViewResult\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "PartialViewResult\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\PartialViewResult\\PartialViewResult\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "PartialViewResult\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T18:47:34.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PartialViewResult.txt",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\PartialViewResult\\PartialViewResult\\PartialViewResult.txt",
+              "RelativeDocumentMoniker": "PartialViewResult\\PartialViewResult.txt",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\.NET\\Harsha-ASP.NET-Complete-Guide\\Partial Views\\PartialViewResult\\PartialViewResult\\PartialViewResult.txt",
+              "RelativeToolTip": "PartialViewResult\\PartialViewResult.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-25T20:02:09.595Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
