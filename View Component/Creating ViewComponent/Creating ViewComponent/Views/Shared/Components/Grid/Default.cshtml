@@ -1,0 +1,10 @@
+﻿@model PersonGridModel
+<h1>viewcomponentinvoked</h1>
+<h1>@Model.GridTitle</h1>
+
+@foreach(Person person in Model.Persons)
+{
+	<h1>@person.PersonName</h1>
+
+	<h1>@person.JobTitle</h1>
+}

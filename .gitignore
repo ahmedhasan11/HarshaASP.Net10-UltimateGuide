@@ -1,0 +1,27 @@
+# Ignore Visual Studio stuff
+.vs/
+*.user
+*.suo
+*.cache
+*.dbmdl
+
+# Ignore build output
+bin/
+obj/
+Debug/
+Release/
+*.dll
+*.exe
+
+# Ignore NuGet
+*.nupkg
+*.snupkg
+packages/
+project.lock.json
+project.assets.json
+
+# Ignore Rider, VS Code, temp
+.idea/
+.vscode/
+*.log
+*.tmp
