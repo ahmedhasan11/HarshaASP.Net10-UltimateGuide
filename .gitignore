@@ -25,3 +25,5 @@ project.assets.json
 .vscode/
 *.log
 *.tmp
+
+View Component/
