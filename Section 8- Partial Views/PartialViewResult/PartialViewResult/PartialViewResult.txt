@@ -1,0 +1,23 @@
+﻿(*)when to use this? when you want to showsome information only when the user clicks
+on a botton for example , for ex if the user should click for a button
+on a menuitem to show its ingreients or something
+
+(*)like when we can return a View in te Controller , you can also
+return PartialView , but why??
+--> we make this for the asynchronous request made from the browser
+-->from the browser you can make asynchronous request using JavaScript Code
+either by using 1-XML http request , 2-fetch api in javascript
+
+(*) so when the controller recieves the asynchronous request  , creates a model
+object , pass this mode object to the partial view , then partial view
+executes in the server side 
+
+(*)partial view can contain both c# code and html code
+-->1-C# code will be executed in server side
+-->2-html code will be returned as response to the browser
+-->the executed content of the partial view will be added to the response body
+
+
+
+ulinke the original action methods , we invoke this action method that returns
+the PartialViewResult through javascript code asynchronously
