@@ -1,0 +1,23 @@
+﻿@using ViewComponent_Assignment.Models
+
+@model CityWeather
+
+<div>
+
+		<ul>
+			<li>
+				@Model.CityUniqueCode
+			</li>
+			<li>
+				@Model.CityName
+			</li>
+			<li>
+				@Model.DateAndTime
+			</li>
+			<li>
+				@Model.TemperatureFahrenheit
+			</li>
+		</ul>
+		<button id="btn" value="Details">Details</button>
+
+</div>

@@ -1,0 +1,21 @@
+﻿@{
+	ViewBag.Title = "Home";
+}
+
+@* you can call the viewcomponent with 2 options
+
+1- @await Component.InvokeAsync("name of ViewComponentClass")
+
+2- add the tag helpers in the _viewimports , then use the viewcomponent tag helper
+then use the tag helper <vc:grid>
+*@
+@*@await Component.InvokeAsync("Grid")
+	<vc:grid></vc:grid>
+*@
+<h1> test to load javascriipt</h1>
+<button id="load-json"> load person data</button>
+<div id="list"></div>
+<script src="~/person.js"></script>
+
+
+
