@@ -1,0 +1,16 @@
+﻿you can make a section in your view like this:
+@section{
+<h1>  this is some test text  </h1>
+}
+
+and in the layout view you can make RenderSection("name of section",false)
+
+and the section data that you did will be printed in the specified place you had put the RenderSection in
+
+
+//in real world projects how we can use these?
+1-if you want to add a javascript file for a specific view only , then you can add it to the section you did
+and redndersection it
+1.1-or you can put that javascript file directly in the layout so all the views will get it
+
+2-adding some hyperlinks

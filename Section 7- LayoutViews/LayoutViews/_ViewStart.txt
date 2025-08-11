@@ -1,0 +1,13 @@
+﻿the only purpose for _ViewStart.cshtml is to share a specific layout 
+
+//1-can be used across all the Controllers --> put it just on the Views folder 
+dont make it in shared or any other folder
+
+//2-can be used local for a specific controller so it will use the specific layout
+for only the views of the specific controller you make it inside
+
+//dont use any data or access anydata as the same as _ViewImports
+
+//the only purpose for _ViewStart is to share the layouts across all controller or
+a specific controller
+

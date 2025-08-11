@@ -1,0 +1,13 @@
+﻿in each View you have a Property called Layout
+
+it specifies the Layout you want to use to your View
+
+//notice that you should modify this Property only when you need to print
+a specific layout view to that specific View
+
+//but if you have some views that will have the same layout so you dont need
+to repeat this statment of 	Layout = "~/Views/Shared/_Layout.cshtml"; everytime this is 
+not good 
+, 
+
+instead --> we add this statement once in the _ViewStart.cshtml
