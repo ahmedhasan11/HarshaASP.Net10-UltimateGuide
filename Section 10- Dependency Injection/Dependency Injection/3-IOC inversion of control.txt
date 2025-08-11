@@ -1,0 +1,31 @@
+##guides you how to implement the Dependency inversion principle-->use IOC container 
+
+--> inverses the control by shifting the control to IOC container
+
+--> what is our problem? we dont know how to do an object of the ICitiesService Class
+
+-->how the problem is solved? 
+	#instead of we make the object by ourselves
+	#the IOC Container takes the responsibility of creating an object of the service class
+	#IOC Container makes an object of the cityservice class and supply it to the controller
+	("dont call us ,we will call you")
+
+-->IOC container can be implemented using other designpatterns-->but we will use dependency injection
+
+-->you have to add the service class to the IOC Container
+
+-->WHO IS THE IOC CONTAINER????????????????? SOLUTION--> builder.services (which is in program.cs)
+
+#IMPORTANT
+-->you have to add the service class to the IOC Container in program.cs
+            -you have to supply Service Details --> in a obj of ServiceDescriptor class
+            -Service Details--> interface & service class & ServiceLifeTime
+
+ #what is happpening?
+ (*)hey IOC container , whenever somebody asks for ICityService -->
+ create an object of the CityService and supply the object
+			  
+
+/*example: home controller asked for an object implements ICityService ,  so the request
+will be sent to the IOC Container , it creates object of the service class,supplies
+this object to the HomeController*/

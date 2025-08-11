@@ -1,0 +1,20 @@
+here we only have 2 things
+
+1-Controller
+
+2-Service
+
+##the problem here is the Controller is Fully Dependent on Service
+
+how?
+
+-->in controller constrcutor you have to do object from the service to use methods 
+
+//what if you have 2 developers not only 1 
+
+//developer a : responsible on developing controller
+//developer b : responsible on developing Service
+
+##theproblem--> developer A have towait until developer B complete the Service because you have to make an object
+-->any changes in the service affect the controller
+-->diff to test because they depend on each other
