@@ -1,0 +1,5 @@
+(*) acts as another IOC Container 
+
+//the follwing 2 is not supported bythe builder.services, but supported using Autofac
+#InstancePerOwned--> implement basedon the realtionship between the classes
+#instancepermatchinglifetimescope -->youtaganame and ifthenameismatched then the instance will be crerated

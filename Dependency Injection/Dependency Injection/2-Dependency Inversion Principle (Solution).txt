@@ -1,0 +1,11 @@
+Defintion--> 1-Controller doesn't depend on Service (problem of direct dependency Solved)
+
+## both Controller & Service should depend on Abstractions
+##Abstraactions-->like Interfaces & Abstract Class
+
+-->make a class library ServiceContract , make interface inside it 
+-->inside your interface put the methods which you planned to put in the service
+
+1-Controller -->make variable of the interface type and access it
+
+2-Service--> implements interface , make sure all these methods are implemented properly withsame dataype & parameters
