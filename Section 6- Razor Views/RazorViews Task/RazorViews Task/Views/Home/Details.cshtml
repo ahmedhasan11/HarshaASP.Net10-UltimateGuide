@@ -1,0 +1,25 @@
+﻿@using RazorViews_Task.Models
+@model List<CityWeather>
+
+<div>
+	<div >
+		@foreach(var dt in Model)
+		{
+			<h1>@dt.CityName</h1>
+			<div>
+				<div>
+					@dt.CityUniqueCode
+				</div>
+				<div>
+					@dt.CityName
+				</div>
+				<div>
+					@dt.DateAndTime
+				</div>
+				<div>
+					@dt.TemperatureFahrenheit
+				</div>
+			</div>
+		}
+	</div>
+</div>
