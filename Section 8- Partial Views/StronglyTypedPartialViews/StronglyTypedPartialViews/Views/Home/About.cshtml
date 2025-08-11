@@ -1,9 +1,0 @@
-﻿@{
-	ListPartialView listobj = new ListPartialView();
-	listobj.ListTitle = "Countries";
-	listobj.ListOfCountries = new List<string> { "USA", "Canada", "Japan" };
-}
-
-@{
-	await Html.RenderPartialAsync("_ListPartialView", listobj);
-}
