@@ -1,0 +1,14 @@
+﻿@using Dependency__Injection_Task.Models;
+@model List<CityWeatherClass>
+
+<div>
+	<div class=""></div>
+</div>
+
+@foreach (var CityWeather in Model)
+{
+	@CityWeather.CityUniqueCode;
+	@CityWeather.CityName;
+	@CityWeather.DateAndTime;
+	@CityWeather.Temp
+}
