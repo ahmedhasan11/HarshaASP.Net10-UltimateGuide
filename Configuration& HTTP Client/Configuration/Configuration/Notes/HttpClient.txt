@@ -1,0 +1,36 @@
+﻿Requirements: fetch some data from a webservice called finhub , and show the data
+
+
+
+//there is a predefined HttpClient Service that youcan addto your services inprogram.cs
+
+//then you can inject that service in that entir app
+
+//theservice class name is HTTPClientFactory (not HTTPClient)
+
+the interface IHTTPClientFactoryis implemented by apredefined class called DefaultHTTPFactory
+
+IHTTPClientFactory-->Interface which is used  to create an instance of HTTPClient Class
+(instead ofyoubyyourown create your instanceof the HTTPClient), but why?
+the solution is-->1-afteryour responseis done andeverythingisdone, HTTPClientFactory take the 
+responsibility to close the connection with the serverr
+
+//we needtomake a request to another server , so we acts here as client
+//steps to make arequest 
+1-add HttpCLient service inprogram.cs
+2-inject the Httpclient service using the IHTTPClientFactory(to use the benefitof the close connection)
+,(also to makeit make an instance of the HTTPCLient insteadof we make it)
+
+3- make a method to make our request
+
+4-in that method use the using() , then now we needto tell the HttpClientFactory to make the instance
+//do it using the obj.CreateCLient() -->obj here is the obj you injected
+
+5-inside the using ,create an object of a class called HttpRequestMessage , in the brackets
+of that object pass the URI and Http method , called RequestUri, Method
+
+6-now using the obj injected youc an say obj.SendAsync(obj_ofRequestMessage), assign that into a
+obj of HttpResponseMessage
+
+
+

@@ -1,0 +1,8 @@
+﻿we already discussed the options pattern and how to use it 
+
+what if we better do inject it instead of do all of that code
+
+1-go inject the Model in the program.cs 
+2-use the builder.Configuration.GetSection("section name") as a service
+
+this returns object but not a model object , this returns a Ioptions<model class> object

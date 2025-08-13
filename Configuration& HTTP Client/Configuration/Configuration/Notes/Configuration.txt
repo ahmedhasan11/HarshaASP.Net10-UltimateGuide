@@ -1,0 +1,1 @@
+﻿we are discussing appsettings.jsonconfigurationto access itsproperties or changein them

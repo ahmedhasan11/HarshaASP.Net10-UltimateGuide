@@ -1,0 +1,23 @@
+﻿what if in real world projects you need to just 90%ofthetime access 2 properties or 3 from a specific section in appsettings.json
+
+// hereyouuse options pattern
+
+1-create a new model classand write intoitthe properties you need to access (should be same name like the property in appsettings.json)
+
+2- in code  , using the configuration obj , use the getsection method to access the section in the appsettings.json
+
+3- here yoou have (2) ways
+{
+ (*)1--> GetSection("section name") .Get<ModelClassName>() --> this creates a new object of the model class , and check
+ for the properties names of the model class , if they are matched -->it assign the values to the properties of the obj
+
+ (*)2-->Create a new object of the modelclass , then use the GetSection("section name").Bind(obj_name)
+
+
+
+}
+
+
+		
+
+		
