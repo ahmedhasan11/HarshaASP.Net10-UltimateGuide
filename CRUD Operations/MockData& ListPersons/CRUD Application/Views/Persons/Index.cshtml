@@ -1,0 +1,49 @@
+﻿@using ServiceContracts.DTO
+@using Service
+@model IEnumerable<PersonResponse>
+@{
+	ViewBag.Title = "Persons";
+}
+
+<div class="table">
+	<div class="page-content">
+		<div >
+
+				<table class="table w-100 mt">
+					<thead> 
+						<tr>
+
+							<th>Name</th>
+							<th>Email Address</th>
+							<th>Address</th>
+							<th>Age</th>
+							<th>Date Of Birth</th>
+							<th>Country</th>
+							<th>Gender</th>
+							<th>ReccivenewsLetters</th>
+						</tr>
+					</thead>
+					<tbody>
+					@foreach (PersonResponse person in Model)
+					{
+						<tr>
+
+							<td>@person.PersonName</td>
+							<td>@person.EmailAddress</td>
+							<td>@person.Address</td>
+							<td>@person.Age</td>
+							<td>@person.DateOfBirth</td>
+							<td>@person.Country</td>
+							<td>@person.Gender</td>
+							<td>@person.ReccivenewsLetters</td>
+													
+
+						</tr>
+					}
+					</tbody>
+				</table>				
+		
+			
+		</div>
+	</div>
+</div>
