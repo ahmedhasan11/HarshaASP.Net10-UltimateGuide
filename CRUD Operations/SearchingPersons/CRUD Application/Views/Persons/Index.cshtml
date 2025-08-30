@@ -1,0 +1,104 @@
+﻿@using ServiceContracts.DTO
+@using Service
+@model IEnumerable<PersonResponse>
+@{
+	ViewBag.Title = "Persons";
+}
+<form action="~/persons/index" method="get"> @*the browser have to collect the 
+	values from the form elements(textboxes & Dropdownlist)
+	how to do it? use the name attribute inside the tag <select name="">
+	and with this name only the value will be submitted
+	<select name="searchBy"> --> searchBy= value user selected from the dropdownlist
+	<input name="searchString">-->searchString= value entered in the textbox
+
+
+	so assume user selected Person Name and in textbox writed a
+
+	then QueryString of Form is searchBy=PersonName& searchString=a
+
+	so the EQueryString is genereated automatically based on the values selected by user
+
+	//so this QueryString is Submitted to the server as a part of the Get request 
+	that the form made 
+
+*@
+
+
+	<div class="box flex">
+		@*search dropdown list*@
+		<div class="flex-1">
+			<select class="form-input" name="searchBy">
+				@foreach (var field in ViewBag.SearchFields)
+				{
+					@*ther istwo properties here you can access the key and values pairs
+					theyare--> Value , Key , likewe did here --> field.Key,field.Value
+				*@
+					@*you can define what you want to return using value property in the tag
+					like we did here--><option value=@field.key>
+				*@
+					@*here field.Value means the Value from the Dict<Key,Value>*@
+					@*the KEY will be taken as value which be submitted from the submit button*@
+					if (field.Key== ViewBag.CurrentsearchBy)
+					{
+						<option  value="@field.Key" selected="selected">@field.Value </option>
+					}
+					else
+					{
+						<option   value="@field.Key">@field.Value </option>
+					}
+
+			}
+
+			@*here we have to show the available attributes user can search*@
+		</select>
+	</div>
+	@*search textbox*@
+	<div class="flex-1">
+		<input name="searchString" value="@ViewBag.CurrentsearchString" type="search" id="Search" class="form-input" placeholder="Search"/>
+	</div>
+	@*search Button*@
+	@*wehaveto specify what will happen when the user clicks on the submit button
+		we did that on the form tag , whenuser clicks the submit button, 
+		the from tag will be proccessed forwhich action you put , and the method
+	*@
+	<div class="=flex-1">
+		<button class="button button-blue-back">Search</button>
+		<a href="~/persons/index" class="link-hover">Clear All</a>
+	</div>
+</div>
+				<table class="table w-100 mt">
+					<thead> 
+						<tr>
+
+							<th>Name</th>
+							<th>Email Address</th>
+							<th>Address</th>
+							<th>Age</th>
+							<th>Date Of Birth</th>
+							<th>Country</th>
+							<th>Gender</th>
+							<th>ReccivenewsLetters</th>
+						</tr>
+					</thead>
+					<tbody>
+					@foreach (PersonResponse person in Model)
+					{
+						<tr>
+
+							<td>@person.PersonName</td>
+							<td>@person.EmailAddress</td>
+							<td>@person.Address</td>
+							<td>@person.Age</td>
+							<td>@person.DateOfBirth</td>
+							<td>@person.Country</td>
+							<td>@person.Gender</td>
+							<td>@person.ReccivenewsLetters</td>
+													
+
+						</tr>
+					}
+					</tbody>
+				</table>
+</form>
+		
+			
