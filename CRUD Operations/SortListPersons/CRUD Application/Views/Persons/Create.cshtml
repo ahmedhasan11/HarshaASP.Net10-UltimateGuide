@@ -1,0 +1,54 @@
+﻿@{
+	ViewBag.Title = "Create Person";
+}
+
+<form action="~/persons/create" method="post">
+	@*for the values to be submitted every input tag must have name attribute,
+		if there is no name for a specific input-->its value will not be submitted when we click on submit button
+		,and it should match withthe same name of the propertyof your class
+		-->here our calssis the PersonAddRequest
+		-->soModelBinding when you clicks the submitbutton it gets thevalue fromthat sepecific input 
+		andaddsthe value into the propertynamethatatchesitin thePersonAddRequest
+	*@
+
+	<div>
+		<label for="PersonName"><h2>Person Name:</h2></label>
+		<input type="text" id="PersonName" name="PersonName" />
+	</div>
+	<div>
+		<label for="EmailAddress"><h2>Email Address:</h2></label>
+		<input type="text" id="EmailAddress" name="EmailAddress"/>
+	</div>
+	<div>
+		<label for="DateOfBirth"><h2>Date Of Birth:</h2></label>
+		<input type="date" id="DateOfBirth" name="DateOfBirth" />
+	</div>
+	<div>
+		<h2>Gender:</h2>
+
+		@*to justselect 1 option you have to give the2 inputs the samename with diff id*@
+		<input type="radio" id="Male" name="Gender" value="male"/>
+		<label for="Male"> Male</label>
+
+		<input type="radio" id="Female" name="Gender" value="female" />
+		<label for="Female"> Female</label>
+
+	</div>
+	<div>
+		<label for="Address"><h2>Address:</h2></label>
+		<input type="text" id="Address" name="Address" />
+	</div>
+	<div>
+		<label for="Country"><h2>Country:</h2></label>
+		<select>
+			
+		</select>
+	</div>
+	<div>
+		<label for="ReccivenewsLetters"><h2>ReccivenewsLetters:</h2></label>
+		<input type="checkbox" id="ReccivenewsLetters" name="ReccivenewsLetters" />
+	</div>
+
+
+
+</form>
