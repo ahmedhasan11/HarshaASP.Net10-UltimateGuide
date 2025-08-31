@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>StocksApp_Task</RootNamespace>
+    <UserSecretsId>f1cbb91a-7c9a-4b1b-8e54-51344e775ae8</UserSecretsId>
+  </PropertyGroup>
+
+</Project>
