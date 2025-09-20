@@ -1,0 +1,5 @@
+﻿instead of <form action="~/persons/index" method="get"></form>
+
+you can use <form asp-controller="persons" asp-action="index" method="get">
+
+<form asp-controller="persons" asp-action="index" method="get"> --> <form action="~/persons/index" metho="get"></form>
