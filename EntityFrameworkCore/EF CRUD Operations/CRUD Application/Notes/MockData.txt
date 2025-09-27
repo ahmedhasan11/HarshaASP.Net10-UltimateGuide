@@ -1,0 +1,12 @@
+﻿//to mock data , firstof all weare using GUID asthe typeofour personID, countryID
+
+//youcan go to tools-->Create Guid--> copy and generate ID's 
+
+//then crate your objects and use the ID's you generated as the IDof the obj(even person or country)
+
+//whatis the problem?
+when we go to unit test said that we want  the list of countries or Persons to be empty so we can test
+Solution?????--> create a bool and init it with true but-->when you inject the service in the CountryTest
+make this bool =false , what this bool do? it mocks data if its true, if its itdoes nothing
+
+-->next estep--> gto mockaroo website and makeeach propertyand eachtype of it -->previewdata and copy it
