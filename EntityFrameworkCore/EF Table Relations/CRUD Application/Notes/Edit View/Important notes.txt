@@ -1,0 +1,15 @@
+﻿the edit bvutton that is in the index view behind each person details ,, its not enough to just make <a> tag that just have the action&controller
+, you have to pass to this action the id of that specific person that you are pressing its edit button,,, inside the anchor tag you have 
+a tag helper called asp-route-(variable name) , here you can write this , the variable namehere , is the same parametername that you wrote
+in the parameters of the action method --so if Edit(Guid personID) --><a asp-route-personID="@person.PersonId">,,,so this will make a request 
+to theaction method you want, pass to it the person id 
+
+
+
+
+in the Edit view of [httpGet] we knew that you havd id and you will not make a field for it in the Create or Edit
+, but the problem is the id parameter is not being passed to the [httpPost] Edit--> so we have to pass it in the 
+Edit get view so the form when it makes the request to the Post Edit-->the modelpassed contains the personID
+
+so just in the edit view make <input type="hidden" asp-for="PersonID"> , and it will be passed to the Post Edit
+

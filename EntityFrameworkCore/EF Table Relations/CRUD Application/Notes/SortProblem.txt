@@ -1,0 +1,29 @@
+﻿(*)PROBLEM-->we talked about doing search , now we are going to create sort-->we need when we click on the table header
+link Person Name -->elements be sorted based on Person Name Decs-->because its already sorted Ascendent
+-->also when we clickon the Person Name again-->it should returns to the normal Ascendent Order
+
+(*) we want to do all of that for all headers and also there is an icon from the fontawesome app that reresenets if 
+tghe sort now on the column asc or decs , its just an arrow that is either up or down , you can use it inside <i> tag
+just use the specific style used for it
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+What We have to do??
+1- you have to get the value the user did like we did in search when wegot the SearchBy& SearchString
+you also have SortBy& SortOrder-->so get them also from the QueryString ,--> and put them into the params into Index action
+-->then create for them initial value which SortBy=PersonName&SortOrder=ASC so each time you open the View datais ordered
+based on the PersonName Header-->then Create ViewBag for them to access them to check the CurrentValue so you can make your conditions
+
+2-you have 3 Conditions for each header -->(1)ASC-->DESC , (2)DESC-->ASC, (3)Normal One(so there is no arrow)
+-->by default 3 conditions for every header is too much code , so here we will use PartialView and it checks for the
+Specified nameof(PersonResponse.Property)-->we will pass the ColumnName & DisplayName from the IndexView -->to PartialView
+while calling the Html.PartialAsync() by each time you are creating a new obj of ViewDataDictionary(ViewData) this is a
+dictionary that we can access its Key& Value Pairs in our PartialView
+
+3-so foreach header--> you will call the Html.PartialAsync() and pass to it (1) the name of the partialview &(2)the new obj of the
+ViewDataDictionary(ViewData) and pass the data we need whichis the ColumnName andDisplayName and use these keys in our
+PartialView so now the PartialView is Dynamic
+
+4- 
+
+
