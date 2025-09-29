@@ -1,0 +1,107 @@
+﻿@model PersonUpdateRequest
+
+<a asp-controller="persons" asp-action="Index">Back to Persons List</a>
+<h1> Edit Person</h1>
+<form asp-action="Edit" asp-controller="Persons" method="post" >
+
+	<input asp-for="PersonID" type="hidden"/>
+	<div>
+		<label asp-for="PersonName"><h2>Person Name:</h2></label>
+		<input asp-for="PersonName"  />
+		<span asp-validation-for="PersonName"></span>
+	</div>
+	<div>
+		<label asp-for="EmailAddress"><h2>Email:</h2></label>
+		<input asp-for="EmailAddress"  />
+		<span asp-validation-for="EmailAddress"></span>
+	</div>
+	<div>
+		<label asp-for="DateOfBirth"><h2>DateOfBirth:</h2></label>
+		<input asp-for="DateOfBirth"  />
+		<span asp-validation-for="DateOfBirth"></span>
+	</div>
+
+	<div>
+		<h2>Gender:</h2>
+		@{
+			string[] genders = (string[])Enum.GetNames(typeof(GenderOptions));
+		}
+		@foreach (var gender in genders)
+		{
+			<input type="radio" asp-for="Gender" value="@gender" />
+			<label for="@gender"> @gender</label>
+
+		}
+		<span asp-validation-for="Gender"></span>
+		@*to justselect 1 option you have to give the2 inputs the samename with diff id*@
+		@* 		<input type="radio" id="Male" name="Gender" value="male"/>
+		<label for="Male"> Male</label>
+
+		<input type="radio" id="Female" name="Gender" value="female" />
+		<label for="Female"> Female</label> *@
+
+	</div>
+	<div>
+		<label asp-for="CountryID"><h2>Country:</h2></label>
+		<select asp-for="CountryID" asp-items="@ViewBag.Countries"  >
+			
+			<option>Please Select:</option>
+		</select>
+		<span asp-validation-for="CountryID"></span>
+	</div>
+	<div>
+		<label asp-for="Address"><h2>Address:</h2></label>
+		<input asp-for="Address"  />
+		<span asp-validation-for="Address"></span>
+	</div>
+	<div>
+		<label asp-for="ReccivenewsLetters"><h2>ReccivenewsLetters:</h2></label>
+		<input asp-for="ReccivenewsLetters"  />
+		<span asp-validation-for="ReccivenewsLetters"></span>
+	</div>
+
+	@*Submit*@
+	<div class="form-field flex">
+		<div class="w-25">
+		</div>
+		<div class="flex-1">
+			<button class="button button-green-back">Edit</button>
+
+			<div asp-validation-summary="All" class="text-red"></div>
+
+			@if (ViewBag.Errors != null)
+			{
+				<div class="text-red ml">
+					<ul>
+						@foreach (string error in ViewBag.Errors)
+						{
+							<li class="ml">@error</li>
+						}
+					</ul>
+				</div>
+			}
+		</div>
+	</div>
+
+
+
+
+</form>
+@section scripts {
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+			asp-fallback-test="window.jQuery" asp-fallback-src="~/jquery.min.js">
+	</script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js"
+			asp-fallback-test="window.jQuery.validator" asp-fallback-src="~/jquery.validate.min.js">
+	</script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js"
+			asp-fallback-test="window.jQuery.validator.unobstrusive" asp-fallback-src="~/jquery.validate.unobtrusive.min.js">
+	</script>
+	}
+
