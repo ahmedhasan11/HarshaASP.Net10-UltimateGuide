@@ -1,0 +1,4 @@
+﻿in AspNetCoreIdentity-->the Managers offer the business logic that contains the methods
+to perform manipulations on users and roles(Create,Delete,Update,etc.....)
+
+-->internally uses UserStore (RepositoryLayer that we configured before)
