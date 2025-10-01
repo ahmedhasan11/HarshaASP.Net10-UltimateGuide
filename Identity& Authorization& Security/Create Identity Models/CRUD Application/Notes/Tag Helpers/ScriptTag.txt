@@ -1,0 +1,25 @@
+﻿we made the script tage before when we called the cdn src , but there is a prblem now that is what if the request that made to cdn returned null
+
+-->now we should make a repalcemnts of a recovery for the js files , so just go t the cdn links and save your files , put them in the wwwroot
+
+-->asp-fallback-test-->this is what says if the request is null or not 
+-->asp-fallback-src-->this contains the path of the file in the wwwroot(local)
+
+-->lifeecycle-->when the mdelbinding send a request to cdn site , if the request is null or undefined , the asp-fallback-test calls the 
+asp-fallback-src ,,,,, if the request is defined correctly , asp-fallback-test do nothing , so its just like a backup for your files to make
+sure that everything is going well
+
+
+
+-->its not recommended to call your script tags in the page content , if you are doing them in the create view , they are now part of the RenderBody
+so they will be called in the RenderBody , its not recommended 
+
+-->Soultion-->leave the script tags as they are in the Create view but just put them in @section scripts , give them the name you want
+,and go in your layout , and before the close of the </body> tage , call the RenderSection("scripts", required:false) 
+
+-->required attribute made false , because not all your views have these script tags , you just putit in yout create , for example your index view
+doesnt have these script tags , so if  you didint add the required attribute , when theindex view getcalled , it gives error because modelbinding
+didnt find the script tags which you told him to render
+
+
+

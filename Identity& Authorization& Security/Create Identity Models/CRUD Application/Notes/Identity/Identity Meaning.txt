@@ -1,0 +1,10 @@
+﻿remmeber when we was working only in applicationDbContext , wemake Dbset<Person>, DbSet<Country>
+
+exactly similar to that in case of identity , Db sets are created based on these two entity classes
+(IdentityUser<T>, IdentityRole<T>)
+
+
+Packages: Install in Entities Class Library , also in the Web Project
+1-Microsoft.AspNetCore.Identity
+2-Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
