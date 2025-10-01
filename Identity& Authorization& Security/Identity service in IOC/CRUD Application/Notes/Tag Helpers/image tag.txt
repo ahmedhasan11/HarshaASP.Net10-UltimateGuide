@@ -1,0 +1,4 @@
+﻿there is a small problem when your wesbite is in productionphase when you change some photo withanother one, 
+it cant be loaded becausethe browser using cash to load a image , so it keeps the old iimage
+
+ Solution-->add the attribute called asp-append-version="true" in your <img> tag
