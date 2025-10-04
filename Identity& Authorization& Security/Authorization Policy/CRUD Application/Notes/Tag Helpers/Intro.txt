@@ -1,0 +1,7 @@
+﻿<input type="" name="" id="" value="">
+
+instead of above code
+
+you can do this <input asp-for="ModelPropertyName">
+
+so 

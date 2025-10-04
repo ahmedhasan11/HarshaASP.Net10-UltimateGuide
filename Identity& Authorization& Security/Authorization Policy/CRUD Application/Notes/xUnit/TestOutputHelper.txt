@@ -1,0 +1,20 @@
+﻿//what is the TestOutputHelper?
+
+in yourtest cases look at the results if the test passed-->nothing is shown just test passed
+
+//what if we want the results we did to show , if we addeed some persons and we want after test passed
+in the text box below it shows the expected values and actual values so we can make sure everything is okay
+
+how?
+1-inject the testoutputhelper service in your PersonTest class using the ItestOutputHelper interface
+
+2-use the _testoutputhelper.WriteLine("put here the message you want to show that define the details", object you will read from)
+
+3-in("put here the message you want to show that define the details", object.ToString()) we added the .ToString()
+
+4-go to the PersonResponse(the class that we read from its object)--> and override the .ToString() method
+
+5-after overriding you haveto printthe value of each property you want to show
+
+6-in your test class print the actual value and expected
+
