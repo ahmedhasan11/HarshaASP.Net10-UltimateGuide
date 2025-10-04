@@ -1,0 +1,53 @@
+﻿(*)we should add the identity as service in the IOC Container 
+
+builder.services.AddIdentity<????,?????>();
+
+Identity service asks 6 questions
+1-what is the model class per store the user details -->ApplicationUser 
+details:it goes into your class andsee what are the properties that is defined in this class
+
+2-what is the custom class name for storing the user details-->ApplicationRole
+
+3-how we have to store this data,, using which DbContext??-->AddEntityFrameworkStores<PersonsDbContext>
+
+4-at the time of login , email & phone number verification OR Forgot password OR Reset password OR OTP
+at hese times , we have to generate tokens randomly at runtime , there is some token providers
+that help you , like: EmailTokenProvider, PhoneNumberTokenprovider, Etc....,
+to add these default tokens 
+
+Solution--> AddDefaultTokenProviders
+
+
+5-what is the exact repository layer to use for working with this PersonsDbContext?? because we can't use the
+DbContext directlyin the manager class-->this UserStore is for Users table
+
+Solution-->AddUserStore<UserStore< ? , ? , ? , ? >()> -->offers the repository layer that stores 
+	(1) user details using  ApplicationUser class
+	(2) Role details using ApplicationRole class 
+	(3) asks what DbContext to use 
+	(4) asks what is the DataType of userID
+
+6-as we said the UserStore is used for Useres table, we now have to make one to store
+User Roles
+-->AddRoleStore<RoleStore<? , ? , ? >>  
+	(1) pass to it the ApplicationRole because its the model class for storing the roles details
+	(2) pass to it the DbContext
+	(3) asks what is the DataType of userID
+
+
+
+
+so now --> it understands that
+1-we have to create the aspnetUsers with its properties(Application Layer)
+2-we have to create the aspnetRoles with its properties (Application Layer)
+3-store the data using this PersonsDbContext(Application Layer)
+4-configuring UserStore to your specified classes(Repository Layer)
+5-configuring RoleStore to yourspecified classes(Repository Layer)
+
+
+Final Code:
+            builder.Services.AddIdentity<ApplicationUser, ApplicationRole>()
+                .AddEntityFrameworkStores<PersonsDbContext>()
+                .AddDefaultTokenProviders()
+                .AddUserStore<UserStore<ApplicationUser, ApplicationRole, PersonsDbContext, Guid>>()
+                .AddRoleStore<RoleStore<ApplicationRole, PersonsDbContext, Guid>>();

@@ -1,0 +1,48 @@
+﻿as we saw the UserManager manipulatesuserinformation
+
+
+as you injected the UserMangaer using Di , you also have to inject SignInManager to use these methods:
+
+SignIn Manager-->provides business logic for 1-login & 2-logout
+
+1-Login-->2 methods {SignInAsync(), PasswordSignInAsync}
+
+2-Logout-->2 methods {SignOutAsync(), IsSignedIn()}
+
+
+Question:what will happen when you use the _signinmanager.SigninAsync(applicationuserObj,???)
+#######
+Answer is{
+	Cookies: whenever a user is signed in it creates a cookie inthe server side and send it to the browser
+	then the browser stores it inthe browser memory , and when this user trytonavigate to another url 
+	like persons/index , the browser automatically submits the cookie to prove that the user is already
+	logged in ,,then server recieves the request and verify the cookieis valid or not
+}
+
+Question:what is the other parameterthat the SignInAsyncmethod needs?
+######
+Answer: itneeds a parameter called IsPersistent , this tells the browser to save your cookie or not if 
+you closed the browser, ithave 2 values true OR false
+IsPersistent:true-->the browser will save this cookie even if you closed the browser 
+so next time you open the browser and go to the page , you don't have to Login again
+
+IsPersistent:false-->your cookie will be lost after youclose the browser so you have to login
+again inour page each timeyou close the browser
+
+-->now we needinthe register post method , ifresult.succeeded , we need to use the signinasync
+method to login theuser , and in out Layout we need to display the current user name for example
+, thereis a property called User you can use it in any view , whichhavesome properties
+you can display the namelikethat-->@User.Identity.Name
+Problem-->itwill not be shown , but why? when you signin using the SigninAsync(), the cookie
+will bestoredin the request.cookies in thebrowser , but you didnt get it in yourapplication
+Solution--> inyourprogram.cs -->app.UseAuthentication();-->this fetches the cookie from Request.cookies
+and extracts from it user ID &user Name andautomatically assign it to your @User property
+
+-->app.UseAuthentication()-->should be used above the (app.UseRouting(),app.MapControllers())
+
+
+####what if we need to display the username& logout button if user is loggedin , display register and loginbutton if user not logged in
+Solution-->@User.Identity.IsAuthenticated-->returns true if user is logged in , soyou can make if condition on it
+
+
+
