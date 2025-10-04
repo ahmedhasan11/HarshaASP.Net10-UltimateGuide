@@ -1,0 +1,26 @@
+﻿what is the return url???
+
+imagine if now you aremaking a request to persons/create , but you didnt log in so you dont have
+access , looatyour method we says that when youlog in it redirects you to persons/index-->but asa useryou 
+will be confused
+
+i made a request to createand in logged in , why you letme go to index???
+
+there is a parameter the authorizationprovides in the query stringcalled ReturnUrl
+it taesthe request theuserhave and store it in the query string you canseethis , but it will notwork
+until you mae it work
+
+-->useing model binding, inthe login GET--> you have to fetch the ReturnUrl using ModelBinding
+, -->asp-route-ReturnUrl=@context.Request.Query["ReturnUrl"]
+
+-->then get it in the POST Login using model binding, so get it inyour method , 
+
+then you haveto make a if condition inside the success result
+
+if(!string.isNullOrEmpty(ReturnUrl)&&Url.IsLocalUrl(ReturnUrl))
+{
+return LocalRedirect(ReturnUrl)
+}
+
+-->IsLocalUrl-->means is it in the same application
+-->LocalRedirect-->use it security issue
