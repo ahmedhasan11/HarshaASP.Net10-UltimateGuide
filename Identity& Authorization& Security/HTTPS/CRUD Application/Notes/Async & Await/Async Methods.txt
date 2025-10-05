@@ -1,0 +1,10 @@
+﻿#1- go to ICountriesService , we have to convert all these methods to async methods , but how?
+
+first of all , the return type of the method is important,
+for ex:CountryResponse AddCountry(CountryAddRequest? countryAddRequestobj);
+
+here return type is CountryResponse ->the idea is if we will convert it into async methods
+we have to make the return type is Task<return type of yur method> so for explain, you are passing
+your return type as generic parameter for the Task
+
+why we used Task? becauseits awaitable-->while calling this method the caller can use the awaitkeyword
