@@ -1,0 +1,6 @@
+﻿IdentityUser<T> -->represents user details --> a model class to store userdetails 
+5 built in properties -->(ID,Email,UserName,PhoneNumber,PasswordHash), if youwant to add
+more properties create a child class based on IdentityUser and add your additional properties
+
+Q:what is the <T> behind the IdentityUser
+ANS-->its generic class represents DataType of the ID(by default String)
