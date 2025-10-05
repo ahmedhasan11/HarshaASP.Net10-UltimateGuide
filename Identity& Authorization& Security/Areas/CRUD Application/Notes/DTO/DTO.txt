@@ -1,0 +1,17 @@
+﻿DTO: data tansfer objects -->used for sending the request and receiveing the response
+(these are not about browser request) , it mans the req between controller and service calss for example
+
+what happens?
+1- the controller sends a request ,
+			sends the details in the form of request DTO object(CountryAddRequest)
+
+
+2- the controller recieves an object of Response DTO (CountryResponse)
+
+//these 2 objects are used for data exchange between controller and service
+
+(*)DTO's used either 1- as argument to a method OR 2-response or return value from the method
+
+Q1: how converting the Countryobj into a CountryResponse works with Extension Method?
+Solution-->this extension method is going to be injected into the CountryModel class (it behaves like its added to Country class)
+-->so you didnt change the code of the Country Model to make it as clean as possible
