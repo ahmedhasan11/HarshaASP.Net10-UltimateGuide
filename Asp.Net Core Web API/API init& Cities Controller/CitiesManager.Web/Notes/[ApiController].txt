@@ -1,0 +1,9 @@
+﻿3-theapi controller must implementattribute called[ApiController] 
+-->specifies that these action methods are going to be APi action metohds 
+not regular mvc controller actoion methods or endpoints 
+so they will not render any view whatever happened
+
+-->also enforeces the controller must to have attribute routing([Route("")])
+-->automatically returns bad request result in case any bad request found inthe model state
+,,so you dont have to make a condition that if model state
+is invalid so return bad request it is auto done using this[ApiController]

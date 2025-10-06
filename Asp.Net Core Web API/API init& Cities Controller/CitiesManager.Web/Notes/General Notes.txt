@@ -1,0 +1,14 @@
+﻿(*)all the api controllers begin with api (not must) , it is recommended to keep
+this api as a prefix for all the Api controller
+
+(*)also any URl that begins with api, its easily identified that its targeting WebApi Controller
+soitdoesn't return any view but returns only data as stirng or JSONor XML
+
+(*)Packages:
+1-Micrsofot.Entityframeworkcore.SqlsERVER
+2-Micrsofot.Entityframeworkcore.Tools
+
+
+(*)which controller youwill create? 
+1-the empty one youwill writemethodswhateveryou want
+2-api controller with action using EF-->all action methodswith all HTTP methods to create,update,delete,.... on a specific table
