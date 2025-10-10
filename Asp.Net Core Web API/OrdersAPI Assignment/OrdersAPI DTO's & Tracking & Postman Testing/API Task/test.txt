@@ -1,0 +1,22 @@
+﻿Order
+{
+	GET-->Retrieve all orders
+	GET-->Retrieve an order by ID
+	POST-->Add a new order
+	PUT-->Update an existing order
+	Delete-->Delete an order
+}
+OrderItems
+{
+GET-->Retrieve all order items for a specific order
+
+GET-->Retrieve an order item by ID
+
+POST-->Add a new order item
+
+PUT-->Update an existing order item
+DELETE-->Delete an order item
+}
+
+
+
