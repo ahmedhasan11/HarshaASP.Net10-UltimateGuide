@@ -1,0 +1,28 @@
+﻿look at GetCity -->Task<ActionResult<>>
+and look at PutCity-->Task<IActionResult>
+
+but what is the difference why we sometimes use ActionResult and sometimes IActionResult
+based on what???
+
+In Asp.Net for all the Controllers-->fundamental return type is IActionResult
+-->there is a lot of classes that are used like return types that implement this IActionResult
+-->if you wouldlike to return thecontent on specific content type-->ContentResult
+-->if you would like to return aspecificmodelobject asa return value-->ObjectResult
+-->so if you want to return your things as a specific return type -->useIActionResult
+
+buton theotherside of ActionResult
+-->if you would like to return only ObjectResult from your code -->ActionResult
+-->look atgetCities(),GetCity()-->both we used ActionResult becuase we are 
+returning obj,,,if you want to use IActionResult here you haveto write the code to convert
+this city object into any result type that we talked about like-->Ok(city)
+
+look at PUT -->we wanted to return BadRequestResult&NotFoundResult&NoContextResult
+,,so we used IActionResult
+
+
+main thingof ObjectResult-->isto containmmodel obj-->convert it into JSON format
+Different child classesofobjectResult:
+1-OkObjectResult -->200 status code
+2-CreatedAtActionResult-->201 statuscode
+3-NotFoundObjectResult-->404 status code
+4-BadRequestObjectResult-->400 status code

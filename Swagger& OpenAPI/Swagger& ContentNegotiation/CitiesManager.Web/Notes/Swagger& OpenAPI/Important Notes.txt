@@ -1,0 +1,2 @@
+﻿after you add all swaggerservices
+-->you haveto go to launchsettings.json and change the launchUrl to "swagger"

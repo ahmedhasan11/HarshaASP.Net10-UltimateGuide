@@ -1,0 +1,30 @@
+﻿3-theapi controller must implementattribute called[ApiController] 
+-->specifies that these action methods are going to be APi action metohds 
+not regular mvc controller actoion methods or endpoints 
+so they will not render any view whatever happened
+
+-->also enforeces the controller must to have attribute routing([Route("")])
+-->automatically returns bad request result in case any bad request found inthe model state
+,,so you dont have to make a condition that if model state
+is invalid so return bad request it is auto done using this[ApiController]
+
+
+(*)its a must that your controller contain attribute routing with [ApiController]
+
+
+(*)if you didnt use [ApiController] and you want to get some JSON data you have to explicitly mention [FromBody]
+
+(*)in any actionmethod like GetCities()  OR  GetCity() the return type even return cities OR return city  
+so a collection or single object all of these will be automatically converted as JSON format that is another benefit provided by
+the [ApiController] attribute,,so as a developer you need not convert your data into Json format,,this is done by [ApiController] 
+attribute interanlly
+
+(*)as we said-->the [ApiController] make the model validations for us as wesaid , and
+creates the same information as an obj of ProblemDetails, thenconvert the sameas JSON,
+then this returned as response
+
+inbrief-->internally [ApiController] doesthis
+if(ModelState.IsValid==false)
+{
+return ValidationProblem(ModelState)
+}
