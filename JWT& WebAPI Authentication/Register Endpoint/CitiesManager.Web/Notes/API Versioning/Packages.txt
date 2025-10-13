@@ -1,0 +1,3 @@
+﻿1-Asp.Versioning.Mvc-->enablesapi versioning support forASP.NetCore WebAPI controller
+
+2-Asp.Versioning.Mvc.ApiExplorer -->provides metadata that can be read by the swagger

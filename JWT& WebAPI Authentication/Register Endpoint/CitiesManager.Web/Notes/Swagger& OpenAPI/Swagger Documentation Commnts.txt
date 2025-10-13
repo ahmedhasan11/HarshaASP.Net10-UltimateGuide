@@ -1,0 +1,25 @@
+﻿asa developer , of course you can write comments for each and everry endpoint inthe swagger UI
+
+so you or another developer or the anuglar or react developer can test it easy,and also look
+at comments 
+
+(*)how to add comments -->it's super easy , using XML comments
+1-make xml comment for a specific action method or for all
+	
+so ,
+2-convert this XML documentation comments into an XML file within the same project
+	(*)how????
+	-->build->output->XML documentation file path and write the name of the file , ex: api.xml
+	so this will generate api.xml file in current project when you build
+
+	//and thenthe same comments thatyou made will be contained onthis app.xml file
+
+	//then swagger read this app.xml and each comment inside it
+
+	//and don't worry it will be regenerated every time you build the project 
+	//but you have to tell the swagger to read them 
+	(*)how? in builder.services.AddSwaggerGen(options=>
+	{
+	options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory), "api.xml");	
+	});
+

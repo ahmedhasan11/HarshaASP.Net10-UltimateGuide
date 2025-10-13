@@ -1,0 +1,20 @@
+﻿(*)1-what is swagger?
+-->set of tools that helps the developers to generate the user interface in order to document and test the
+RESTful API services
+
+-->built in top of OpenAPI
+
+(*) 2-what is OpenAPI?
+-->the specification that helps the developers to write web API specification in JSON format
+-->by using that JSON some tools such as Swagger or Nslog can understand the structure of web API service 
+-->can understand what request details are to be sent to service and what is the response structure 
+-->then accordingly they can generate the client side code
+
+so in brief-->by using Swagger you can generate the user interface that is used to test the web API
+and also   -->//  //     //    //   //    //       //  client side code for Angular and React, etc...
+
+
+(*) 3-what is Swashbuckle.AspNetCore?
+-->framework that works based on swagger that helps .Net developers to integrate swagger in Asp.NetCore
+
+so as a developer you have to use (1) , (2) , (3) together

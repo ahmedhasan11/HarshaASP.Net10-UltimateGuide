@@ -1,0 +1,27 @@
+﻿builder.Services.AddApiVersioning();
+
+//you have to configure the version reader inside this service
+
+so-->
+
+builder.Services.AddApiVersioning(config=>
+{
+config.ApiVersionReader= new UrlSegmentApiVersionReader(); 
+-->required in order to let Asp.Net core to read the version number from this route parameter
+});
+-->enables asp.net core to identify
+the current working version of the API as per the request Url
+-->this means it expects the API version number to be included as part of the URL
+-->it means as apart of the Route of ApiControllers
+
+-->weare expecting ittobelike this [Route("api/v1/[controller]")]
+
+-->of course version can be different , sonow v: fixed   number:dynamic
+-->for this we havea route parameter called version , andwe have toapply to it
+a route constraint called apiVersion-->predefined route constraint provided by 
+Microsoft.AspNetCore.Mvc.Versioning
+
+so now --> [Route("api/v{version:apiVersion}/[controller]")]
+
+-->then go through your controllers and add [ApiVersion("1.0")] or whatever number you need
+-->you can also add it to a specific action method its ok

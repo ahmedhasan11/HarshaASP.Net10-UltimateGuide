@@ -1,0 +1,40 @@
+﻿(*) what is ContentNegotiation?
+-->theinteractionbetween  client andserverabout the contentthat is present in the request body
+and response body
+
+//there issome problemns ,,, what is this???
+Content Negotiation problem in webAPI is between browser and server
+,,,,,lets take an example
+when a beowser sendarequesttoserver
+there issome several status
+forexample:
+1-browser send a request with request header content-type:application/json
+,2- so now browser informs  theserver that the request body content-type is application/json
+,3- also browser can specify what is the content-type of response that browser needs
+,inrequest body, Accept:application/json , this informs the server ,be careful i
+need the response in the application/json, so
+-->now there is a problem-->watif the server needstoprovidethe response as application/xml
+, so now server sends response as application/xml and it adds a response body, 
+content-type:application/xml
+
+and thats themain problemthatthere is conservatuon between server and browser
+
+(*)by default in asp.netcore both request body&response body assumed as JSON info
+
+(*)butthereissveral content-0typefor JSON,application/json, text/plain,text/json
+
+but wehatif i needtoinformtheclient thatwewantto give the response onlyinthe formof
+application/json
+
+(*)how do we do that??????/
+-->by a predefined filter called produces -->thisisfor response Body
+(*)how to do the same for request body?
+-->by a predefined filter called Consumes-->thisis for requestbody
+
+-->both of themyoucanapply globallyby lambdaexpressionin the addControllers() service
+
+builder.Services.AddControllers(options =>
+{
+	options.Filters.Add(new ProducesAttribute("application/json"));
+	options.Filters.Add(new ConsumesAttribute("application/json"));
+});

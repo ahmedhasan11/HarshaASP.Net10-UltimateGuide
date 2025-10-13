@@ -1,0 +1,20 @@
+﻿POST-->return CreatedAtAction("GetCity", new { id = city.CityID }, city);
+ //returns a JSON object that contains details ofthe newly inserted city obj
+
+
+ PUT-->return NoContent();//-->empty response but along with the status code HTTP 200
+
+ insteadof returning BadRequest-->there issomething called ProblemDetails
+
+ return Problem()-->in itsparameters yo8uhave some attributes like: title,detail, statusCode
+
+ -->but whatare these?when youmakea bad request by default thereis anerror
+ messagebe sentto theuser buthereyou areconfiguringthiserrormessagetowrite
+ the specfici prblem happened
+ its bette , and microsoftrecommendsit
+
+ the return Problem()-->returns a new object of the ProblemDetails class
+ there is also class called ValidationProblemDetails: ProblemDetails,,
+ -->its recommendedonly when you would like toreportonly validation errors, itconatins
+ allthe attributesofthe ProblemDetailslike:title,stsatuscode,detail,,,,but ina addition
+ it have  aarray  of strings calleed Errors  thatyou would liketo report
