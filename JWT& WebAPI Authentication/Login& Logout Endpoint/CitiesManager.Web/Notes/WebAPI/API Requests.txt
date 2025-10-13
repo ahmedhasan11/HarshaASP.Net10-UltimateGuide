@@ -1,0 +1,12 @@
+﻿(*)its a must that your controller contain attribute routing with [ApiController]
+
+(*)in case of WebAPI you will apply attribute routing for the Controller only not for every action method
+-->the action method will be auto selected by asp.net core itself depending on HTTP method that is used for request
+Question::so depending on what the asp.netcore selects theat specificaction method?
+
+ANS.1-->so if you made a get Request to CitiesController it goes through Cities Controller and searches for the aciton method
+that have the [HTTPGet] ,,,the action method name doesn't matter
+
+ANS.2-->you can not to write the attribute [HTTPGET] , but instead in the name ofthe action method write Get-->GetCities
+
+-->it's better to use [HTTPGet] of course & also prefix method name with the specific attribute like--.GetCities

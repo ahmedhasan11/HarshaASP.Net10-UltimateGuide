@@ -1,0 +1,19 @@
+﻿(*)builder.Services.AddEndpointsApiExplorer();
+-->enables the swagger to read the action methods of our application(HTTP methods,Url,attributes)
+
+(*)builder.Services.AddSwaggerGen();
+-->responsible to add swagger documentation in the current working project
+-->generate OpenAPI specification
+
+Note:the above 2 services doesn't enable swagger UI or swagger JSON endpoints
+
+(*)app.UseSwagger();
+-->enables the endpoints for Swagger JSON file
+-->Swagger.json: the OpenAPI specification that are generated about your WebAPI controller
+endpoints-->it contains the info related to all the action methods of your controller
+(*)app.UseSwaggerUI(); 
+-->to send requests and get responses withinthe same webpage
+
+
+
+

@@ -1,0 +1,9 @@
+﻿(*)What Packages do we need?
+
+1-Microsoft.AspNetCore.OpenApi
+
+-->you can goand install swaggerpackage , but insteadyou can go andintsall the Swashbuckle package ,
+it automatically insatlls the swagger package
+
+2-Swashbuckle.AspNetCore
+-->it automatically installed the Swashbuckle.AspNetCore.Swagger internally
