@@ -1,0 +1,11 @@
+﻿where& when should we generate the token?
+-->where?-->in your account Controller Post Register actionmethod
+-->when?-->after successful registeration
+-->you have to generate the toen& return the same as response
+
+-->just call the method you did in the service , after injecting the service
+,use the service to call the method , we know already that this method will reurn
+a AuthenticationResponse obj , thatis our DTO , just get this in var and return ok(obj)
+
+//do the same for login
+-->after successful password login
