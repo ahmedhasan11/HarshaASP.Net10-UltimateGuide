@@ -1,0 +1,21 @@
+﻿while generatingtheJWt token , as per the standards ,you have to add some user
+claims, as a part of the payload
+
+-->so the importnat properties or claims that must be present in payloads is -->
+1-Issuer
+-->Issuer: indicates the domain address of the web API that has generated
+or created the JWT token--->just put into it the local host 
+
+-->soitindicatres thatinthis particulardomainwehave generatedthe JWTtoken
+
+
+2- Audience -->you haveto mentionthename of the domain,whichdomain
+adience can havethis jwt token
+
+3-"EXPIRATION_MINUTES":10-->numberof minutes , howmuchlongerthat particulartokenoncegenerated
+is valid, so here-->you aresaying thetokenthat havebeen generatednos is validfor up to 10 minutes
+
+4-"Key"-->weare doing it inthe appsettings.json now ,butinthe production level they willbe
+asa environment variable , developmenttime keys may beknownto developers , but the production 
+time keywillnotbe known to the developers ,it will be knosn only byoneperson
+whoisactually hostingthe application on theproduction server
