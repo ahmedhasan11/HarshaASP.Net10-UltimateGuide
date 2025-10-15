@@ -1,0 +1,29 @@
+﻿afterwecreatedtheinterface , and didtheflowofourservice& service contracts
+
+1-getthe Expiration from appsettings.json -->using _configuration
+
+
+2- you have to prepare the claims that are needed to be added in the payload
+-->claim represnnts a particular value much like fields or details of the particular user
+2.1-create array of claims
+2.2-create subject claim--> as we saidthere are certain typesofclaims that must be
+	included in thepayload of the JWT token-->one of them is Subject
+	-->the sub value indicated the user identity,in our case user.Id.ToString()
+	,,you can also write any value that represent an identity to the user
+	new claim(JwtRegisteredClaimNames.Sub, user.Id.ToString())
+
+2.3- create Jti claim -->theunique id forthe token-->everytimeyou generate anew tokenitgets 
+aunique ID
+	new claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+
+2.4- create Iat claim -->represents the date and time of token generation
+new claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToUnixTimeSeconds().ToString())
+
+2.5-optionally: new claim(ClaimTypes.NameIdentifier,user.Email) -->
+is notpresentin jwt but oprionally we are adding , its beusedasidentity,butwe already 
+made theuserid aboveasidentity, solets add the email thistime 
+
+2.6-optionally: new claim(ClaimTypes.Name, user.Personname)-->nameofthe user
+
+
+------------------------------------------------------------------------------

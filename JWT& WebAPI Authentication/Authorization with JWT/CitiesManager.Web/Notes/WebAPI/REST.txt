@@ -1,0 +1,7 @@
+﻿HTTP SERVICE-->availableserviceonn the serverit doesn't containUI onits own
+
+flow-->appsends request to server, ontheserver api controller executes & processthe request &sends response back to the browser
+
+response-->on the client OR browser we will receive datain the form of either JSON OR XML
+
+so overall , youare just replacing the role of viewswith other client application such as singlepage application OR anymobileapplication

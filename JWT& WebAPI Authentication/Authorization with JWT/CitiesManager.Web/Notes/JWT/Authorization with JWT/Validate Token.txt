@@ -1,0 +1,74 @@
+﻿Problem: the same token that user gets , must be submitted as a request header
+in all the subsequent requests that can be made to the server
+-->solution:search(may be there is a thing in postman for that )
+
+-->app.UseAuthentication()-->this middleware is required to check the JWT is submitted
+-->but you have to make the code inside it that validates the JWt token
+Q:how????
+1-you required to explicitly add the Authentication service to the IOC conainer
+2-configure validation of JWt tokjen in the same service
+
+-->it uses the same package that we installed -->Microsoft.AspNetCore.Authentication.JwtBearer
+
+Code
+{
+	builder.services.AddAuthentication(options=>
+	{
+	options.DefaultAuthenticationScheme= JwtBearerDefaults.AuthenticationScheme
+			-->whenever a request come , it will be validated using the DefaultScheme 
+			which is JwtBearerDefaults.AuthenticationScheme
+
+	options.DefaultChallengeScheme= JwtBearerDefaults.AuthenticationScheme
+			-->if the DefaultAuthenticationScheme failed , it will be validated using
+			the DefaultChallengeScheme
+	});
+	-->but what if you want when the user is not validated using Jwt, you would 
+	like to redirect that particular user by using cookie authentication scheme
+	//so its better in the options.DefaultChallengeScheme to make its value
+	is CookieAuthenticationDefaults.AuthenticationScheme
+}
+--.the above code is not enough for validating the token,
+you have to specify what are the properties that has to be checked in the JWT token
+-->to do this you have to mention an extension method called 
+-->.AddJwtBeare(options=>
+{
+//creae obj of TokenValidationParameters
+options.TokenValidationParameters= new TokenValidationParameters()
+	{
+	//withing the token if theIssuerValue doesn't match the ValidIssuer
+	//OR if the AudienceValue doesn't match with the ValidAudience
+	//OR if the token is expired
+	//OR you need to validate the signature , just pass the key value to the property
+	}
+})
+
+
+Final Code
+{
+
+builder.Services.AddAuthentication(options => 
+{
+	options.DefaultAuthenticateScheme=JwtBearerDefaults.AuthenticationScheme;
+	options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+}
+
+).AddJwtBearer(options => 
+{
+	options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters() 
+	{
+		ValidateAudience = true,
+		ValidAudience = builder.Configuration["Jwt:Audience"],
+		ValidateIssuer = true,
+		ValidIssuer = builder.Configuration["Jwt:Issuer"],
+		ValidateLifetime=true,
+		ValidateIssuerSigningKey = true,
+		IssuerSigningKey=new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+	};
+});
+}
+
+	var policy= new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+	options.Filters.Add(new AuthorizeFilter(policy));
+	 //adding the builder.Services.AddAuthentication(.....) that wedid as a global filter for llcontroller
+	 //insted ,youcn just dd the[Authorize] attribute for all your controller
+	 //in account controller wemade [AllowAnonymous] so this will make the [Authorize] Disabled don't worry

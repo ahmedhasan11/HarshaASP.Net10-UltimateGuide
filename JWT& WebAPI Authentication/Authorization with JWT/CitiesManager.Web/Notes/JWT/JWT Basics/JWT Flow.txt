@@ -1,0 +1,28 @@
+﻿JWT: token system thatis exchanged betweenthe serverandclient
+
+Flow:
+1-user signs in with username& password
+
+2-server generates a token autmoatically for the same,this token includes user details
+
+3-this token will be sent back to the client 
+
+4-we will store this token in the browser
+
+5- for all the subsequent requests 
+the browser responsible of claiming that the user is already logged in
+-->in order to do that 
+---->browser automatically adds the JWT token as a part of the request header
+
+6-this particaulr token will be verified by the server
+-->identify that token is valid&& check the user details that are part of the token
+
+7-if token is valid-->the approperiate code will be executed on the server
+-->and appropriate response will be sent also 
+
+SO,Over all
+-->server generates token & send it to the browser
+-->and for each request the browser send the token as apart of the request
+-->server verify this token 
+
+-->more secure than just store the user id or details in the browser memory
