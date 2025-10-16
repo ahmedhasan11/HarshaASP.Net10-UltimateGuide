@@ -1,0 +1,23 @@
+﻿Problem: wesaidthat token havetime for expiraton , assume thattoken is expired
+after 10 min , what happens now, user have to login again to get anewtoken , imagine that user
+re-login every 10 min 
+
+Solution-->Refresh Token(automatic regenration of the JWT token)
+
+RefreshToken: isnot thesame as JWT token it doesn't contain header,payload,etc..
+,its just a base64 string of a random number
+
+Flow:
+1-user sign in
+2-server create-->1-JWT Token , 2-Refresh Token
+3- as soonas the JWTexpires,the browser makesanother requesttoanendpoint in the 
+APIserver , heyapi server take  this refreshtoken and ifthistoken is valid,
+please regenratea newJWt token for me
+
+4-API server verifies both tokens, the ExpiredJWt& RefreshToken
+-->it generates a  new JWT token
+
+so -->in this way refresh token is a proof of user authenticity indicating that
+the userisvaliduser
+
+//don't forget-->when harsha tested all these , hesupplied the refreshtoken& jwttoken in angular

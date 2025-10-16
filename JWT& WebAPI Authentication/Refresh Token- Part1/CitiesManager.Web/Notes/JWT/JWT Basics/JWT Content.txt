@@ -1,0 +1,10 @@
+﻿consistsof 3 parts:
+
+Header , Payload, Signature
+
+1-Header: detailsof the token -->typeof token-->signing alogorithm used
+
+2-Payload:actual user details, you can include data you need in it(don't put sensitive data)
+
+3-Signature: encrypted version of (Header&payload)
+ -->its the secret value that is only known to the particular server

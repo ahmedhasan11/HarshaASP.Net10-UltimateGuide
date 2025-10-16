@@ -1,0 +1,22 @@
+﻿Differences between MVC & WebAPI
+1-Partent Class--> ControllerBase 
+	what is thediff? Controlleris abstract class that inheritsfrom ControllerBase, but
+	Controller conraings properties and methodsthat are used and required tocreate the 
+	views , so we donthave views in API we dont need it
+
+
+
+2-return type of action methods-->return only JSON objects
+OR string value with a particular status code
+
+
+3-theapi controller must implementattribute called[ApiController] 
+-->specifies thattheseaactionmethods aregoingto beAPi action metohdsnot regular mvc controller
+actoion methods or endpointsso theywillnot render anyview whateverhappened
+
+-->also enforeces the controller must to have attribute routing([Route("")])
+-->automatically returns bad request result in case any bad request found inthe model state
+,,soytou donthavetomake a conditionthatif model state
+is invalidsoreturn badrequest it isauto doneusing this[ApiController]
+
+
