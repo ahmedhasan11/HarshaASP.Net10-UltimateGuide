@@ -1,0 +1,23 @@
+﻿in appsettings.json -->you have to mention the time of expiration in minutes even for 
+JWT token or RefreshToken
+
+-->we have to make the code of generating the RefreshToken
+-->also store this RefreshTokenin the users Table -->to validate 
+-->we will always store the latest refreshtoken  in the users table
+
+-->addthe RefreshToken property inthe ApplicationUser model
+
+--.gomakethe RefreshTOkenGenerator() method and make it private in JWTService
+
+-->in yout GenerateJWt method , when you return allvalues, also
+returnthe refresh token and let itsvalueistocall the method thats all
+
+####13:00
+
+RefreshTOken in AccountController
+//you nowgotyourrefreshtokeninthe  authenticationresponse
+//youhave tostorethistoken in users table
+//so now  userhavesomethingcalled user.RefreshTOken --.assignthis to
+theauthresponse.RefreshToken
+
+//also _usermanagaer.UpdateAsync(user)

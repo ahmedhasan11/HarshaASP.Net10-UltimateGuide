@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CitiesManager.Web</name>
+    </assembly>
+    <members>
+        <member name="M:CitiesManager.Web.Controllers.v1.CitiesController.GetCities">
+            <summary>
+            Getting all Cities  Ordered By City Name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.Web.Controllers.v2.CitiesController.GetCities">
+            <summary>
+            Getting all Cities  Ordered By City Name
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CitiesManager.Web.Migrations.seedingcities">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.Web.Migrations.seedingcities.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.Web.Migrations.seedingcities.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.Web.Migrations.seedingcities.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:CitiesManager.Web.Migrations.Identity">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.Web.Migrations.Identity.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.Web.Migrations.Identity.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.Web.Migrations.Identity.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:CitiesManager.Web.Migrations.RefreshToken">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.Web.Migrations.RefreshToken.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.Web.Migrations.RefreshToken.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.Web.Migrations.RefreshToken.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:CitiesManager.Web.Migrations.RefershTokenExpirationDateTime">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.Web.Migrations.RefershTokenExpirationDateTime.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.Web.Migrations.RefershTokenExpirationDateTime.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.Web.Migrations.RefershTokenExpirationDateTime.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

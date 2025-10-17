@@ -1,0 +1,47 @@
+﻿what do we want to  do now? we need to make the methodwhich will get
+the jwt token& refreshtoken , to verify them ,so itcan make for you
+a new tokens and send them, we have to verify theuseridentity , 
+-->how?
+inthe payload of thejwttoken , itcon tainsthe userid
+
+-->extract thepayload fromthe jwttoken and seeif this  id already exists in db?
+
+-->create a new method in the IJwtService
+-->ClaimPrincipal? GetPrincipalFromJwtToken(string? token);
+-->ClaimPrincipal-->represents user details
+-->so thismethodhaveto read the user details fromtoken ,and return the user
+object based onClaimsPrincipal type
+-->first ofall you have to check thatthe token thatyougetin thismetod
+isa valid token , so make validations, likewe didin the oprogram.cs 
+when we dida new obj of TokenValidationParameters(), 
+
+(*)improtant: when you type your validations , 
+-->the ValidateLifetime-->should be false
+-->why? -->because the token is already expired token
+
+(*)how can you read user details from paylaod of that token?
+-->JwtSecurityTokenHandler: read the user object based on existing JWT token
+-->what you need from that class?
+1-validate the token based on the validaiton parameters
+2-if that token is valid return an  obj of calims principle class that represent
+the currentworking useras perthetoken
+
+------>the obj will get--> 1- token ,2- tokenvalidationparameters
+
+#######14:52 
+
+var tokenhandler = new JwtSecurityTokenHandler();
+tokenhandler.ValidateToken(token, validationparameters, out SecurityToken securitytoken);
+-->the above sentence represent the user details from our token's payload
+-->also you can get iton an object of CliamsPrincipal 
+-->ClaimsPrincipal claim= tokenhandler.ValidateToken(token, validationparameters, out SecurityToken securitytoken);
+-->out SecurityToken securitytoken--> have 2 coniditons
+if(token :valid) --> represents an intsance of JWTSecurityToken class
+if(token:invalid)-->represents an object of SecurityToken class OR null
+
+//we have to make a condition to check that our token is valid  or not 
+--> 2 validations-->(1)if the type of the securitytoken is not JWTSecurityToken jwtsecuritytoken
+-->(2) if the jwtsecuritytoken.Header.Alg not equal to
+the SecurityAlgorithms.HmacSha256,stringcomparison.invarientcuktureignorecase
+
+-->if either of these happens ,-->token is invalid -->throw new SecurityTokenException("Invalid Token") 
