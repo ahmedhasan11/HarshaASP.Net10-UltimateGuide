@@ -1,0 +1,23 @@
+﻿MapGroups-->meaning grouping your endpoints based on a particular route prefix
+
+-->instead you write multiple endpoints that have the common prefix independently
+you can group them together so that you will be having the chance of separating
+the same into a separate file instead of writing too much code inprogram.cs file
+
+--.also you can apply the authorizationpolicies or filters easily for all of them
+
+-->so instead of--> app.MapGet("/products",async (HttpContext context) =>
+{
+	var content = string.Join("\n", products.Select(product => product.ToString()));
+	await context.Response.WriteAsync(content);
+});
+
+you can do this -->
+var mapgroup= app.MapGroup("/products");
+
+//GET Products -->Minimal API
+mapgroup.MapGet("/",async (HttpContext context) =>
+{
+	var content = string.Join("\n", products.Select(product => product.ToString()));
+	await context.Response.WriteAsync(content);
+});
