@@ -1,0 +1,13 @@
+﻿Minimal API : the new way to create the web API or HTTP services
+-->the alternative way to create the API services instead of using the web API controllers
+
+-->limited access to custom mmodelbinding
+--> no support for filters except Endpoint Filters
+
+-->it doesn't support the form-data and form-data-urlencoded 
+
+-->supports (QueryString , JSON , XML)
+
+-->well suited for small scale applicaitons
+
+-->well suited for large scale applicaitons with microservices
