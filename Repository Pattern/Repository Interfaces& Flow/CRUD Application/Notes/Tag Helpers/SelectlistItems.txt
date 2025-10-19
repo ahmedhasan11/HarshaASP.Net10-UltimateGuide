@@ -1,0 +1,14 @@
+﻿whatis the selectListItems??????
+
+what we are trying to do here , there is acomplex code in the Create view which we create foreach to iterate
+on all countries to show them in the dropdownlist ---> so there is a better way
+
+-->you can ignore this foreach loop-->use the SelectListItem Class-->import the namespace of Rendering
+-->any new object of the SelectListItem requires 2 parameters 1-value 2-text 
+example: new SelectListItem(){value="1", text="harsha"} --> <option value="1">harsha</option> 
+so this what happen automatically when you create the new object of the SelectListItem
+
+so what we gonna do  here , we will get the countries as a list of <SeletcListItem> then we pass it to ViewBag
+
+then in our Create view , inthe <select> tag we have a tag helper called asp-items , here we can pass 
+our countries , and it will be auto translatedto options tags
