@@ -1,0 +1,24 @@
+﻿Problem: in your service you are accessing dbContext 
+and this belongs to EF , but what if in future your company need to
+shift code form EF to dapper or azure or whatever or postgrateSql , 
+you will need everytime to check the service and edit it
+
+business logic--> tightly coupled with data logic
+
+so also-->you have to make separation between business logic & Data Access logic
+
+Solution-->Repository Pattern 
+
+RepositoryPattern:its the abstraction layer between business logic and data access logic
+
+					Business Logic(Service)
+							|
+					Repository Pattern
+							|
+					Data Access logic
+
+so in furture if you want to go with azure for example, just make a horizontal repository
+
+(*)the methods in the repo is the same as mtethod in the service ,  but in
+service the return type& arguments are DTo's , but in Repo you are accessing the
+data access layer , so you can use the entities directly

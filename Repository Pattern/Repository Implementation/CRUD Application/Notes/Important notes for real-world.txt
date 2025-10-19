@@ -1,0 +1,37 @@
+﻿(*)its recommended to create all entity classes as a separate class library
+
+(Section){
+
+		(*)your Domain Model (like Country ) , the presentation layer(Controllers,Views,API's) should never access it directly,
+			instead-->the presentation layer workswith DTO's & ViewModels-->thenService layer maps those to Domain model
+
+		(*)You won’t make the controller accept a Country object as a method parameter,
+			and you won’t make it return a Country object to the client
+
+}
+
+(*)it's recommended to create DTO in a separate class library
+
+(*)every test case executes independently -->exmaple: for every unit test case the country list will be empty
+
+
+(*)if you have too many properties , and you have to do multiple validations for each one, here if statments arenot
+good because of the lengthy code , instead , check for the model that you will validate 
+//which here is the PersonAddRequest , then usedata anootaions attributes, but we have to 
+call thesedata anootations programatically in the service
+//we have to programmatically call the model validations related methods which are part of componentmodel.dataannotations
+//so go the model you want to validate andput your data annotation attributes
+//then go validate the same modelin the Service
+
+(*)in order to use icons in your layout-->you have to use a third partycalled cdnjs font awesome
+go to the site--> copy link tag of the fontaswesome.min.css version 6.1.1-->Paste in layout Head
+
+
+
+(*)it is always advisible to maintain the service methods and controller action methods as
+async methods always
+
+(*)it is veryrocommended from microsofttouse AntiForgeryToken in everypage(view,controller)
+-->[ValidateAntiFrgeryToken]
+
+(*)most of the companies uses Repository Pattern
