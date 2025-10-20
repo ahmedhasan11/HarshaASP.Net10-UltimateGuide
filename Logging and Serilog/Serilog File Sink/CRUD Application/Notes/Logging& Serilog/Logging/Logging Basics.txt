@@ -1,0 +1,21 @@
+﻿Logging:is how to know that your app runs successfully without errors
+-->even some errors are encountered how you track them
+-->record all actions and errors that are occured in your app execution
+
+assume:execution reached to action method , the log displays or stored the message
+for later review purpose, if its reached to service , leave a message from service and so on...
+
+Logging Framework : the intermediator between your app layer and Logs
+
+Logs : data store where actual log messages are persisted so you can review it later
+
+except console logs , all other logs can be reviewed later
+
+1-ILogger.LogDebug("log message") -->debugging purpose (ex: current value of a var )
+
+2-ILogger.LogInformation("log message")-->general flowof execution(ex: it reached controller )
+
+3-ILogger.LogWarning("log message") -->app executed abnormally (ex: stuck into loop)
+
+4-ILogger.LogError("log message")
+5-ILogger.LogCritical("log message") -->dangerous exception leads to server crash or app crash
