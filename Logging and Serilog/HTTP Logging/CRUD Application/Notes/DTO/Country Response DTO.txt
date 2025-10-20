@@ -1,0 +1,25 @@
+﻿    public class CountryResponse
+    {
+        public Guid CountryID { get; set; }
+        public string? Countryname { get; set; }
+    }
+
+    public static class CountryExtensions {
+
+
+		 public static CountryResponse ToCountryResponse(this Country country) //recieves an object of country
+         {
+            return new CountryResponse() { CountryID = country.CountryID, Countryname = country.Countryname };
+         }
+    }
+
+
+
+            //explaining this Country country:
+
+
+		//هنا كأن Country نفسه عنده ميثود اسمها ToCountryResponse()،
+		//لكن الحقيقة هي جاية من الـ extension method اللي انت كتبتها.
+		//لاحظ كلمة this Country country 👆
+		// معناها: "خلي الميثود دي تبقى شكلها كأنها جزء من كلاس Country"
+        //so when you call it you willjust say   countryobj.ToCountryResponse() and assign it into a obj of CountryResponse

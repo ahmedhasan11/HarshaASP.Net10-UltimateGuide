@@ -1,0 +1,38 @@
+﻿#Confused_Questins& meaning{
+
+	Area: group of related controller,views and models that are related to specific module or specific user
+
+	likewe aremaking Admin area-->we are collecting all Controller,models,views that are related to admin
+
+	but here you will say then theviews that we did already?what they willbe used for?
+	Answer--> they are general views for all users , but now we will create views thatonly admin will access them
+	}
+#EndConfusing
+
+#Code:how toredirect actin to a specific Area?
+	what we will do here? in the Login post -->_usermanager.IsInRoleAsync(user, ApplicationRoleEnum.Admin.ToString())-->you are checking
+	if this user is Admin using the IsInRoleAsync() method  -->if he is Admin ,we want to redirect him tothe action method which
+	isin the Home Controller of the Admin Area but how do we do this????
+	Answer--> pass the name of the area as anonymous obj-->return RedirectToAction("Index","Home", new {area = "Admin"})
+
+#EndCode
+
+#Careful!!!!!!!!
+
+if youareinthe layout.cshtml andyou are doing a hyper link to an action thatis in Admin area
+, thenyou have to mention the asp-areapropertyinsidethe <a>tag
+-->like this <a asp-controller="Home" asp-action="Index" asp-area="Admin"> , if you didnt mention the asp-area , it will try to search 
+on the controller of the root level
+
+
+
+also-->if you are in area's Views and you are creating a hyperlink , by default it will search on admin area , 
+Solve--> use asp-area="", let it empty that's it!
+
+
+if you are in admin area-->compiler search on admin area
+
+
+if you areinroot-->compiler search on root
+ 
+#EndCareful
