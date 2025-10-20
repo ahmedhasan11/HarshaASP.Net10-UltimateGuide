@@ -1,0 +1,18 @@
+﻿we have to configure the serilog in our appsettings.json 
+-->must be "Serilog" then only the serilog package can identify the configuration
+-->remember when you gave the Serilog permission to read form our appsettings.json??????
+ that's whaappening here Serilog auto read from our appsettings.json 
+
+ -->that's why we must made it "Serilog"
+
+ -->what should we mention inside the configuration of "Serilog"
+
+ 1-"Using"-->List of sinks --> "Serilog.Sinks.Console"
+ 2-"MinimumLevel" -->minimum log level like when we said Information or debug ,etc.......
+ 3-"WriteTo" -->configure additional settings of each individual sink
+ "WriteTo":[{"Name":"Console"}]
+
+ the 3 is a MUST , 
+
+ in brief -->when you want to add a sink into the serilog configuratiuon
+ -->you jhave toadd it into "Using" and "WriteTo"
