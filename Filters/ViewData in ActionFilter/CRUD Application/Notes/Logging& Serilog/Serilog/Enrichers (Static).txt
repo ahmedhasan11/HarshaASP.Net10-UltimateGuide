@@ -1,0 +1,23 @@
+﻿--.the additionalvaluesthatare logged into the serilog,
+
+-->thatwhen asp.netcore givesthelogtoserilog ,thereSerilogmakes additionalproperties ,into
+thislog,sothis will beshowninoursinkwhateverisit
+
+-->how to configure it?
+-->in the "Serilog" , after the "WriteTo" ,,,,add "Enrich"
+-->there you can add the values you want 
+-->"FromLogContext" -->any properties that you add to the log context should be Enriched,
+means should be added to the actual app log
+
+-->how do we add additional values to the log context?
+add "Properties":{""} ,inside it you can add whatever key value pairs for your log
+
+
+    "Enrich": [ "FromLogContext" ],
+    "Properties": {
+      "ApplicationDemo": "CRUD Demo App"
+    }
+
+-->these properties you added  willbe logged everytime foreach log of the same request
+-->but all these are staticvalues, what if we want to add Dynamic Values??
+-->IDiagnosticsContext
