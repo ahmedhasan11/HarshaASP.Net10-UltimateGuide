@@ -1,0 +1,7 @@
+﻿the unique number that is generated auto foreach request,so that you can write
+all logs of the request with reference to the RequestID
+
+-->Where to find it? -->in Seq , open any request there , yousee some properties, one of them RequestID
+
+-->thereisnothing to dowithit just for yourinformation thateveryrequesthaveits 
+requestID, so you cantrackrequestdetailsfor infurture and see erorsorwhatever
