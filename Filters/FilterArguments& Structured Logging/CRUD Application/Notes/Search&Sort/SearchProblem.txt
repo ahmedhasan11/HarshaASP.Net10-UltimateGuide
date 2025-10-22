@@ -1,0 +1,56 @@
+﻿we need to do Search in Index view but how??
+
+1- Create  Dictionary that Contains--> "Key":"Value"-->"ActualPropertyName":"DisplayName"
+--.this means display name is Person Name but actual name in the personResponseClass
+ofthat property is PersonName 
+------------------------------------------------------------------------------
+2-go to the index view -->foreach on the Dictionary you made using ViewBag 
+and eachiteration it should show @field.Value -->internal property for the dict
+------------------------------------------------------------------------------
+3- create a Select to make a dropdown list and for each iteration 
+<option>@field.Value</option> -->thatshows the DisplayName
+------------------------------------------------------------------------------
+4-but now we need to get the ActualPropertyName not the DisplayName so how will we 
+get it? -->you rememberwhen we talked about the @field.Value property ?
+-->thereis also @field.Key property but how vouldwe retrieve it when the user
+chooses thevalue from the dropdownlist????/
+
+Sol-->go to the <option> adn do that <option value="@field.Key"> -->this returns
+the ActualPropertyName which is theKey in the dict
+
+so now this option displays the DisplayName(value) and gets the ActualName(Key)
+------------------------------------------------------------------------------
+
+5-now we need to do a Form to use the action attribute& action method Properties
+<form action="~/persons/index" method="get"> so when you submit using the button , 
+the browser have to collect the values from the form elements(textboxes & Dropdownlist) to integrate it with
+the get request you will made with the form-->but what data? and how to give the browser the data
+
+--> in each element in the fromyou haveattribute called name="" which retrieves the data user
+choosed and assignitto whatyou put in name
+example: <option name="searchBy"> , <input name="searchString">
+(*)so the response of these called-->QueryString
+(*)so the QueryString is genereated automatically based on the values selected by user
+(*)so this QueryString is Submitted to the server as a part of the Get request 
+	that the form made 
+
+(*)	so assume user selected Person Name and in textbox writed a-->
+then QueryString of Form is searchBy=PersonName& searchString=a
+------------------------------------------------------------------------------
+6-final part-->you can read the values of the QueryString while ModelBinding
+-->go to the action method-->create 2 parameters with the same name 
+so youaregetting-->searchBy=PersonName& searchString=a
+and you get it in public IActionResult Index(string searchBy,string searchString)
+------------------------------------------------------------------------------
+7- go to the controller-->access the 2 arguments ,
+you already Created the GetFilteredPersons(string searchBy,string searchString) -->call this method 
+andpass to it the 2 arguments andfinally search is done
+------------------------------------------------------------------------------
+8- another problem that the searchBy and searchString selected is not being shown with te filtered data
+because after all the iteration , you are calling the view again so the 2 boxes are being reset 
+
+Sol-->in your controller create ViewBag for the searchString & searchBy -->then use them to make it 
+how?-->for the text box , add a attribute called value= @ViewBag.CurrentsearchString
+-->for the DropDownList--> check if (field.Key==ViewBag.CurrentsearchBy) --> in the <option selected="selected"> tag you have a 
+attribute called selected--> the selected item will be selected automatically at the time of opening the view
+

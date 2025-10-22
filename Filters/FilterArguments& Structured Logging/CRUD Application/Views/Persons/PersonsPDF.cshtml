@@ -1,0 +1,40 @@
+﻿@using ServiceContracts.DTO
+@using Services
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<PersonResponse>
+@{
+	ViewBag.Title = "Persons";
+}
+<link href="@("http://" + Context.Request.Host.ToString() + "/Stylesheet.css")" rel="stylesheet" /> @*code related to Rotativa*@
+@* http://localhost:port/StyleSheet.css *@
+
+	<table class="table w-100 mt">
+		<thead>
+			<tr>
+				<th>PersonName</th>
+								<th>EmailAddress</th>
+			<th>DateOfBirth</th>
+			<th>Gender</th>
+			<th>Age</th>
+			<th>Country</th>
+			<th>ReccivenewsLetters</th>
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (PersonResponse person in Model)
+			{
+				<tr>
+
+					<td style="width:15%">@person.PersonName</td>
+					<td style="width:20%">@person.EmailAddress</td>
+					<td style="width:9%">@person.DateOfBirth</td>
+					<td style="width:15%">@person.Gender</td>
+					<td style="width:9%">@person.Age</td>
+					<td style="width:10%">@person.Country</td>
+					<td style="width:20%">@person.ReccivenewsLetters</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+
+
