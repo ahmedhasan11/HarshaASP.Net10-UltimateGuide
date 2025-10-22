@@ -1,0 +1,20 @@
+﻿try to testsome logs, try them all  in your program.cs and run
+-->look at the cmd that kestrel made , ohhhh debug didnt show
+-->but why? because by default internally its set as the lowest level is information
+
+-->so if the lowset level is information , whatever low than it wil not be shown
+
+-->Default:Information (will show 2-5), -->Default:Warning(will show 3-5)
+
+1-Debug            2-Information          3-Warning       4-Error     5-Critical
+
+-->so to show debug , you can find the "Default" in appsettings.json in "Logging" , write "Debug"
+-->"Microsoft.AspNetCore":"Warning" -->this represents the logs from the predefined library
+of EF core , let it as it is
+
+-->PROBLEM 
+what is it?Debug will not be shown also, WHY?
+-->because logs are being overwritten by appsettings.development.json because its being run and loaded
+after the appsettings.json, 
+
+SOLUTION-->make the default in appsettings.development.json  -->Debug also
