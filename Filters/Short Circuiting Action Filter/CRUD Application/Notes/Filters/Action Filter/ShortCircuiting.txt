@@ -1,0 +1,37 @@
+﻿it is possiblethat an action filter can short circuit the actionmethod as well as the remaining
+action filters
+
+                                            [When To DO It]
+ //do this only when there is some validtion errors or incorrect data in the request 
+ or any other invalid value is submiteed so you can short circuting by assigning a return in
+ the context.result
+
+Short Circuiting: preventing the remaining items from execution , gicing the result directly
+to thebrowser
+
+-->whenever you call the filter, it will executesome code then allow the subsequent action method
+or filter to continue,,,in caseof some validaiton rules,,if thefilterwants itcan short circuit
+
+-->its like , whenyou are writingyourlogic in the filter , then you access context.Result  , 
+
+ifyou made context.Result = View(),,,it will execute the ViewResult and sent it back as a response
+to the browser  -->that is the short circuiting(skipping)
+
+so if you want to short Circuit :
+1-you have to assign something into context.Result, non-null value
+2- don't call the await next()
+
+IMPORTANT--> when you short circuit in action filter , you have to know that it will only
+skips the action filters and action methods only , it won't skip Result Filter
+
+
+//you see that code that if ModelState is Invalid? you can do it in a action filter , and shortcircuit it that
+when any error happens , you can return a specfiic view
+            else
+            {
+				List<CountryResponse> countries = await _countryservice.GetAllCountries();
+				ViewBag.Countries = countries.Select(country => new SelectListItem() { Value = country.CountryID.ToString(), Text = country.Countryname });
+				ViewBag.Errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage).ToList();
+				return View(response.ToPersonUpdateRequest());
+            }
+ 

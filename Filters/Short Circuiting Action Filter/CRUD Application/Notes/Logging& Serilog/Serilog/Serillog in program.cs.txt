@@ -1,0 +1,28 @@
+﻿Enable--> builder.Host.UseSerilog();
+-->in this parameters method recieve lambda expression that has 3 arguments
+1- context , 2-services , 3- logger_configuration
+
+1-HostBuilderContext context-->using which you can access app configuration or services
+
+2-IServiceProvider services-->the service collection which is the built in IOC container
+
+3-LoggerConfiguration logger_configuration -->configuration of the Serilog
+-->in this argument create a lambda expression 
+, logger_configuration.ReadFrom.Configuration(context.Configuration) 
+this means-->we are reading the configuation settings from our asp.net core app
+and assigning the configuration into the Serilog
+
+so finally --> the Serilog is able to read from our appsettings.json or appsettings.development.json
+
+also Serilog may require the service collection of our app in order to make available our services
+into serilog
+-->logger_configuration.ReadFrom.Configuration(context.Configuration).ReadFrom.Services(services)
+so that any serilog sink can access the services of our application
+
+Code
+{
+ builder.Host.UseSerilog((HostBuilderContext context, IServiceProvider service, LoggerConfiguration logger_configuration) =>
+ {
+ logger_configuration.ReadFrom.Configuration(context.Configuration).ReadFrom.Services(service);
+ });
+}

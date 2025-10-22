@@ -1,0 +1,46 @@
+﻿of course we added the viewdata as a part of the action method itself
+-->but what is the benefit of using it in OnActionExecuted?
+-->you can 1-read , 2- validate , 3- overwrite it
+-->look at the code of your controller in Index , you assign the values of
+ViewBag.CurrentsearchBy = searchBy;
+ViewBag.CurrentsearchString = searchString;
+-->you can do these in the onActionExecuted , to make the code of 
+your controller clean , so that's why we use it here , because the 
+onActionExecuted already executes before the return, so the view will contain
+the ViewData values
+
+(*)how to access the ViewData in OnActionExecuted??
+-->there is no direct property in context that makes you access the 
+ViewData
+
+-->context.Controller.ViewData
+-->we need to type cast the above code into PersonsController, 
+after type casting this controller property into Persons controller,
+then we can access the ViewData obj
+
+PersonsController personscontroller= (PersonsController) context.Controller
+
+-->so now you can access the ViewData--> personscontroller.ViewData
+
+-->we would like to assign the searhcby,searchstring,soryby,sortorder 
+values into this view data
+(*)how you can access the parameters???
+context.ActionParameters is not accessible within the OnActionExecuted ,
+it's only accessible within the OnActionExecuting,
+-->SOLUTION:you should send the ActionArguments from OnActionExecuting 
+to OnActionExecuted
+(*)how????
+-->context.HttpContext.Items[], if you add any key value pairs to this ,
+-->the same is accessible in any subsequent methods either in the 
+action method or in any other subsequent filter methods
+
+in OnActionExecuting--> 
+context.HttpContext.Items["arguments"]=context.ActionArguments
+
+go back to OnActionExecuted
+-->now we have to get this context.HttpContext.Items["arguments"] 
+-->you have to typecast it into dictionary type
+-->IDictionary<string, object?>? parameters= (IDictionary<string,obj?>?) 
+context.HttpContext.Items["arguments"]
+
+
