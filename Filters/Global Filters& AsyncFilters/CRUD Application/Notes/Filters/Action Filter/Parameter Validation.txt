@@ -1,0 +1,40 @@
+﻿-->we want to access the parameters of Index action method and validate them
+
+1-go to OnActionExecuting() , look at it's parameter (context) 
+-->using this context obj you can get the parameters -->context.ActionArguments
+--> context.ActionArguments -->Dictionary< string , object> type
+
+
+Code{
+
+		public void OnActionExecuting(ActionExecutingContext context)
+		{
+			//BEFORE logic
+			_logger.LogInformation("PersonsListActionFilter.OnActionExecuting()");
+
+			if (context.ActionArguments.ContainsKey("searchBy"))
+			{
+				string? searchBy = Convert.ToString(context.ActionArguments["searchBy"]);
+				if (!string.IsNullOrEmpty(searchBy))
+				{
+					var searchoptions = new List<string>()
+					{
+					nameof(PersonResponse.PersonName),
+					nameof(PersonResponse.Gender),
+					nameof(PersonResponse.Address),
+					nameof(PersonResponse.CountryID),
+					nameof(PersonResponse.DateOfBirth),
+					nameof(PersonResponse.EmailAddress),
+					};
+					if (searchoptions.Any(temp => temp == searchBy) == false)
+					{
+						_logger.LogInformation("value of {searchBy}", searchBy);
+						context.ActionArguments["searchBy"] = nameof(PersonResponse.PersonName);
+						_logger.LogInformation("value of {searchBy}", context.ActionArguments["searchBy"]);
+					}
+				}
+			}			
+		}
+
+}
+		

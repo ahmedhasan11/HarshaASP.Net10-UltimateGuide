@@ -1,0 +1,35 @@
+﻿we need not all users can access out system ,only useres who already logged in
+can access our pages
+
+##we have to add the authorization service  -->enforces the request to have the identity cookie
+
+so what happen?-->it cecks forthe identity cookie inthe request ,if there is no identity cookie
+this means that user is not logged in yet,so it keeps redirecting him to register or login page
+
+
+//app.UseAuthorization()-->addsauthorization middleware to the request pipeline
+which adds the access permissions of the particular user
+-->it evaluates which the current user can access this particular resourse or not
+
+            builder.Services.AddAuthorization(options =>
+            {
+                options.FallbackPolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser()
+                .Build(); //your policy is whatever action methods user should be logged in
+                //(the request should have the identity cookie)
+            });
+            builder.Services.ConfigureApplicationCookie(options =>
+            {//whenever the abovepolicyisnot respected by the request& te user have not logged in
+                //then redirect him to this url
+                options.LoginPath = "/Account/Login";
+            });
+
+
+//but this auth rooe will be applied for the entire application , for all action methods
+
+we need some action methods that anonymoususercan access without beingauthorized , like register orlogin
+, justadd the data annotation attribute above the controller class-->[AllowAnonymous]
+
+
+ReturnUrl-->the original path of the URL is mentioned asReturnUrl
+-->indicatesoriginallythe request was sent to persons/index -->it means after successful
+login redirect user to persons/index

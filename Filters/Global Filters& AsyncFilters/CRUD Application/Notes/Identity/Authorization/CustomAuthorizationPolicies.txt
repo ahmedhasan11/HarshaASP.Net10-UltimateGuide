@@ -1,0 +1,29 @@
+﻿what we are tryingto do here , that if auser have successfullylogged in , nowhe shouln't have access on
+Login& registeragainbecausehe already loggedin , the problem is he canaccesstheseaction methods using query string
+
+//we will use the [Authorize] attribute but theidea is we arenow creating a custm policy notinternal inthe framework
+
+//so what you shoulddo?
+1-go to program.cs 
+2-find where you made the Authorization service 
+-->            builder.Services.AddAuthorization(options =>
+            {
+                options.FallbackPolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser()
+                .Build(); //your policy is whatever action methods user should be logged in
+                //(the request should have the identity cookie)
+            });
+
+3- use the options to make a custom policylike this
+-->                options.AddPolicy("UnauthorizedAccess", policy => 
+                {
+                    //here we can return either true or false , 
+                    //true-->user have access
+                    //false-->denied access
+                    //what we need is that if the user is authenticated ,he get access denied onloginand register 
+
+                    policy.RequireAssertion(//means you would like to check your condition
+                        context => { return !context.User.Identity.IsAuthenticated; }
+                        );
+                });
+
+4-[Authorize("nameofthe policythat youput here whichis -->UnauthorizedAccess")] on each method of Register& Login
