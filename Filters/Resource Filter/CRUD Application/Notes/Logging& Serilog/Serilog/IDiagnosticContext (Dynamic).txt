@@ -1,0 +1,31 @@
+﻿the anotherway to add propertiesinto logs,
+//us
+"Packages"--> Serilog.Extensions.Hosting , addit whereverthe class that habve yourlogs
+"Enable"-->you have to add the Endpoint Completion Log service -->app.UseSerilogRequestLogging()
+"DI"--> crate obj from IDiagnosticContext , inject it , use it wherever you need
+Code
+{
+			_diagnosticContext.Set("Persons", ActualList);//value can be anything
+			//here we added the list of persons 
+			//as a diagnostic ,  so we can see it as an additional property in the completion Log
+}
+Completion Log: extra log message as soon as the request response is completed
+
+-->here, the properties thatyouaddtothe diagnostic COntext , willbe loggedinto the lastlog
+event ofthesamerequest,for ex:under1requestthereis10logs ,so these properties atthe
+end oftherequest,there willbeone completionlog that indicates thattherequestprocess has
+ been completed
+ //so whatever properties you add here, will be added to the completion logonly
+ -->also you can add dynamic values at anypointof time at any layer of the app
+
+ -->individual diagnostic COntext will be created for each individual request based on 
+ the RequestID
+
+ -->lets sayourgoal is , inthepersonsservice ,thegetfilteredpersonsmethod
+ //thedatathat isretrievedformdbbshouldbeloggedintothediagnostic context
+ inbrief: we want tosee the listof persosnsinthelog
+ -->here ourlogs isinthe peronservice, so add thepackageintotheserviceclasslibrary
+
+ OutPut-->ifyoyu see theoutput,itonlysays Entities.Person, dataishidden,
+ -->overrideToString() togive the details ofperson
+ -->our Serilog internally calls .ToString() for each person obj

@@ -1,0 +1,17 @@
+﻿Package--> Serilog.Sinks.MSSqlServer 8.2.2
+
+"Name":"MSSqlServer"
+"Args" --> "connectionString" , "tableName" , "autoCreateSqlTable"-->to create the table auto
+
+-->we have to create a new database exclusively for storing
+the Serilog logs
+
+
+      {
+        "Name": "MSSqlServer",
+        "Args": {
+          "connectionString": "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=CRUDLogs;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False",
+          "tableName": "Logs",
+          "autoCreateSqlTable": true
+        }
+      }
