@@ -1,0 +1,12 @@
+﻿when you write log message from your .net core app
+-->the logging framework will write the log messages into 3 places(Providers)
+-->will write on the 3 not only one of them
+1-Console (Kestrel)       2-Debug(View-->Output-->Debug)      3-EventLog(for windows: Event Viewer app)
+
+-->what if youwant to disable one of them?
+
+builder.Host.ConfigureLogging(loginproviders=>{
+	loggingproviders.ClearProviders(); //clear all providers
+	loggingproviders.AddConsole(); //add console provider
+
+});

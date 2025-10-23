@@ -1,0 +1,26 @@
+﻿prevent filter piepline from executing , prevent or short circuit the remaining
+filter piepline ,, ex:if the requested content-type is unsupported by the server
+then we can short circuit the request and return error 
+
+									[Benefit]
+-->the idea is what if you want to temporarily disable specific button
+-->so you can do this easily
+
+
+-->since it executes before modelBinding , you can add some values in the request body or
+request headers
+
+-->you can also add a metric to count how much time this action method took to execute
+
+have 2 methods 
+1- OnResouceExecuting() -->Between AuthorizationFilter and ModelBinding //Common
+2- OnResourceExecuted() --> after ResultFilter(OnResultExecuted) //Rare
+
+									[OnResourceExecuting()]
+-->since it executes before modelBinding , you can add some values in the request body or
+request headers
+
+-->you can also add a metric to count how much time this action method took to execute
+
+									[OnResourceExecuted()]
+-->only one thing you can do --> cahce the response body if needed

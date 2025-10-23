@@ -1,0 +1,26 @@
+﻿in AspNetCoreIdentity-->the Managers offer the business logic that contains the methods
+to perform manipulations on users and roles(Create,Delete,Update,etc.....)
+
+-->internally uses UserStore (RepositoryLayer that we configured before)
+
+1- await _usermanager.CreateAsync(objOfApplicationUser)-->it internally adds the model obj to the DbSet 
+and then calls the SaveChanges() ,so it automatically generate andexecute the sql statements
+to perform the insert
+
+
+2-await _usermanager.CreateAsync(objOfApplicationUser, DTO.Password)-->returns something called IdentityResult
+-->represents resultof executionof some particular operation(create,update,delete) , contains
+status of db operation(success OR failture) , in case of failture-->it contain the error message
+
+so you have to iterate on error messages(IdentityError class objects) , to get the appropriate
+error message and add it intoModelState using-->
+ModelState.AddModelError("action_method_name", obj.Description)
+
+#############Security Issue-->while creating the obj of ApplicationUser , dont assign the password property
+there , 
+you can pass the password property from your DTO here--> CreateAsync(objOfApplicationUser, DTO.Password)
+
+so like that the password will be hashed ,and when user try to login , the password hash that
+isstoredin db and password has that are beingused to login, ifthey are equal , user login success
+
+
