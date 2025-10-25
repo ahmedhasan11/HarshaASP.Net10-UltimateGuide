@@ -1,0 +1,10 @@
+﻿rememberthe UserStore & RoleStore that we were confused about it while adding the Identity as IOC service
+
+both of them  calledthe repository layer of the Identity Architecture , so we had to configure
+them thats all --> so you dont have to create your custom classes for the store
+
+--> you can assume that the repository will be geneated automatically based on the datatypes you mentioned
+
+1-it internally creates obj of DbContext through DI 
+2-invokes the appropriate methods that is used to perform CRUD operations on the users table
+(in brief repository accesses  the DbContext internally)

@@ -1,0 +1,30 @@
+﻿-->like the before and after the action -->ActionResult 
+--> before and after Result -->ResultFilter
+
+when you return a view in action method 
+Flow--> 
+OnActionExecuted --> if(any exception)-->ExceptionFilter
+
+since the ViewResult is returned from the action method
+-->the view will execute -->all razor code blocks of the 
+view 
+
+						[Why to use it]
+1-OnResultExecuting() -->you can short Circuit the execution
+of the result, you can return some other result other than what 
+was actually returned in the action method
+
+ex:there is Create GET , returns ViewResult,,but for some
+reason you dont want to give the ViewResult for the Create View
+,instead you would like to give content result to the browser
+
+so-->you successfully returned a view from action method but
+it have been short circuited from the ResultFilter
+
+(*)you can also add additional ViewData before the view executes
+
+2-OnResultExecuted -->here the result is already executed
+so here you can change any something in the response body or headers
+
+
+its is rare to use in real world projects
