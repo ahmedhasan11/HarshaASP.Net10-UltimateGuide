@@ -1,0 +1,12 @@
+﻿-->if you short circuit , 1-Autorizaiton Filter,2-Exception Filter , 3-Resource Filter
+,,in all these3 cases the Result Filter doesn't execute
+
+-->there is another type of ResultFilter that execute compulsary even when you
+short circuit in these filters
+
+-->soyou have a chance for keeping the code that you want to execute compulsary
+without fail 
+
+it have 2 methods btw
+
+-->rare to use in real world

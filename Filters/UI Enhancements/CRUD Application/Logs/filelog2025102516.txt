@@ -1,0 +1,209 @@
+2025-10-25 16:32:53.508 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-25 16:32:53.819 +03:00 [INF] Now listening on: https://localhost:5051
+2025-10-25 16:32:57.581 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/ - null null
+2025-10-25 16:32:57.669 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:5051
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-25 16:32:57.737 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-10-25 16:32:57.746 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-10-25 16:32:57.752 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-10-25 16:32:57.754 +03:00 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5051/Account/Login?ReturnUrl=%2F
+2025-10-25 16:32:57.757 +03:00 [INF] HTTP GET / responded 302 in 94.6323 ms
+2025-10-25 16:32:57.767 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/ - 302 0 null 194.9512ms
+2025-10-25 16:32:57.772 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/Account/Login?ReturnUrl=%2F - null null
+2025-10-25 16:32:57.777 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:5051
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+2025-10-25 16:32:57.789 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-10-25 16:32:57.795 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.AccountController.Login (CRUD Application)'
+2025-10-25 16:32:57.883 +03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller CRUD_Application.Controllers.AccountController (CRUD Application).
+2025-10-25 16:32:58.517 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-25 16:32:58.521 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-25 16:32:58.537 +03:00 [INF] Executing ViewResult, running view Login.
+2025-10-25 16:32:58.798 +03:00 [INF] Executed ViewResult - view Login executed in 266.869ms.
+2025-10-25 16:32:58.806 +03:00 [INF] Executed action CRUD_Application.Controllers.AccountController.Login (CRUD Application) in 919.8319ms
+2025-10-25 16:32:58.808 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/Stylesheet.css - null null
+2025-10-25 16:32:58.808 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 16:32:58.810 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.AccountController.Login (CRUD Application)'
+2025-10-25 16:32:58.811 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Stylesheet.css
+Accept: text/css,*/*;q=0.1
+Host: localhost:5051
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-25 16:32:58.815 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 25 Oct 2025 13:32:57 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+custom-key-from-Global: [Redacted]
+X-Frame-Options: [Redacted]
+2025-10-25 16:32:58.817 +03:00 [INF] HTTP GET /Account/Login responded 200 in 1040.4383 ms
+2025-10-25 16:32:58.818 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 9.823ms
+2025-10-25 16:32:58.823 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/Account/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 1052.1946ms
+2025-10-25 16:32:58.834 +03:00 [INF] Sending file. Request path: '/Stylesheet.css'. Physical path: 'D:\BackEnd.NET\Harsha codes\Filters\IAlwaysRunResultFilter\CRUD Application\wwwroot\StyleSheet.css'
+2025-10-25 16:32:58.835 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/_vs/browserLink - null null
+2025-10-25 16:32:58.838 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/css
+Date: Sat, 25 Oct 2025 13:32:57 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Sat, 25 Oct 2025 12:20:40 GMT
+Content-Length: 10279
+2025-10-25 16:32:58.842 +03:00 [INF] HTTP GET /Stylesheet.css responded 200 in 30.7734 ms
+2025-10-25 16:32:58.844 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/Stylesheet.css - 200 10279 text/css 36.4917ms
+2025-10-25 16:32:58.909 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.2527ms
+2025-10-25 16:32:58.994 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/jquery.validate.unobtrusive.min.js - null null
+2025-10-25 16:32:58.998 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /jquery.validate.unobtrusive.min.js
+Accept: */*
+Host: localhost:5051
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+If-Modified-Since: [Redacted]
+If-None-Match: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-25 16:32:59.001 +03:00 [INF] The file /jquery.validate.unobtrusive.min.js was not modified
+2025-10-25 16:32:59.006 +03:00 [INF] Response:
+StatusCode: 304
+Content-Type: text/javascript
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Mon, 22 Sep 2025 14:05:14 GMT
+2025-10-25 16:32:59.007 +03:00 [INF] HTTP GET /jquery.validate.unobtrusive.min.js responded 304 in 9.2506 ms
+2025-10-25 16:32:59.010 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/jquery.validate.unobtrusive.min.js - 304 null text/javascript 15.9136ms
+2025-10-25 16:32:59.072 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/favicon.ico - null null
+2025-10-25 16:32:59.076 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Host: localhost:5051
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-25 16:32:59.086 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-10-25 16:32:59.091 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-10-25 16:32:59.094 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-10-25 16:32:59.095 +03:00 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5051/Account/Login?ReturnUrl=%2Ffavicon.ico
+2025-10-25 16:32:59.096 +03:00 [INF] HTTP GET /favicon.ico responded 302 in 20.1514 ms
+2025-10-25 16:32:59.099 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/favicon.ico - 302 0 null 26.8558ms
+2025-10-25 16:32:59.104 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/Account/Login?ReturnUrl=%2Ffavicon.ico - null null
+2025-10-25 16:32:59.109 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Host: localhost:5051
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-25 16:32:59.114 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-10-25 16:32:59.119 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.AccountController.Login (CRUD Application)'
+2025-10-25 16:32:59.122 +03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller CRUD_Application.Controllers.AccountController (CRUD Application).
+2025-10-25 16:32:59.155 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-25 16:32:59.160 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-25 16:32:59.170 +03:00 [INF] Executing ViewResult, running view Login.
+2025-10-25 16:32:59.182 +03:00 [INF] Executed ViewResult - view Login executed in 12.7476ms.
+2025-10-25 16:32:59.186 +03:00 [INF] Executed action CRUD_Application.Controllers.AccountController.Login (CRUD Application) in 61.1777ms
+2025-10-25 16:32:59.190 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.AccountController.Login (CRUD Application)'
+2025-10-25 16:32:59.194 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 25 Oct 2025 13:32:58 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-25 16:32:59.196 +03:00 [INF] HTTP GET /Account/Login responded 200 in 87.8197 ms
+2025-10-25 16:32:59.200 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/Account/Login?ReturnUrl=%2Ffavicon.ico - 200 null text/html; charset=utf-8 96.2377ms

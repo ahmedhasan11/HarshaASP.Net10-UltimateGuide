@@ -1,0 +1,2 @@
+﻿Package--> 1-Serilog 4.3.0
+2-Serilog.AspNetCore  9.0.0
