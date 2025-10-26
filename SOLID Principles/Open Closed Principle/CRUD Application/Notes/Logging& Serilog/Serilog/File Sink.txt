@@ -1,0 +1,23 @@
+﻿to store logs in a file
+
+Configuration::
+
+"Args" contains properties like "path" , "rollingInterval",optional: "fileSizeLimitBytes","roleOnFileSizeLimit"
+
+"rollingInterval":"Hour" -->anew file gets created each hour 
+//it will take the same file nam ebut add to it the timestamp or number
+
+"fileSizeLimitBytes"-->even ifthe hour didnt finish , if this filelimit exceeded , it will
+create new file,-->in order to letit make the new file it is required to add more property
+which is "roleOnFileSizeLimit":true
+
+
+
+"WriteTo":[{"Name":"File", 
+
+			"Args":{
+				"path":"logs/log.txt"
+				"rollingInterval":"Hour",
+				"fileSizeLimitBytes":1048576,
+				"roleOnFileSizeLimit":true -->this what let it to create new file when size exceeds
+			}}]

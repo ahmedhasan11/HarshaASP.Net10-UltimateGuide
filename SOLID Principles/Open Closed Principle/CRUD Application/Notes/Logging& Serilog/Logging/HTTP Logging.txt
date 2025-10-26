@@ -1,0 +1,27 @@
+﻿track the incoming requests and corresponding HTTP responses
+
+-->Logs all the requests and corresponding response details in the Log as soon as they
+happened in the real time
+
+Enabling Http Logging:
+{
+	------>builder.UseHttpLogging()-->successfully enabled globally
+
+	--->in apsettings.development.json -->  "Microsoft.AspNetCore": "Information" , because these logs
+	are generated from EF core
+
+	-->but  this is not enabling request Body or Response Body 
+	(you can enable them if you need(not recommended)), don't do it until its so necessary needed
+	-->to enable it 
+	builder.Services.AddHttpLogging(options=>{options.LoggingFields=Microsoft.AsoNetCore.HttpLogging
+	.HttpLoggingFields."here select the property that you want to be shown"})
+
+	            builder.Services.AddHttpLogging(options =>
+            {
+                options.LoggingFields = Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.RequestPropertiesAndHeaders
+                    |
+                    Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.ResponsePropertiesAndHeaders;
+
+            });
+
+}

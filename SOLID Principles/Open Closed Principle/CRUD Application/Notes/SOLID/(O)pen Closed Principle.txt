@@ -1,0 +1,33 @@
+﻿(*)O--> Open-Closed Principle --> if you want to implement a new funcionality OR change the 
+existing functionality by changing the source code,,instead of making change for the
+existing code base -->it's advisable to implement the same as a separate class
+	(because you may reuse the codethrough inheritance or interfaces)
+	(you should never make any changes the code unless you want to fix bugs)
+
+									[Scenario]
+there is interface1 , there is method1  for insertion , there is class1 implement interface1
+but because of the changes of the business requirements there is a need of
+changing something in the existing code
+-->so instead of making these changes to the method1 of the class1
+-->create a alternative class that is modified class and there contain the Re-Created code
+									
+									[Why]
+if you try to make some small changes
+1-Regression testing 
+2- some of the existing unit test cases might not be relevant
+3-introduce new bugs,,because already the existing customers might be using existing
+functionality
+
+Steps: assume you have Excel method in IPersonGetterService has 6 fields inside it
+, and there is a requirement to you need inside it just 3 fields (excel field),
+1- create a new class 
+2- in this new class implement IPersonGetterInterface
+3- DI the PersonGetterService (this is the old service )
+4- in the IOC --> AddScoped<PersonGetterService,PersonGetterService>();
+5-use this old service methods inside the interface methods that you dont need
+6-inside the Excel method write your code 
+7-delete the old IOC container service that is <IPersonGetterService, PersonGetterService>
+8-in the IOC --> AddScoped<IPersonGetterService, newclassnamethatyoudid>
+Step 7 , 8 don't worry the old service still work because you already implemented it
+in the new modified service class 
+

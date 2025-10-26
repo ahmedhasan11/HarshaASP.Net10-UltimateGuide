@@ -1,0 +1,13 @@
+﻿-->record the time taken for execution of particular block of the code and add the same
+into the logs
+
+Package-->Serilog Timings 3.0.1
+
+-->lets do this in GetFilteredPersons in Person Service
+
+using(Operation.Time)
+{
+//your code that you want to measure its time
+
+
+}

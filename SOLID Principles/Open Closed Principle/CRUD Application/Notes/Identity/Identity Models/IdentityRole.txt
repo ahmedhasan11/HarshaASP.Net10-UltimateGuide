@@ -1,0 +1,14 @@
+﻿we have identity role to represent the role of the user
+
+Role-->the typeof user(customer,admin,user,user manager)
+
+create a child class of the IdentityRole 
+
+also <T>-->generic to represent DataType of ID
+
+2 builtin properties (ID, Name) , Name-->name of the Role
+
+you can also add additional properties inside the child class
+
+
+create a child class of the IdentityRole for each type of user
