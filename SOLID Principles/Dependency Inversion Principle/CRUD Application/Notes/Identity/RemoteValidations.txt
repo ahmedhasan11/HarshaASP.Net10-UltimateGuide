@@ -1,0 +1,42 @@
+﻿#Problem{
+	what is hppening here , try to register a new user with a email that is used before(duplicate)
+	what will happen that it will immediately create a post request to our actionmethod(no client sidevalidation)
+
+	-->the browser doesnt check if the email address already exists
+
+	what is happening by default?
+#EndProblem}
+
+#flow
+	what happening is that when you submit the button, it leads to a page refresh becauase the server
+	reloads the complete view , the same values of the text boxes remains the same , but the problem is
+	due to security rules of the browsers --> password fields will be emptied
+
+	whatis the flow we need?
+	-->browsersends request to the serverwith all the values of textboxes , server response with true or false
+#Endflow
+
+#how to do wat we want
+	-->browsersends request to the serverwith all the values of textboxes , server response with true or false
+	//this is called client side validations, and it can bedone usingjavascript , but the ideais
+	EF Core provides this option foryou withour you by yourself write javascipt code for this 
+	(instead it generatesessential JS code automatically at runtime )
+	What is EFCore provides in thie situation?
+	-->you have to createan actionmethod thatperforms the validation and returns either true OR false
+	,,then we have to apply that action method && Controllernameas a remote validation in the model property
+#Endhow
+
+#Code
+1-create the action method whoich make the email check validation
+2-inside this action method , there is a method inside the _userManager called FindByEmailAsync(email)
+3-this  method returns a ApplicationUser obj -->check if its NULL
+4-if(user==null)-->return Json(true) -->the expected return type is JsonResult becausethe remote validation
+thatmenas the async request made from the browser can only recieve the JsonResult
+
+5-go tothe property thatwewant to do the client validation(Email in yout DTO)
+6-[Remote()] data annotation , in order to make async request to the mentioned action method 
+to the particular route
+7-[Route(action:"", controller:"", ErrorMessage="")]
+8-		[Remote(action: "EmailValidation", controller:"Account",ErrorMessage ="Email Already Exists")]
+		public string Email { get; set; }
+#EndCode

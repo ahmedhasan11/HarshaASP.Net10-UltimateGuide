@@ -1,0 +1,14 @@
+﻿thereare 2 attributesinasp.net core to apply a filter for the particular action method
+or Controller       1-TypeFilter      2-ServiceFilter
+
+1-TypeFilter -->can supply arguments
+2-ServiceFilter -->can't supply arguments
+
+
+
+but whatever filter that you are putting inside this ServiceFilter
+-->you have to add it as a aservice
+ex: [ServiceFilter(typeof(PersonsListActionFilter))]
+-->builder.Services.AddTransient<PersonsListActionFilter>();
+
+as benefit-->both are same use whatever you like 

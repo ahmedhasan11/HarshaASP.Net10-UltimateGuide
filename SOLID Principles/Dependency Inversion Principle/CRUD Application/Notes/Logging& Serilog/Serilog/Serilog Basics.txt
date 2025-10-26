@@ -1,0 +1,8 @@
+﻿most popular logging framwork in asp.net core
+but why we use it?
+-->because the intternal logging framework in asp net core doesn't support to log to other
+external logged destination such as files or databases
+
+-->sink: logging destination -->specifies where the logs should be stored
+Console sink , Debug sink , EventLog sink , database sink , file sink , etc.....
+
