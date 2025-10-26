@@ -1,0 +1,34 @@
+﻿#1--> the async method execution can be passed by using await keyword
+-->as soon as the particular task has been completed -->resume the execution of the async method
+-->meanwhile the same thread can execute some other methods OR some other requests(to ensure you
+use the maximum benefit of the cpu capacity)
+
+أول ما تكتب async على الميثود، بقى ينفع توقفها مؤقت باستخدام await.
+
+لما تيجي عند await، البرنامج هيقف لحد ما الـ Task اللي مستنيه يخلص.
+
+أول ما الـ Task يخلص، البرنامج يكمل بقيّة الكود اللي بعد await عادي.
+
+وفي الوقت اللي الميثود واقفة فيه بتستنى، الـ نفس الثريد يقدر يشتغل على حاجات تانية (زي ميثود تانية أو ريكويست تانية)، وده بيخلي المعالج (CPU) يستغل وقته ومايبقاش فاضي مستني
+
+
+
+
+#2-you will create asynchronous method using -->async keyword
+-->it can use one or more await keywords 
+-->whereever you would like to wait for getting the response from a particular method(foe example
+reading data from file or from db) -->you can use the await keyword
+
+أي مكان في الكود انت محتاج تستنى فيه
+رد أو نتيجة من حاجة بتاخد وقت (زي قراءة داتا من فايل أو من قاعدة البيانات)، تحط عنده await.
+
+
+#3-most of the I/O operations particularly db interaction should be done with async operation
+-->you always have to use async & await while interacting with the files, databases, anyother 
+external resources(for ex: communicating with email service)
+
+أغلب عمليات الـ I/O (اللي هي إدخال/إخراج بيانات)، خصوصًا التعامل مع قاعدة البيانات، لازم تتعمل بـ async.
+
+يعني أي شغل بيتعامل مع حاجات برة البرنامج نفسه
+(زي قراءة/كتابة فايلات، التعامل مع الداتابيز، أو تتواصل مع سيرفس برة زي خدمة إرسال إيميلات)،
+لازم تستخدم async & await.

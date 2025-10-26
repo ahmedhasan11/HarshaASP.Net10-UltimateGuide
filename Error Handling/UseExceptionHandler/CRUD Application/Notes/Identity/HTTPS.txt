@@ -1,0 +1,12 @@
+﻿allrequests andresponseses gets encrypted
+
+app.UseHTTPSRedirection() -->informs browserto use HTTPS
+
+sometimesitwill notwork because browser didnt getit , so inthis
+you have to UseHsts() this enforces the browsert to enable HTTPS 
+
+
+
+----->then go to launchsettings.Json --.and changes http to https 
+
+that's all!!
