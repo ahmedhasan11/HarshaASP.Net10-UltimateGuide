@@ -1,0 +1,9 @@
+﻿Filters:the methods that execute before and after the action method execution
+-->they execute as a part of Filter pipeline -->executes after the action selector executes
+
+as soon as a particular action method is selected --> it executes the filter pipeline
+
+Filter pipeline-->collection of filters , some execute before the action , some after
+
+ex: Authorization Filter-->have only 1 method that executes BEFORE
+ex:Action Filter -->2 methods one executes BEFORE , and the other is AFTER

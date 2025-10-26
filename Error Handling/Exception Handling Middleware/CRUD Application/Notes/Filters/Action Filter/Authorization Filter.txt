@@ -1,0 +1,19 @@
+﻿in the filter pipeline -->the first executing filter is the Authorization Filter
+
+-->1 method -->OnAuthorize
+
+-->validate whether the user is logged in or not , it means that it defines whether
+this user is authenticated or not
+
+-->if user not logged in , we can short circuit the request
+
+-->here we make Authentication(logged in or not) & Authorization (have permission or not)
+
+
+											[HOW]
+-->by verifying the cookie
+--->where we will create the cookie? -->Result Filter because it is used to perform
+last moment changes to the response such as adding a cookie or response headers, add
+them in the OnResultExecuting
+
+-->we didn't made it practical was just a test for understanding

@@ -1,0 +1,21 @@
+﻿we want to do some client side validations, 
+
+you have toimport 3 libraries from cdn (in that specified order)
+
+1-jquery.min.js
+
+2-jquery.validate.min.js
+
+3-jquery.validate.unobtrusive.min.js
+
+take link of each library from cdn website , and import them in a script tag in your create view
+
+
+after all of that , you have to for each input tage create a <span> tag and there is a tag helper in the span
+called asp-validatin-for ,, here assign to it the modelpropertyname -->s mdelbinding will go through the model property you specified
+and get the data annotation you wrote , or the error message and print it 
+
+
+-->what if you have lots of inputs? , you can use in your button , the asp-validation-summary="all"
+			<div asp-validation-summary="All" class="text-red"></div> //so it will gets all the error messages and print them 
+			behind the button so user can see them easily

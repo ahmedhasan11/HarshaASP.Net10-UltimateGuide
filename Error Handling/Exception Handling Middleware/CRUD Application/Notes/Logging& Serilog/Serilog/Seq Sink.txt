@@ -1,0 +1,11 @@
+﻿Third Party Tool-->offers a monitoring tool to monitor the logs of the app in real-time
+
+Packages-->Serilog.Sinks.Seq 9.0.0
+
+the Serilog makes HTTP request to write thelog into the particualr seq  server
+
+seq server recieves request from Serilog , makes it available in the monitoring tool 
+
+so-->you have to give the Serilog the server URL to which the log message should be POSTED
+
+"Args" --> "serverUrl"

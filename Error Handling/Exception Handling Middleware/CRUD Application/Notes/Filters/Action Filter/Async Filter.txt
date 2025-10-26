@@ -1,0 +1,17 @@
+﻿whatif you want todo some async operations on Filter method
+
+-->Insetad of youinherit from IActionFilter ,,,,,inherit from IAsyncActionFilter
+-->here you will have just 1method in thisinterface whichis
+-->OnActionExecutionAsync
+
+//but whatabour before and after?
+
+//you havea parameterinthsimethod called next ,
+
+						//before logic
+
+						await next();
+
+						//afterlogic
+
+
