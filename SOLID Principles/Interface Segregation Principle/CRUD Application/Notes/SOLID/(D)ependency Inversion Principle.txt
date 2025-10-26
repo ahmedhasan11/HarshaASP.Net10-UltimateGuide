@@ -1,0 +1,12 @@
+﻿(*)D --> Dependency Inversion Principle [DIP] -->the high level modules should not 
+depened on the low level modules
+
+-->whenever a class1 calls another class2 directly by creating an obj , so this means 
+class1 depends on class2 ,,so now if you made any changes in class2 , class1 affected
+
+-->so now higher level module depends on low level modules
+-->also the developer of high level module should wait until the low level is finished
+
+so now DIP solved this by --> both should depend on Abstractions or Interfaces
+
+-->we already learned and practised it before in section 12

@@ -1,0 +1,9 @@
+﻿the main difference between Repository and Service
+--> Repository is the pure implementation of the data access logic
+--> means it's tightly coupled to the domain
+-->we can access the Dbcontext and Dbset as it is in the repository , but without 
+any kind of validation logic
+Prove: the validation logic or any kind of calculations , any kind of decision
+making before implementation of something -->Business Logic
+
+so -->repo blindly implements the db interaction wwithout checking anything

@@ -1,0 +1,29 @@
+﻿(*)Action Filter -->2 methods one executes BEFORE , and the other is AFTER
+
+BEFORE--> OnActionExecuting()             AFTER--> OnActionExecuted()
+
+Benefit??
+{
+you can access the parameters of action method and validate them
+}
+FLOW
+{
+	as soon as the route action is selected, before execution of that particular action method
+
+	-->the OnActionExecuting() executes ,,,, then after the action method executes
+	-->the OnActionExecuted() executes
+}
+
+Code
+{
+1-do a new class 
+2-inherit it form IActionFilter interface
+3-implement this interface , write the code for both methods
+4-attach this filter to the particular action method ,
+   above your action method do this --> [TypeFilter(typeof(PersonsListActionFilter))]
+}
+
+Controller Code Explaination
+{
+[TypeFilter(typeof(PersonsListActionFilter))]-->do a obj of this class and this will be attached to ActionMethod
+}

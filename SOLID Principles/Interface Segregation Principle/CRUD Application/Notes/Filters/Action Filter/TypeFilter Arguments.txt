@@ -1,0 +1,18 @@
+﻿-->of course we said that we are supplying the TypeFilter for that specific action
+-->you can pass some arguments from TypeFilter
+,,then recieve the same from the Constructor of that Filter class
+
+[TypeFilter(typeof(FilterClassName)), Arguemnts= new object [] {arg1, arg2}]
+--> Public FilterClassName (IService service, type param1 , type param2)
+
+-->first parameter recieves arg1 , second parameter recieves arg2
+
+
+-->funcionality-->it have to add some response header into response
+
+
+RealBenefit-->you can make this filter to any action method because each time you are supplying
+the Key and Value paris dynamically and they gets added to Response Header
+
+
+
