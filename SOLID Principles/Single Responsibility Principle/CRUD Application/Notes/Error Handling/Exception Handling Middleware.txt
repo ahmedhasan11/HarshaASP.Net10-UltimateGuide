@@ -1,0 +1,18 @@
+﻿Mandatory on Real-world projects you have to enable it
+-->we use it in production errors or Staging errors
+when an exception happens in any middleware or filters or action methods
+-->Development-->shows Developer Exception Page
+-->Production-->HTTP 500
+
+Exception Filter -->scope is vsery limited just for action method& action filter
+
+but exceptions can occur anyway for ex: executing any other middleware, you can 
+have 10 middlewares chained together , in order to catch any exception,
+we need a superior mechanism to catch exceptions that happens anywhere
+
+Exception Filter-->catch exceptions of action filter selection method execution
+
+Exception Handling Middleware-->to handle exceptions of all the middleware including
+action methods and action filters and all other filters like (Global Exception Handler)
+
+

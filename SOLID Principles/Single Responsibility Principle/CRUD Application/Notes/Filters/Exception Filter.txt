@@ -1,0 +1,19 @@
+﻿what ia happening whenever an exeption is raised later on time
+
+[ModelBinding OR OnActionExecuting OR ActionMethod OR OnActionExecuted]
+-->if any error or exception happened in these sections , then only the 
+Exception Filter executes , it can only catches exceptions that are form these
+
+-->outisde the above sections if exception is raised , they will not be caught by 
+Exception Filter
+
+ExceptionFilter can 1-short circuit  2-continue the remaining filters
+
+-->if you want to handle a specific exption mechanism only for a particular
+one or two action methods -->Exception Filters are recommended to use
+
+          [ShortCircuting]
+-->1-context.ExceptionHandled=true ;     //do previous or normal short circuiting
+
+            [End of Method]
+-->return Task.CompletedTask , means this async method have been completed
