@@ -1,0 +1,1034 @@
+2025-10-27 21:35:56.637 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-27 21:35:56.921 +03:00 [INF] Now listening on: https://localhost:7276
+2025-10-27 21:35:56.923 +03:00 [INF] Now listening on: http://localhost:5274
+2025-10-27 21:35:58.740 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/ - null null
+2025-10-27 21:35:58.879 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-27 21:35:58.953 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-10-27 21:35:58.968 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-10-27 21:35:58.971 +03:00 [INF] Response:
+StatusCode: 302
+Location: https://localhost:7276/Account/Login?ReturnUrl=%2F
+2025-10-27 21:35:58.975 +03:00 [INF] HTTP GET / responded 302 in 102.0626 ms
+2025-10-27 21:35:58.986 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/ - 302 0 null 260.4145ms
+2025-10-27 21:35:58.991 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/Account/Login?ReturnUrl=%2F - null null
+2025-10-27 21:35:59.000 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Upgrade-Insecure-Requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+2025-10-27 21:35:59.019 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.AccountController.Login (ContactsManager.UI)'
+2025-10-27 21:35:59.119 +03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller CRUD_Application.Controllers.AccountController (ContactsManager.UI).
+2025-10-27 21:35:59.320 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:35:59.323 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:35:59.338 +03:00 [INF] Executing ViewResult, running view Login.
+2025-10-27 21:35:59.648 +03:00 [INF] Executed ViewResult - view Login executed in 313.8334ms.
+2025-10-27 21:35:59.654 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-27 21:35:59.656 +03:00 [INF] Executed action CRUD_Application.Controllers.AccountController.Login (ContactsManager.UI) in 532.7601ms
+2025-10-27 21:35:59.658 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-10-27 21:35:59.661 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.AccountController.Login (ContactsManager.UI)'
+2025-10-27 21:35:59.707 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 52.9647ms
+2025-10-27 21:35:59.709 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 27 Oct 2025 18:35:58 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+custom-key-from-Global: [Redacted]
+X-Frame-Options: [Redacted]
+2025-10-27 21:35:59.712 +03:00 [INF] HTTP GET /Account/Login responded 200 in 711.5487 ms
+2025-10-27 21:35:59.725 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/Account/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 734.1283ms
+2025-10-27 21:35:59.774 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 115.8605ms
+2025-10-27 21:36:03.942 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7276/Account/Login?ReturnUrl=%2F - application/x-www-form-urlencoded 221
+2025-10-27 21:36:03.946 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /Account/Login
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cache-Control: max-age=0
+Content-Type: application/x-www-form-urlencoded
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+Content-Length: 221
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-27 21:36:03.951 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.AccountController.Login (ContactsManager.UI)'
+2025-10-27 21:36:03.967 +03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ServiceContracts.DTO.LoginDTO, System.String) on controller CRUD_Application.Controllers.AccountController (ContactsManager.UI).
+2025-10-27 21:36:04.018 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:06.159 +03:00 [INF] Executed DbCommand (57ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-10-27 21:36:06.382 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-10-27 21:36:06.416 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-10-27 21:36:06.430 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-10-27 21:36:06.456 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-10-27 21:36:06.466 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-10-27 21:36:06.484 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-10-27 21:36:06.497 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-10-27 21:36:06.502 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:06.504 +03:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2025-10-27 21:36:06.505 +03:00 [INF] Executed action CRUD_Application.Controllers.AccountController.Login (ContactsManager.UI) in 2536.0386ms
+2025-10-27 21:36:06.506 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.AccountController.Login (ContactsManager.UI)'
+2025-10-27 21:36:06.507 +03:00 [INF] Response:
+StatusCode: 302
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Location: /
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-27 21:36:06.507 +03:00 [INF] HTTP POST /Account/Login responded 302 in 2561.1678 ms
+2025-10-27 21:36:06.511 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/ - null null
+2025-10-27 21:36:06.513 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7276/Account/Login?ReturnUrl=%2F - 302 0 null 2570.8741ms
+2025-10-27 21:36:06.514 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cache-Control: max-age=0
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+2025-10-27 21:36:06.523 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:06.532 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderEnum) on controller CRUD_Application.Controllers.PersonsController (ContactsManager.UI).
+2025-10-27 21:36:06.539 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:06.540 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:06.540 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:06.544 +03:00 [INF] Index action method from PersonsController
+2025-10-27 21:36:06.550 +03:00 [INF] GetAllPersons from PersonsRepository
+2025-10-27 21:36:06.638 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[EmailAddress], [p].[Gender], [p].[PersonName], [p].[ReccivenewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[Countryname]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-27 21:36:06.693 +03:00 [INF] Time of GetFilteredPersons in PersonService completed in 143.9 ms
+2025-10-27 21:36:13.182 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:13.183 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:13.184 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:13.186 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-before
+2025-10-27 21:36:13.188 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-27 21:36:13.255 +03:00 [INF] Executed ViewResult - view Index executed in 68.2875ms.
+2025-10-27 21:36:13.257 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-after
+2025-10-27 21:36:13.258 +03:00 [INF] Executed action CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI) in 6724.8692ms
+2025-10-27 21:36:13.259 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:13.260 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 27 Oct 2025 18:36:13 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+CUSTOM-KEY-from-action: [Redacted]
+CUSTOM-KEY-from-controller: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-27 21:36:13.261 +03:00 [INF] HTTP GET / responded 200 in 6746.8776 ms
+2025-10-27 21:36:13.263 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/ - 200 null text/html; charset=utf-8 6751.6722ms
+2025-10-27 21:36:13.268 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-27 21:36:13.271 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 2.8565ms
+2025-10-27 21:36:13.272 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-10-27 21:36:13.284 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 11.6829ms
+2025-10-27 21:36:18.009 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/persons/index?searchBy=&%20searchString=&sortBy=PersonName&sortOrder=DESC - null null
+2025-10-27 21:36:18.013 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-27 21:36:18.014 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:18.018 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderEnum) on controller CRUD_Application.Controllers.PersonsController (ContactsManager.UI).
+2025-10-27 21:36:18.022 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:18.023 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:18.023 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:18.024 +03:00 [INF] Index action method from PersonsController
+2025-10-27 21:36:18.025 +03:00 [INF] GetAllPersons from PersonsRepository
+2025-10-27 21:36:18.044 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[EmailAddress], [p].[Gender], [p].[PersonName], [p].[ReccivenewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[Countryname]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-27 21:36:18.047 +03:00 [INF] Time of GetFilteredPersons in PersonService completed in 22.1 ms
+2025-10-27 21:36:18.049 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:18.050 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:18.051 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:18.052 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-before
+2025-10-27 21:36:18.053 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-27 21:36:18.059 +03:00 [INF] Executed ViewResult - view Index executed in 5.5131ms.
+2025-10-27 21:36:18.059 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-after
+2025-10-27 21:36:18.060 +03:00 [INF] Executed action CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI) in 40.924ms
+2025-10-27 21:36:18.062 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:18.063 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 27 Oct 2025 18:36:17 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+CUSTOM-KEY-from-action: [Redacted]
+CUSTOM-KEY-from-controller: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-27 21:36:18.063 +03:00 [INF] HTTP GET /persons/index responded 200 in 50.5045 ms
+2025-10-27 21:36:18.065 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/persons/index?searchBy=&%20searchString=&sortBy=PersonName&sortOrder=DESC - 200 null text/html; charset=utf-8 55.5972ms
+2025-10-27 21:36:18.068 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-10-27 21:36:18.069 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-27 21:36:18.072 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 3.4726ms
+2025-10-27 21:36:18.075 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 7.2151ms
+2025-10-27 21:36:18.492 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&searchString=CurrentsearchString&sortBy=EmailAddress&%20sortOrder=ASC - null null
+2025-10-27 21:36:18.496 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-27 21:36:18.508 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:18.510 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderEnum) on controller CRUD_Application.Controllers.PersonsController (ContactsManager.UI).
+2025-10-27 21:36:18.514 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:18.514 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:18.515 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:18.516 +03:00 [INF] Index action method from PersonsController
+2025-10-27 21:36:18.516 +03:00 [INF] GetAllPersons from PersonsRepository
+2025-10-27 21:36:18.527 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[EmailAddress], [p].[Gender], [p].[PersonName], [p].[ReccivenewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[Countryname]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-27 21:36:18.529 +03:00 [INF] Time of GetFilteredPersons in PersonService completed in 13.1 ms
+2025-10-27 21:36:21.970 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:21.972 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:21.973 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:21.974 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-before
+2025-10-27 21:36:21.975 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-27 21:36:21.982 +03:00 [INF] Executed ViewResult - view Index executed in 6.8642ms.
+2025-10-27 21:36:21.983 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-after
+2025-10-27 21:36:21.984 +03:00 [INF] Executed action CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI) in 3472.889ms
+2025-10-27 21:36:21.985 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:21.986 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 27 Oct 2025 18:36:21 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+CUSTOM-KEY-from-action: [Redacted]
+CUSTOM-KEY-from-controller: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-27 21:36:21.986 +03:00 [INF] HTTP GET /persons/index responded 200 in 3490.2430 ms
+2025-10-27 21:36:21.988 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&searchString=CurrentsearchString&sortBy=EmailAddress&%20sortOrder=ASC - 200 null text/html; charset=utf-8 3496.2758ms
+2025-10-27 21:36:21.995 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-10-27 21:36:21.995 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-27 21:36:22.013 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 18.5041ms
+2025-10-27 21:36:22.015 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 20.2978ms
+2025-10-27 21:36:23.990 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&%20searchString=CurrentsearchString&sortBy=EmailAddress&sortOrder=DESC - null null
+2025-10-27 21:36:23.994 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-27 21:36:23.995 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:23.996 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderEnum) on controller CRUD_Application.Controllers.PersonsController (ContactsManager.UI).
+2025-10-27 21:36:23.998 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:23.999 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:24.000 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:24.000 +03:00 [INF] Index action method from PersonsController
+2025-10-27 21:36:24.001 +03:00 [INF] GetAllPersons from PersonsRepository
+2025-10-27 21:36:24.011 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[EmailAddress], [p].[Gender], [p].[PersonName], [p].[ReccivenewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[Countryname]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-27 21:36:24.014 +03:00 [INF] Time of GetFilteredPersons in PersonService completed in 12.7 ms
+2025-10-27 21:36:24.015 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:24.016 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:24.016 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:24.017 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-before
+2025-10-27 21:36:24.018 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-27 21:36:24.021 +03:00 [INF] Executed ViewResult - view Index executed in 2.3536ms.
+2025-10-27 21:36:24.022 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-after
+2025-10-27 21:36:24.023 +03:00 [INF] Executed action CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI) in 25.4034ms
+2025-10-27 21:36:24.024 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:24.025 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 27 Oct 2025 18:36:23 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+CUSTOM-KEY-from-action: [Redacted]
+CUSTOM-KEY-from-controller: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-27 21:36:24.026 +03:00 [INF] HTTP GET /persons/index responded 200 in 32.0100 ms
+2025-10-27 21:36:24.028 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&%20searchString=CurrentsearchString&sortBy=EmailAddress&sortOrder=DESC - 200 null text/html; charset=utf-8 37.2062ms
+2025-10-27 21:36:24.031 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-10-27 21:36:24.031 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-27 21:36:24.038 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 6.8461ms
+2025-10-27 21:36:24.039 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.4393ms
+2025-10-27 21:36:24.493 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&searchString=CurrentsearchString&sortBy=EmailAddress&%20sortOrder=ASC - null null
+2025-10-27 21:36:24.497 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-27 21:36:24.498 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:24.499 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderEnum) on controller CRUD_Application.Controllers.PersonsController (ContactsManager.UI).
+2025-10-27 21:36:24.500 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:24.501 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:24.501 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:24.502 +03:00 [INF] Index action method from PersonsController
+2025-10-27 21:36:24.503 +03:00 [INF] GetAllPersons from PersonsRepository
+2025-10-27 21:36:24.507 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[EmailAddress], [p].[Gender], [p].[PersonName], [p].[ReccivenewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[Countryname]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-27 21:36:24.509 +03:00 [INF] Time of GetFilteredPersons in PersonService completed in 6.5 ms
+2025-10-27 21:36:24.510 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:24.511 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:24.512 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:24.513 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-before
+2025-10-27 21:36:24.514 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-27 21:36:24.515 +03:00 [INF] Executed ViewResult - view Index executed in 1.9664ms.
+2025-10-27 21:36:24.516 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-after
+2025-10-27 21:36:24.517 +03:00 [INF] Executed action CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI) in 17.286ms
+2025-10-27 21:36:24.518 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:24.519 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 27 Oct 2025 18:36:23 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+CUSTOM-KEY-from-action: [Redacted]
+CUSTOM-KEY-from-controller: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-27 21:36:24.519 +03:00 [INF] HTTP GET /persons/index responded 200 in 22.7374 ms
+2025-10-27 21:36:24.521 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&searchString=CurrentsearchString&sortBy=EmailAddress&%20sortOrder=ASC - 200 null text/html; charset=utf-8 27.4268ms
+2025-10-27 21:36:24.524 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-10-27 21:36:24.524 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-27 21:36:24.528 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 3.5039ms
+2025-10-27 21:36:24.530 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.7749ms
+2025-10-27 21:36:24.895 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&%20searchString=CurrentsearchString&sortBy=EmailAddress&sortOrder=DESC - null null
+2025-10-27 21:36:24.898 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-27 21:36:24.899 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:24.900 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderEnum) on controller CRUD_Application.Controllers.PersonsController (ContactsManager.UI).
+2025-10-27 21:36:24.902 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:24.903 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:24.904 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:24.905 +03:00 [INF] Index action method from PersonsController
+2025-10-27 21:36:24.905 +03:00 [INF] GetAllPersons from PersonsRepository
+2025-10-27 21:36:24.916 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[EmailAddress], [p].[Gender], [p].[PersonName], [p].[ReccivenewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[Countryname]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-27 21:36:24.918 +03:00 [INF] Time of GetFilteredPersons in PersonService completed in 12.6 ms
+2025-10-27 21:36:24.919 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:24.921 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:24.921 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:24.923 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-before
+2025-10-27 21:36:24.924 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-27 21:36:24.926 +03:00 [INF] Executed ViewResult - view Index executed in 2.5563ms.
+2025-10-27 21:36:24.928 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-after
+2025-10-27 21:36:24.929 +03:00 [INF] Executed action CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI) in 27.7123ms
+2025-10-27 21:36:24.931 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:24.932 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 27 Oct 2025 18:36:23 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+CUSTOM-KEY-from-action: [Redacted]
+CUSTOM-KEY-from-controller: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-27 21:36:24.932 +03:00 [INF] HTTP GET /persons/index responded 200 in 34.3835 ms
+2025-10-27 21:36:24.934 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&%20searchString=CurrentsearchString&sortBy=EmailAddress&sortOrder=DESC - 200 null text/html; charset=utf-8 39.3289ms
+2025-10-27 21:36:24.937 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-10-27 21:36:24.938 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-27 21:36:24.946 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 7.8124ms
+2025-10-27 21:36:24.948 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 10.6649ms
+2025-10-27 21:36:25.336 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&searchString=CurrentsearchString&sortBy=DateOfBirth&%20sortOrder=ASC - null null
+2025-10-27 21:36:25.339 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-27 21:36:25.341 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:25.342 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderEnum) on controller CRUD_Application.Controllers.PersonsController (ContactsManager.UI).
+2025-10-27 21:36:25.343 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:25.344 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:25.345 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:25.345 +03:00 [INF] Index action method from PersonsController
+2025-10-27 21:36:25.346 +03:00 [INF] GetAllPersons from PersonsRepository
+2025-10-27 21:36:25.351 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[EmailAddress], [p].[Gender], [p].[PersonName], [p].[ReccivenewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[Countryname]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-27 21:36:25.353 +03:00 [INF] Time of GetFilteredPersons in PersonService completed in 7.0 ms
+2025-10-27 21:36:25.355 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:25.356 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:25.357 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:25.358 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-before
+2025-10-27 21:36:25.359 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-27 21:36:25.361 +03:00 [INF] Executed ViewResult - view Index executed in 2.2516ms.
+2025-10-27 21:36:25.362 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-after
+2025-10-27 21:36:25.364 +03:00 [INF] Executed action CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI) in 20.8844ms
+2025-10-27 21:36:25.365 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:25.367 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 27 Oct 2025 18:36:24 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+CUSTOM-KEY-from-action: [Redacted]
+CUSTOM-KEY-from-controller: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-27 21:36:25.367 +03:00 [INF] HTTP GET /persons/index responded 200 in 28.2665 ms
+2025-10-27 21:36:25.369 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&searchString=CurrentsearchString&sortBy=DateOfBirth&%20sortOrder=ASC - 200 null text/html; charset=utf-8 33.4593ms
+2025-10-27 21:36:25.372 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-10-27 21:36:25.372 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-27 21:36:25.376 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 3.9475ms
+2025-10-27 21:36:25.378 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.8789ms
+2025-10-27 21:36:25.749 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&%20searchString=CurrentsearchString&sortBy=DateOfBirth&sortOrder=DESC - null null
+2025-10-27 21:36:25.752 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-27 21:36:25.753 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:25.754 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderEnum) on controller CRUD_Application.Controllers.PersonsController (ContactsManager.UI).
+2025-10-27 21:36:25.755 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:25.756 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:25.757 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:25.757 +03:00 [INF] Index action method from PersonsController
+2025-10-27 21:36:25.758 +03:00 [INF] GetAllPersons from PersonsRepository
+2025-10-27 21:36:25.767 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[EmailAddress], [p].[Gender], [p].[PersonName], [p].[ReccivenewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[Countryname]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-27 21:36:25.768 +03:00 [INF] Time of GetFilteredPersons in PersonService completed in 10.4 ms
+2025-10-27 21:36:25.770 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:25.770 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:25.771 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:25.772 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-before
+2025-10-27 21:36:25.773 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-27 21:36:25.774 +03:00 [INF] Executed ViewResult - view Index executed in 1.616ms.
+2025-10-27 21:36:25.775 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-after
+2025-10-27 21:36:25.776 +03:00 [INF] Executed action CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI) in 20.6956ms
+2025-10-27 21:36:25.777 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:25.778 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 27 Oct 2025 18:36:24 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+CUSTOM-KEY-from-action: [Redacted]
+CUSTOM-KEY-from-controller: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-27 21:36:25.779 +03:00 [INF] HTTP GET /persons/index responded 200 in 26.3978 ms
+2025-10-27 21:36:25.780 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&%20searchString=CurrentsearchString&sortBy=DateOfBirth&sortOrder=DESC - 200 null text/html; charset=utf-8 31.3994ms
+2025-10-27 21:36:25.787 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-10-27 21:36:25.789 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-27 21:36:25.793 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 4.1949ms
+2025-10-27 21:36:25.796 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 8.3556ms
+2025-10-27 21:36:26.411 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&searchString=CurrentsearchString&sortBy=Gender&%20sortOrder=ASC - null null
+2025-10-27 21:36:26.414 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-27 21:36:26.415 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:26.416 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderEnum) on controller CRUD_Application.Controllers.PersonsController (ContactsManager.UI).
+2025-10-27 21:36:26.418 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:26.419 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:26.420 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:26.421 +03:00 [INF] Index action method from PersonsController
+2025-10-27 21:36:26.422 +03:00 [INF] GetAllPersons from PersonsRepository
+2025-10-27 21:36:26.426 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[EmailAddress], [p].[Gender], [p].[PersonName], [p].[ReccivenewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[Countryname]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-27 21:36:26.428 +03:00 [INF] Time of GetFilteredPersons in PersonService completed in 6.4 ms
+2025-10-27 21:36:26.429 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:26.430 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:26.431 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:26.431 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-before
+2025-10-27 21:36:26.432 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-27 21:36:26.434 +03:00 [INF] Executed ViewResult - view Index executed in 1.9322ms.
+2025-10-27 21:36:26.435 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-after
+2025-10-27 21:36:26.436 +03:00 [INF] Executed action CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI) in 18.0971ms
+2025-10-27 21:36:26.437 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:26.438 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 27 Oct 2025 18:36:26 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+CUSTOM-KEY-from-action: [Redacted]
+CUSTOM-KEY-from-controller: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-27 21:36:26.438 +03:00 [INF] HTTP GET /persons/index responded 200 in 24.2365 ms
+2025-10-27 21:36:26.440 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&searchString=CurrentsearchString&sortBy=Gender&%20sortOrder=ASC - 200 null text/html; charset=utf-8 29.4802ms
+2025-10-27 21:36:26.444 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-10-27 21:36:26.444 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-27 21:36:26.447 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 3.4373ms
+2025-10-27 21:36:26.450 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.9248ms
+2025-10-27 21:36:26.727 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&%20searchString=CurrentsearchString&sortBy=Gender&sortOrder=DESC - null null
+2025-10-27 21:36:26.730 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-27 21:36:26.731 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:26.732 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderEnum) on controller CRUD_Application.Controllers.PersonsController (ContactsManager.UI).
+2025-10-27 21:36:26.733 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:26.734 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:26.734 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:26.735 +03:00 [INF] Index action method from PersonsController
+2025-10-27 21:36:26.736 +03:00 [INF] GetAllPersons from PersonsRepository
+2025-10-27 21:36:26.935 +03:00 [INF] Executed DbCommand (198ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[EmailAddress], [p].[Gender], [p].[PersonName], [p].[ReccivenewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[Countryname]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-27 21:36:26.937 +03:00 [INF] Time of GetFilteredPersons in PersonService completed in 200.9 ms
+2025-10-27 21:36:26.938 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:26.939 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:26.939 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:26.940 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-before
+2025-10-27 21:36:26.941 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-27 21:36:26.943 +03:00 [INF] Executed ViewResult - view Index executed in 1.8305ms.
+2025-10-27 21:36:26.944 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-after
+2025-10-27 21:36:26.945 +03:00 [INF] Executed action CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI) in 211.578ms
+2025-10-27 21:36:26.946 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:26.947 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 27 Oct 2025 18:36:26 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+CUSTOM-KEY-from-action: [Redacted]
+CUSTOM-KEY-from-controller: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-27 21:36:26.948 +03:00 [INF] HTTP GET /persons/index responded 200 in 218.0585 ms
+2025-10-27 21:36:26.950 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&%20searchString=CurrentsearchString&sortBy=Gender&sortOrder=DESC - 200 null text/html; charset=utf-8 223.0123ms
+2025-10-27 21:36:26.952 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-10-27 21:36:26.953 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-27 21:36:26.956 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 3.3742ms
+2025-10-27 21:36:26.958 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.4948ms
+2025-10-27 21:36:27.484 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&searchString=CurrentsearchString&sortBy=PersonName&%20sortOrder=ASC - null null
+2025-10-27 21:36:27.487 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-27 21:36:27.488 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:27.488 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderEnum) on controller CRUD_Application.Controllers.PersonsController (ContactsManager.UI).
+2025-10-27 21:36:27.489 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:27.490 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:27.491 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:27.491 +03:00 [INF] Index action method from PersonsController
+2025-10-27 21:36:27.492 +03:00 [INF] GetAllPersons from PersonsRepository
+2025-10-27 21:36:27.506 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[EmailAddress], [p].[Gender], [p].[PersonName], [p].[ReccivenewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[Countryname]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-27 21:36:27.508 +03:00 [INF] Time of GetFilteredPersons in PersonService completed in 15.9 ms
+2025-10-27 21:36:27.509 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:27.514 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:27.515 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:27.515 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-before
+2025-10-27 21:36:27.516 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-27 21:36:27.517 +03:00 [INF] Executed ViewResult - view Index executed in 1.4246ms.
+2025-10-27 21:36:27.518 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-after
+2025-10-27 21:36:27.519 +03:00 [INF] Executed action CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI) in 29.5923ms
+2025-10-27 21:36:27.520 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:27.520 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 27 Oct 2025 18:36:27 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+CUSTOM-KEY-from-action: [Redacted]
+CUSTOM-KEY-from-controller: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-27 21:36:27.521 +03:00 [INF] HTTP GET /persons/index responded 200 in 34.5132 ms
+2025-10-27 21:36:27.523 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&searchString=CurrentsearchString&sortBy=PersonName&%20sortOrder=ASC - 200 null text/html; charset=utf-8 38.6577ms
+2025-10-27 21:36:27.526 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-10-27 21:36:27.526 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-27 21:36:27.529 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 3.1765ms
+2025-10-27 21:36:27.531 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.1289ms
+2025-10-27 21:36:27.846 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&%20searchString=CurrentsearchString&sortBy=PersonName&sortOrder=DESC - null null
+2025-10-27 21:36:27.849 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-27 21:36:27.851 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:27.851 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderEnum) on controller CRUD_Application.Controllers.PersonsController (ContactsManager.UI).
+2025-10-27 21:36:27.852 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:27.853 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:27.853 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:27.854 +03:00 [INF] Index action method from PersonsController
+2025-10-27 21:36:27.855 +03:00 [INF] GetAllPersons from PersonsRepository
+2025-10-27 21:36:27.863 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[EmailAddress], [p].[Gender], [p].[PersonName], [p].[ReccivenewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[Countryname]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-27 21:36:27.865 +03:00 [INF] Time of GetFilteredPersons in PersonService completed in 10.9 ms
+2025-10-27 21:36:27.866 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:27.867 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:27.868 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:27.868 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-before
+2025-10-27 21:36:27.869 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-27 21:36:27.870 +03:00 [INF] Executed ViewResult - view Index executed in 1.3856ms.
+2025-10-27 21:36:27.871 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-after
+2025-10-27 21:36:27.872 +03:00 [INF] Executed action CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI) in 19.6782ms
+2025-10-27 21:36:27.873 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:27.873 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 27 Oct 2025 18:36:27 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+CUSTOM-KEY-from-action: [Redacted]
+CUSTOM-KEY-from-controller: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-27 21:36:27.874 +03:00 [INF] HTTP GET /persons/index responded 200 in 24.7623 ms
+2025-10-27 21:36:27.875 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&%20searchString=CurrentsearchString&sortBy=PersonName&sortOrder=DESC - 200 null text/html; charset=utf-8 29.1685ms
+2025-10-27 21:36:27.879 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-10-27 21:36:27.881 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-27 21:36:27.883 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 1.8772ms
+2025-10-27 21:36:27.884 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 4.9364ms
+2025-10-27 21:36:28.919 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&searchString=CurrentsearchString&sortBy=Age&%20sortOrder=ASC - null null
+2025-10-27 21:36:28.922 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-27 21:36:28.923 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:28.924 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderEnum) on controller CRUD_Application.Controllers.PersonsController (ContactsManager.UI).
+2025-10-27 21:36:28.926 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:28.927 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:28.928 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:28.929 +03:00 [INF] Index action method from PersonsController
+2025-10-27 21:36:28.929 +03:00 [INF] GetAllPersons from PersonsRepository
+2025-10-27 21:36:29.023 +03:00 [INF] Executed DbCommand (92ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[EmailAddress], [p].[Gender], [p].[PersonName], [p].[ReccivenewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[Countryname]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-27 21:36:29.025 +03:00 [INF] Time of GetFilteredPersons in PersonService completed in 96.0 ms
+2025-10-27 21:36:29.027 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:29.027 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:29.028 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:29.030 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-before
+2025-10-27 21:36:29.031 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-27 21:36:29.033 +03:00 [INF] Executed ViewResult - view Index executed in 2.3957ms.
+2025-10-27 21:36:29.035 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-after
+2025-10-27 21:36:29.035 +03:00 [INF] Executed action CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI) in 109.6438ms
+2025-10-27 21:36:29.037 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:29.038 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 27 Oct 2025 18:36:28 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+CUSTOM-KEY-from-action: [Redacted]
+CUSTOM-KEY-from-controller: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-27 21:36:29.039 +03:00 [INF] HTTP GET /persons/index responded 200 in 117.0633 ms
+2025-10-27 21:36:29.040 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&searchString=CurrentsearchString&sortBy=Age&%20sortOrder=ASC - 200 null text/html; charset=utf-8 121.4626ms
+2025-10-27 21:36:29.044 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-10-27 21:36:29.044 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-27 21:36:29.048 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 3.7198ms
+2025-10-27 21:36:29.050 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.8896ms
+2025-10-27 21:36:29.241 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&%20searchString=CurrentsearchString&sortBy=Age&sortOrder=DESC - null null
+2025-10-27 21:36:29.244 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-27 21:36:29.245 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:29.245 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderEnum) on controller CRUD_Application.Controllers.PersonsController (ContactsManager.UI).
+2025-10-27 21:36:29.247 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:29.247 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:29.248 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:29.249 +03:00 [INF] Index action method from PersonsController
+2025-10-27 21:36:29.249 +03:00 [INF] GetAllPersons from PersonsRepository
+2025-10-27 21:36:29.259 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[EmailAddress], [p].[Gender], [p].[PersonName], [p].[ReccivenewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[Countryname]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-27 21:36:29.260 +03:00 [INF] Time of GetFilteredPersons in PersonService completed in 11.4 ms
+2025-10-27 21:36:29.261 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:29.262 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:29.263 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:29.264 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-before
+2025-10-27 21:36:29.265 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-27 21:36:29.267 +03:00 [INF] Executed ViewResult - view Index executed in 1.8508ms.
+2025-10-27 21:36:29.267 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-after
+2025-10-27 21:36:29.268 +03:00 [INF] Executed action CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI) in 21.8565ms
+2025-10-27 21:36:29.269 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:29.270 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 27 Oct 2025 18:36:29 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+CUSTOM-KEY-from-action: [Redacted]
+CUSTOM-KEY-from-controller: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-27 21:36:29.271 +03:00 [INF] HTTP GET /persons/index responded 200 in 27.3396 ms
+2025-10-27 21:36:29.273 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&%20searchString=CurrentsearchString&sortBy=Age&sortOrder=DESC - 200 null text/html; charset=utf-8 31.9511ms
+2025-10-27 21:36:29.276 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-10-27 21:36:29.276 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-27 21:36:29.280 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 3.2687ms
+2025-10-27 21:36:29.281 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.1625ms
+2025-10-27 21:36:29.812 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&searchString=CurrentsearchString&sortBy=Country&%20sortOrder=ASC - null null
+2025-10-27 21:36:29.815 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /persons/index
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:7276
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-27 21:36:29.816 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:29.817 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderEnum) on controller CRUD_Application.Controllers.PersonsController (ContactsManager.UI).
+2025-10-27 21:36:29.818 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:29.819 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:29.820 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-27 21:36:29.820 +03:00 [INF] Index action method from PersonsController
+2025-10-27 21:36:29.821 +03:00 [INF] GetAllPersons from PersonsRepository
+2025-10-27 21:36:29.826 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[EmailAddress], [p].[Gender], [p].[PersonName], [p].[ReccivenewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[Countryname]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-27 21:36:29.828 +03:00 [INF] Time of GetFilteredPersons in PersonService completed in 7.2 ms
+2025-10-27 21:36:29.830 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:29.830 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:29.831 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-27 21:36:29.833 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-before
+2025-10-27 21:36:29.833 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-27 21:36:29.835 +03:00 [INF] Executed ViewResult - view Index executed in 1.8831ms.
+2025-10-27 21:36:29.836 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-after
+2025-10-27 21:36:29.837 +03:00 [INF] Executed action CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI) in 18.9947ms
+2025-10-27 21:36:29.838 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.PersonsController.Index (ContactsManager.UI)'
+2025-10-27 21:36:29.839 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 27 Oct 2025 18:36:29 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+CUSTOM-KEY-from-action: [Redacted]
+CUSTOM-KEY-from-controller: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-27 21:36:29.840 +03:00 [INF] HTTP GET /persons/index responded 200 in 24.7102 ms
+2025-10-27 21:36:29.841 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/persons/index?searchBy=CurrentsearchBy&searchString=CurrentsearchString&sortBy=Country&%20sortOrder=ASC - 200 null text/html; charset=utf-8 29.3253ms
+2025-10-27 21:36:29.845 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_vs/browserLink - null null
+2025-10-27 21:36:29.845 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-27 21:36:29.849 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 3.4859ms
+2025-10-27 21:36:29.850 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7276/_vs/browserLink - 200 null text/javascript; charset=UTF-8 5.313ms
