@@ -1,0 +1,7 @@
+﻿-->there is no built-inmethod for skipping a specific filter
+
+-->you have to create a class , inherit it from Attribute, apply this attribute
+to the specific action you need to test 
+
+-->inside a filter , co the codefor checkif this action method applies the testFilter
+that's it , context.Filters...............

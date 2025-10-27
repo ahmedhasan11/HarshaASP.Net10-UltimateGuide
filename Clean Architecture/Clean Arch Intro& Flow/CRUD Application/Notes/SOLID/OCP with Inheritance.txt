@@ -1,0 +1,31 @@
+﻿in the old OCP we practised the OCP with Interfaces
+-->there is another way that is with Inheritance
+
+in Real-World -->OCP with Interfaces is the best and recommended
+why is it not recommended-->violates the Liskov Substitution Principle
+
+									[Scenario]
+there is interface1 , there is method1  for insertion , there is class1 implement interface1
+but because of the changes of the business requirements there is a need of
+changing something in the existing code
+-->so instead of making these changes to the method1 of the class1
+-->create a new class that implements the service itself and override the method you want
+
+be careful-->to do this you have to make all the old service methods as virtual
+
+virtual-->makes the method to be overridden in the child classes,,of course overriding
+the virtual methods is optional in the child class
+
+-->we converted all methods to virtual so you can override the method that you want 
+									[New Service Code]
+-->go to your new service
+1-implement old service as an interface
+2-you will have access to all methods ,override the method you want
+3-after override write the code you want
+4-you have to make a constructor of the new service and supply the values that old service
+constructor uses ,,,that means--> if old service constructor have logger& Personrepo
+,then you have in the new service you should have the constructor like this
+Public NewService(IPersonRepository repo, ILogger<NewService> logger):base(repo,logger){}
+5-AddScoped<PersonGetterService,PersonGetterService>();
+6-AddScoped<IPersonGetterService, newclassnamethatyoudid>
+

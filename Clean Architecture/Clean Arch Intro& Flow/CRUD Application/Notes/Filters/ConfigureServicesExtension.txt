@@ -1,0 +1,112 @@
+﻿//you see all services that you have in your program.cs? all the services that are
+witin IOC container(builder.Services) , instead of all this lenghty code in
+program.cs this is not recommended 
+
+-->create a new Folder and create a new class make the class static , inside this class
+make a static method that will be used as an Extension method with (this IService services)
+
+-->data type of builder.Services if of IServiceCollection , so you are making extension 
+method for that type , the return type of extension method is IServiceCollection
+
+-->in program.cs call builder.Services.yourextensionmethodname()
+(*)this method now behaves like its an instance of IServiceCollection type
+
+-->use the services parameter instead of all builder.Services 
+
+-->so this method extends the IServiceCollection type (this IService services)
+(*)the current instance of IServiceCollection is recieved as this parameter
+(*)so you can directly use services.
+
+--> problem::::: when we try to add our DB context , you have to access the
+appsettings.sjon , we was accessing it by builder.Configuration , but builder
+is only accessible within program.cs 
+
+
+Solution------>datatyope of this config its iConfigurationManagerType and 
+ConfigurationManager implements IConfiguration,,so just inject the IConfiguration 
+on the method parameter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         builder.Services.AddControllersWithViews(options =>
+            {
+                //good if this filter dont have parameters
+                //options.Filters.Add<ResponseHeaderActionFilter>(); 
+
+                //getting the loger so we can pass it to the constructor of FilterClass
+              var logger=  builder.Services.BuildServiceProvider().GetRequiredService<ILogger<ResponseHeaderActionFilter>>();
+
+                options.Filters.Add(new ResponseHeaderActionFilter(logger,"custom-key-from-Global","custom-val-from-Global"));
+
+				options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+            });
+            /*its not goodto inject a scoped service into singleton service*/
+            /*we are injecting the personsdbcontextwhich is scoped , inside the country service that is alreadysingleton*/
+            /*how personsDbContext is scoped? by default scoped*/
+			builder.Services.AddScoped<ICountryService, CountryService>();//ineedto use countryservice
+            //ontime in the entireapplicationuntilyou shut downthe app by closing the kestrel
+			builder.Services.AddScoped<IPersonService, PersonService>();
+            builder.Services.AddScoped<IPersonsRepository, PersonsRepository>();
+			builder.Services.AddScoped<ICountriesRepository, CountriesRepository>();
+
+			builder.Services.AddDbContext<PersonsDbContext>(options => options.UseSqlServer(builder.Configuration["ConnectionStrings:DefaultConnectionString"]));
+            builder.Services.AddIdentity<ApplicationUser, ApplicationRole>(options =>
+            {
+                options.Password.RequiredLength = 5;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireDigit = false;
+                options.Password.RequiredUniqueChars = 3;
+                }
+            )
+                .AddEntityFrameworkStores<PersonsDbContext>()
+                .AddDefaultTokenProviders()
+                .AddUserStore<UserStore<ApplicationUser, ApplicationRole, PersonsDbContext, Guid>>()
+                .AddRoleStore<RoleStore<ApplicationRole, PersonsDbContext, Guid>>();
+
+            builder.Services.AddAuthorization(options =>
+            {
+                options.FallbackPolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser()
+                .Build(); //your policy is whatever action methods user should be logged in
+                //(the request should have the identity cookie)
+
+                options.AddPolicy("UnauthorizedAccess", policy => 
+                {
+                    //here we can return either true or false , 
+                    //true-->user have access
+                    //false-->denied access
+                    //what we need is that if the user is authenticated ,he get access denied onloginand register 
+                    policy.RequireAssertion(//means you would like to check your condition
+                        context => { return !context.User.Identity.IsAuthenticated; }
+                        );
+                });
+            });
+            builder.Services.ConfigureApplicationCookie(options =>
+            {//whenever the abovepolicyisnot respected by the request& te user have not logged in
+                //then redirect him to this url
+                options.LoginPath = "/Account/Login";
+            });
+
+            builder.Services.AddHttpLogging(options =>
+            {
+                options.LoggingFields = Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.RequestPropertiesAndHeaders
+                    |
+                    Microsoft.AspNetCore.HttpLogging.HttpLoggingFields.ResponsePropertiesAndHeaders;
+
+            });

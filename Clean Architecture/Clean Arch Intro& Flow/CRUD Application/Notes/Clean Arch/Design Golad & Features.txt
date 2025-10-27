@@ -1,0 +1,22 @@
+﻿------------------------------[Changing external system]------------------------
+-->application should provide flexibility to change the databases or services from
+any other third party vendors
+
+ex:currently you are in SQL server ,,, maybe in future you will need to be on PostgrateSQL
+
+-->and as we said changes of external systems should not affect Business Logic OR UI of app
+
+------------------------------[Database Independent]------------------------
+-->as we said we can change the db without affecting the app functionality
+
+------------------------------[Scalable]---------------------------
+-->app should be easily scale-up OR scale-out
+(scale-up) -->adding additional hardware resources to exisiting webservers such as 
+			increasing CPU or memory capacity
+
+(scale-out) -->adding additional instances of the virtual machines means additional web
+servers
+
+------------------------------[Testable]---------------------------
+-->your business logic should be independently testable because its directly doesn't
+depend on any other external systems such as Databases or third-party services

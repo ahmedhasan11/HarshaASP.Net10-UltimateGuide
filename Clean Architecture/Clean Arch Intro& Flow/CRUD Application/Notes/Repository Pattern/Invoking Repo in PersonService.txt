@@ -1,0 +1,43 @@
+﻿---->GetFilteredPersons() in Service
+
+-->there is some memory issue there before using the repository , what was the issue?
+
+-->we was getting all persons from db into memoty then making our query ,
+that is bad related to memory that's not good , so what we did new that we are making
+the query on the db table and get our data directyly without getting the whole table in
+memoty , we are just getting our filtered persons 
+
+Code
+{
+	await _personsRepository.GetFilteredPersons(p => (!string.IsNullOrEmpty(p.PersonName) ?
+	p.PersonName.Contains(SearchString, StringComparison.OrdinalIgnoreCase) : true)),
+}
+
+
+Problem1(string.IsNullOrEmpty) 
+		//IsNullOrEmpty() is a .NET method, not a database function
+		//there’s no direct SQL equivalent for it (like WHERE ISNULL(p.PersonName, '') = ''),
+		so EF can’t convert it to SQL.
+		//EF can already handle NULL safely when you call string functions on it.
+
+		----> withing this lambda expression we need not 
+		check whether IsNullOrEmpty()
+		-->because internally EF will try to convert this Lambda Expression into equivalent
+		SQL where class so this complex code that IsNullOrEmpty() can't be converted into
+		SQL code in simple manner -->EF throws exception while execution
+
+Solution-->don't check it
+
+Problem2(Contains) -->
+	//EF can translate p.PersonName.Contains(SearchString) to SQL (LIKE '%value%'),
+	but cannot translate this overload:
+	//because StringComparison is also a .NET enum, not a SQL concept.
+	//So this entire condition cannot be directly converted.
+		it's okay to call the contain method in the null value itself
+		because the COntain is just dummy here
+		-->Contains(SearchString, StringComparison.OrdinalIgnoreCase) this whole condition
+		doesn't execute because this will be converted into equivalent valid SQL at runtime
+
+	Solution-->remove the string.ordinalIgnoreCase
+
+	-->by default EF performs case insensitive comparison with like operator

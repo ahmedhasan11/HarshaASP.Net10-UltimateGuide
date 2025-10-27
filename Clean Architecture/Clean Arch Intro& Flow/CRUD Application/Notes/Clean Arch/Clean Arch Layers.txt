@@ -1,0 +1,39 @@
+﻿-------------------------------[UI] (Depend on [Core])----------------------------------
+its the web project , all the asp.net core specific concepts, files or codes
+are present in the same UI project
+-->Controllers // Views // ViewModels // Filters // Middlewares
+											
+----------------------------[Infrastructure] (Depend on [Core])--------------------------
+its all about the external calls from the app,,means that an app may access the external DB
+otherwise ,app maymake calls to microservices or accessing any other storage mechanisms
+such as local file system or external services from third party vendors
+so-->calls to other external sources are present in [Infrastructure]
+-->depends on [Core] so itcan access classes from [Core] directly or [Domain]
+
+-->DbContext // Repositories  // External API calls
+----------------------------------------[Core] ----------------------------------------
+-->(Independent of UI )
+-->(Independent of DB)
+-->(Independent of Data Access Layer)
+-->(Independent of Repository Layer)
+the meaning of Core is your business logic code 
+-->Business Logic (ServiceContracts // Services) // DTO
+IMPORTANT-->it doesn't matter which UI is being used ,or which DB technology is data storage
+
+IMPORTANT-->it Contains a [Domain] Layer as a part of the [Core] and this Domain contains
+the Repository Interfaces(Repository Contracts -->1 interface for 1 table) and Entity classes
+
+-->[UI] is built on top of [Core]
+*******IMPORTANT-->
+[Infrastructure] is built on top of [Core]-->from [Infrastructure] you add ref to [Core]
+instead of [Core] ref [Infrastructure]
+,,which means-->from [Infrastructure] you will access the classes or properties from[Core]
+ex:in your [Infrastructure.DbContext] you will access [Core.[Domain].EntityClasses]
+ex:in your [Infrastructure.Repositories] you will access [Core.[Domain].EntityClasses]
+	& implement [Core.[Domain].RepositoryContracts]
+										
+----------------------------------------[Domain]----------------------------------------
+part of the [Core] and this Domain contains
+-->Repository Interfaces(Repository Contracts -->1 interface for 1 table) 
+-->Entity classes
+

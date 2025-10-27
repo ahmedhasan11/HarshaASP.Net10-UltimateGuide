@@ -1,0 +1,14 @@
+﻿Three-Tier Arch: business logic layer depends on data access layer
+
+Clean Arch= Onion Arch,onelayer is built surronding the existing layer
+
+Main Goal --> separate the business logic , make it independent, cleanly separated
+
+Main feature--> business logic layer built at the coreof the application , and any other
+remaininglayer either UI or Data access are built based on that
+
+										[Three Tier]
+business logic are directly or indirectly depends on data access layer that isanykind
+of changes in Data Access layer will reflect the business Logic layer
+
+in order to separate the business logic , to make it independent , we use CLEAN ARCH

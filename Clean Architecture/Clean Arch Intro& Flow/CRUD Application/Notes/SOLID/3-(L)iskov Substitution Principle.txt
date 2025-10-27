@@ -1,0 +1,33 @@
+﻿(*)L--> Liskov Subsitution Principle -->the subtypes shouldnever overrides any existing
+methods of the base class,,if they already override -->then the exisitng functionality
+of the base class should not be changed(method signature & return value & Exceptions)
+									[LSP Violation]
+-->when you are overriding the parent class method in the child class
+-->in this case we haveto makesure that this code in the child method
+
+1-should not introduce new exceptions that are not their in the parent
+	class method definition
+violate ex: in parent you are just throwing ArgumentNullException ,,,,but in child
+when you overrided the method you throwed a new exception which is ArgumentException
+
+
+2-should provide the same return value if input arguments are same
+violate ex: in parent you are returning a+b ,,,,but in child you overrides and return a*b
+violate ex: in the Excelmethod , in parent you are returning excel file with maybe 9 fields
+,but when you made the OCP Inheritance , you overridden this method and returned 3 fields
+
+									[C# Inheritance]
+-->if you create obj of parent class -->executes parent class method definition
+-->//  //  //     //  // Child class --> //       child  //      //       //
+so it changes the application depending on which obj is created
+
+									[Goad of LSP]
+-->in both cases of C# inheritance -->it should execute the same functionality even
+though it executes diff methods , should return the same value for same inputs
+-->because if there is any mismatch in the validation rules or return value
+,,it brings some difference in the overall functionality of application so it may
+introduce new bugs or unexpected results
+
+-->that's why we don't recommend the OCP with Inheritance
+-->if you used OCP with Interfaces ,, may be you will not violates the LSP
+
