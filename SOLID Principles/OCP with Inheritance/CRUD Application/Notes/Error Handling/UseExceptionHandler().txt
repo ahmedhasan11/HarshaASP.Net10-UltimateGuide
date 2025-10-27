@@ -1,0 +1,19 @@
+﻿we use this to show user friendly error message instead of just a plain text
+
+-->there is a predefined middlware that is called built-in exception handler middleware
+that is called -->UseExceptionHandler
+
+Custom Exception Handler Middleware-->used for write your own code into serilog 
+for example or writing some status codes
+
+Built-in Exception Handler Middleware -->redirecting to a specific route when an
+exception occurs 
+
+above the custom exception handler middleware that we did , app.UseExceptionHandler("")
+-->inside its parameters you have to write the path of the view that you need
+-->and create the view 
+
+(*)how to use the custom ExceptionHandler with the built-in Exception Handler?
+-->just in the custom one type throw; at the last of the method
+throw;-->the same exception obj wil be rethrown, it extends the existing stacked trace
+so the exception that is thrown from your cutsom --> will be caught by the built-in

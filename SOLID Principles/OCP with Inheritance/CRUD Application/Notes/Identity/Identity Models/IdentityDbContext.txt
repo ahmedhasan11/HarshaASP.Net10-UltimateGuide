@@ -1,0 +1,13 @@
+﻿we use it instead of the normal DbContext , because it makes the Dbsets of Identity by itself
+
+just inherit your Context Class from it and pass to it as a generic-->
+IdentityDbContext<yourApplicationUserClass, yourApplicationRoleClass, Datatype of userID>
+
+
+Comparison between DbContext & IdentityDbContext
+
+DbContext-->doesn't provide any predefined DbSets -->create your own DbSets
+IdentityDbContext-->provide the DbSets that are needed to store usere Roles and mapping between user& Role
+to store user details along with their roles --> you need some predefined tables about 4 or 5 ones
+-->all of these tablesare created in theIdentityDbContext ,but why wepass to it our classes and datatypes
+inside its generic??because it doesn't know the actual data type used for user and Role

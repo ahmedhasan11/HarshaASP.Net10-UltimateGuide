@@ -1,0 +1,34 @@
+﻿XSRF:making a forger request to the serverand the server executes itas it is a legit request
+,,also it is the process of making a request to a web server fromanother domain
+
+//flow of the problem-->what happens is, this is security issue , where the attacker some way
+can attack the user of bank , then it haveaccess to usercoie , then the attacker can mkae transfer of
+mobneywith user cookie, the server willresponds with http 200 successfulbecause the bac server
+see thatthe auth cookieis good sothis is a legit request
+
+
+Problem-->the back.comendpoint can't differentiatebetween legitrequest or fake request
+
+Solution-->AntiForgeryToken--.(*)it is veryrocommended from microsofttouse AntiForgeryToken 
+in everypage(view,controller)-->[ValidateAntiFrgeryToken]
+
+how [ValidateAntiForgeryToken] works? --> instead of we have just our IdentityCookie wenow have
+1-Identity Cookie
+2-AntiForgeryToken-->divided to (1)Cookie token &&(2)Form token
+
+the point is that the hacker can accessthe identitycookie and take itfrom theuser , 
+######but the Form token in AntiForgeryToken is input type hidden, hacker cant getit cant guess it
+,so whilemaing the transfer server ass for -->1-Identitycookie,2-CookieToken, 3-FormToken
+,but the hacker just sent 1,2 , so server returns 400 bad request because FormToken not found
+
+
+//so we just have to add [ValidateAntiForgeryToken] forevery POST action method
+-->or instead you can add it as a filter in your program.cs so you donthaveto write
+this attribute on each action method,
+-->go to 
+            builder.Services.AddControllersWithViews(options =>
+            {
+                options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
+            });
+
+//this will addthe attribute toall POST action methods in our project

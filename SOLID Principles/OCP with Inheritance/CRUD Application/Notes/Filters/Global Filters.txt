@@ -1,0 +1,17 @@
+﻿There is a scope for Filters
+(1)-->action method filter-->[TypeFilter] is on action method 
+
+(2)-->class filter -->[TypeFilter] is on the class (filter applied to all action
+methods that are in that class) 
+
+(3)-->Global Filters-->Filter is  at the root level on program.cs , so filter
+getting applied at all controllers on all their action methods
+
+                                [Global Filters]
+-->in builder.Services.AddControllersWithViews(),, inside this parameter
+you have to make a lambda expression, then we have to add our filter class 
+
+-->2 syntax for adding filter class 
+(1--> options.Filters.Add<FilterClassName>()); -->you can't supply parameters
+(2--> options.Filters.Add(new FilterClassName())); -->you can supply parameters
+
