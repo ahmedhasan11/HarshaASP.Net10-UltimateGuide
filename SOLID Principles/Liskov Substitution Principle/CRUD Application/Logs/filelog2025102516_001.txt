@@ -1,0 +1,411 @@
+2025-10-25 16:32:53.853 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 16:32:53.864 +03:00 [INF] Hosting environment: Development
+2025-10-25 16:32:53.865 +03:00 [INF] Content root path: D:\BackEnd.NET\Harsha codes\Filters\IAlwaysRunResultFilter\CRUD Application
+2025-10-25 16:49:50.794 +03:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-25 16:49:51.259 +03:00 [INF] Now listening on: https://localhost:5051
+2025-10-25 16:49:52.691 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/ - null null
+2025-10-25 16:49:52.756 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:5051
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-25 16:49:52.828 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-10-25 16:49:52.838 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-10-25 16:49:52.845 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-10-25 16:49:52.847 +03:00 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5051/Account/Login?ReturnUrl=%2F
+2025-10-25 16:49:52.850 +03:00 [INF] HTTP GET / responded 302 in 102.1938 ms
+2025-10-25 16:49:52.861 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/ - 302 0 null 177.9774ms
+2025-10-25 16:49:52.865 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/Account/Login?ReturnUrl=%2F - null null
+2025-10-25 16:49:52.872 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:5051
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+2025-10-25 16:49:52.971 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-10-25 16:49:52.975 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.AccountController.Login (CRUD Application)'
+2025-10-25 16:49:53.041 +03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller CRUD_Application.Controllers.AccountController (CRUD Application).
+2025-10-25 16:49:53.263 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-25 16:49:53.265 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-25 16:49:53.280 +03:00 [INF] Executing ViewResult, running view Login.
+2025-10-25 16:49:53.571 +03:00 [INF] Executed ViewResult - view Login executed in 295.9555ms.
+2025-10-25 16:49:53.633 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 16:49:53.634 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/Stylesheet.css - null null
+2025-10-25 16:49:53.634 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/_vs/browserLink - null null
+2025-10-25 16:49:53.697 +03:00 [INF] Executed action CRUD_Application.Controllers.AccountController.Login (CRUD Application) in 654.3961ms
+2025-10-25 16:49:53.697 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Stylesheet.css
+Accept: text/css,*/*;q=0.1
+Host: localhost:5051
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+If-Modified-Since: [Redacted]
+If-None-Match: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-25 16:49:53.699 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 97.0512ms
+2025-10-25 16:49:53.701 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.AccountController.Login (CRUD Application)'
+2025-10-25 16:49:53.708 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 25 Oct 2025 13:49:53 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+custom-key-from-Global: [Redacted]
+X-Frame-Options: [Redacted]
+2025-10-25 16:49:53.709 +03:00 [INF] HTTP GET /Account/Login responded 200 in 837.2404 ms
+2025-10-25 16:49:53.714 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/Account/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 849.1524ms
+2025-10-25 16:49:53.715 +03:00 [INF] The file /Stylesheet.css was not modified
+2025-10-25 16:49:53.719 +03:00 [INF] Response:
+StatusCode: 304
+Content-Type: text/css
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Sat, 25 Oct 2025 12:20:40 GMT
+2025-10-25 16:49:53.720 +03:00 [INF] HTTP GET /Stylesheet.css responded 304 in 22.9736 ms
+2025-10-25 16:49:53.721 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/Stylesheet.css - 304 null text/css 87.6792ms
+2025-10-25 16:49:53.733 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/_vs/browserLink - 200 null text/javascript; charset=UTF-8 99.0029ms
+2025-10-25 16:49:53.808 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/favicon.ico - null null
+2025-10-25 16:49:53.811 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Host: localhost:5051
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-25 16:49:53.819 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-10-25 16:49:53.824 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-10-25 16:49:53.825 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-10-25 16:49:53.825 +03:00 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5051/Account/Login?ReturnUrl=%2Ffavicon.ico
+2025-10-25 16:49:53.826 +03:00 [INF] HTTP GET /favicon.ico responded 302 in 15.1850 ms
+2025-10-25 16:49:53.828 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/favicon.ico - 302 0 null 19.5174ms
+2025-10-25 16:49:53.830 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/Account/Login?ReturnUrl=%2Ffavicon.ico - null null
+2025-10-25 16:49:53.832 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Host: localhost:5051
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-25 16:49:53.836 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-10-25 16:49:53.837 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.AccountController.Login (CRUD Application)'
+2025-10-25 16:49:53.839 +03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller CRUD_Application.Controllers.AccountController (CRUD Application).
+2025-10-25 16:49:53.850 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-25 16:49:53.851 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-25 16:49:53.853 +03:00 [INF] Executing ViewResult, running view Login.
+2025-10-25 16:49:53.860 +03:00 [INF] Executed ViewResult - view Login executed in 7.053ms.
+2025-10-25 16:49:53.861 +03:00 [INF] Executed action CRUD_Application.Controllers.AccountController.Login (CRUD Application) in 21.0869ms
+2025-10-25 16:49:53.862 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.AccountController.Login (CRUD Application)'
+2025-10-25 16:49:53.863 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 25 Oct 2025 13:49:53 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-25 16:49:53.864 +03:00 [INF] HTTP GET /Account/Login responded 200 in 31.8095 ms
+2025-10-25 16:49:53.866 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/Account/Login?ReturnUrl=%2Ffavicon.ico - 200 null text/html; charset=utf-8 35.6035ms
+2025-10-25 16:49:59.502 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5051/Account/Login?ReturnUrl=%2F - application/x-www-form-urlencoded 222
+2025-10-25 16:49:59.506 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /Account/Login
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:5051
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cache-Control: max-age=0
+Content-Type: application/x-www-form-urlencoded
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+Content-Length: 222
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-25 16:49:59.508 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-10-25 16:49:59.509 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.AccountController.Login (CRUD Application)'
+2025-10-25 16:49:59.521 +03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ServiceContracts.DTO.LoginDTO, System.String) on controller CRUD_Application.Controllers.AccountController (CRUD Application).
+2025-10-25 16:49:59.553 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-25 16:50:00.585 +03:00 [INF] Executed DbCommand (23ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-10-25 16:50:00.750 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-25 16:50:00.752 +03:00 [INF] Executing ViewResult, running view Login.
+2025-10-25 16:50:00.757 +03:00 [INF] Executed ViewResult - view Login executed in 4.5272ms.
+2025-10-25 16:50:00.758 +03:00 [INF] Executed action CRUD_Application.Controllers.AccountController.Login (CRUD Application) in 1235.3029ms
+2025-10-25 16:50:00.759 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.AccountController.Login (CRUD Application)'
+2025-10-25 16:50:00.759 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 25 Oct 2025 13:50:00 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-25 16:50:00.760 +03:00 [INF] HTTP POST /Account/Login responded 200 in 1253.6684 ms
+2025-10-25 16:50:00.766 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5051/Account/Login?ReturnUrl=%2F - 200 null text/html; charset=utf-8 1263.7582ms
+2025-10-25 16:50:00.767 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/_vs/browserLink - null null
+2025-10-25 16:50:00.768 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 16:50:00.772 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/_framework/aspnetcore-browser-refresh.js - 200 16517 application/javascript; charset=utf-8 4.2736ms
+2025-10-25 16:50:00.782 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/_vs/browserLink - 200 null text/javascript; charset=UTF-8 15.3654ms
+2025-10-25 16:50:00.794 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/favicon.ico - null null
+2025-10-25 16:50:00.796 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /favicon.ico
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Host: localhost:5051
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-25 16:50:00.798 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-10-25 16:50:00.799 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-10-25 16:50:00.800 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-10-25 16:50:00.800 +03:00 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5051/Account/Login?ReturnUrl=%2Ffavicon.ico
+2025-10-25 16:50:00.801 +03:00 [INF] HTTP GET /favicon.ico responded 302 in 4.8018 ms
+2025-10-25 16:50:00.802 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/favicon.ico - 302 0 null 8.2118ms
+2025-10-25 16:50:00.804 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/Account/Login?ReturnUrl=%2Ffavicon.ico - null null
+2025-10-25 16:50:00.806 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Host: localhost:5051
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: [Redacted]
+Referer: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-25 16:50:00.807 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-10-25 16:50:00.809 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.AccountController.Login (CRUD Application)'
+2025-10-25 16:50:00.811 +03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller CRUD_Application.Controllers.AccountController (CRUD Application).
+2025-10-25 16:50:00.813 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-25 16:50:00.814 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-25 16:50:00.816 +03:00 [INF] Executing ViewResult, running view Login.
+2025-10-25 16:50:00.819 +03:00 [INF] Executed ViewResult - view Login executed in 3.1177ms.
+2025-10-25 16:50:00.819 +03:00 [INF] Executed action CRUD_Application.Controllers.AccountController.Login (CRUD Application) in 6.8773ms
+2025-10-25 16:50:00.820 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.AccountController.Login (CRUD Application)'
+2025-10-25 16:50:00.821 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 25 Oct 2025 13:50:00 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-25 16:50:00.821 +03:00 [INF] HTTP GET /Account/Login responded 200 in 15.2086 ms
+2025-10-25 16:50:00.823 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5051/Account/Login?ReturnUrl=%2Ffavicon.ico - 200 null text/html; charset=utf-8 18.8644ms
+2025-10-25 16:50:05.129 +03:00 [INF] Request starting HTTP/2 POST https://localhost:5051/Account/Login?ReturnUrl=%2F - application/x-www-form-urlencoded 221
+2025-10-25 16:50:05.132 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: POST
+Scheme: https
+PathBase: 
+Path: /Account/Login
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:5051
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cache-Control: max-age=0
+Content-Type: application/x-www-form-urlencoded
+Cookie: [Redacted]
+Origin: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+Content-Length: 221
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+2025-10-25 16:50:05.133 +03:00 [INF] Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+2025-10-25 16:50:05.134 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.AccountController.Login (CRUD Application)'
+2025-10-25 16:50:05.135 +03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ServiceContracts.DTO.LoginDTO, System.String) on controller CRUD_Application.Controllers.AccountController (CRUD Application).
+2025-10-25 16:50:05.138 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-25 16:50:05.184 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2025-10-25 16:50:05.283 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-10-25 16:50:05.306 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-10-25 16:50:05.315 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2025-10-25 16:50:05.327 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-10-25 16:50:05.341 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedRoleName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0
+2025-10-25 16:50:05.343 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-25 16:50:05.345 +03:00 [INF] Executing LocalRedirectResult, redirecting to /.
+2025-10-25 16:50:05.346 +03:00 [INF] Executed action CRUD_Application.Controllers.AccountController.Login (CRUD Application) in 209.9965ms
+2025-10-25 16:50:05.347 +03:00 [INF] Executed endpoint 'CRUD_Application.Controllers.AccountController.Login (CRUD Application)'
+2025-10-25 16:50:05.347 +03:00 [INF] Response:
+StatusCode: 302
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Location: /
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+custom-key-from-Global: [Redacted]
+2025-10-25 16:50:05.348 +03:00 [INF] HTTP POST /Account/Login responded 302 in 215.7750 ms
+2025-10-25 16:50:05.349 +03:00 [INF] Request finished HTTP/2 POST https://localhost:5051/Account/Login?ReturnUrl=%2F - 302 0 null 220.0362ms
+2025-10-25 16:50:05.351 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5051/ - null null
+2025-10-25 16:50:05.353 +03:00 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Host: localhost:5051
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cache-Control: max-age=0
+Cookie: [Redacted]
+Referer: [Redacted]
+Upgrade-Insecure-Requests: [Redacted]
+sec-fetch-site: [Redacted]
+sec-fetch-mode: [Redacted]
+sec-fetch-user: [Redacted]
+sec-fetch-dest: [Redacted]
+sec-ch-ua: [Redacted]
+sec-ch-ua-mobile: [Redacted]
+sec-ch-ua-platform: [Redacted]
+2025-10-25 16:50:05.358 +03:00 [INF] Executing endpoint 'CRUD_Application.Controllers.PersonsController.Index (CRUD Application)'
+2025-10-25 16:50:05.366 +03:00 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderEnum) on controller CRUD_Application.Controllers.PersonsController (CRUD Application).
+2025-10-25 16:50:05.370 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-25 16:50:05.371 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-25 16:50:05.372 +03:00 [INF] PersonsListActionFilter.OnActionExecuting
+2025-10-25 16:50:05.373 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-before
+2025-10-25 16:50:05.377 +03:00 [INF] Index action method from PersonsController
+2025-10-25 16:50:05.380 +03:00 [INF] GetAllPersons from PersonsRepository
+2025-10-25 16:50:05.436 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[EmailAddress], [p].[Gender], [p].[PersonName], [p].[ReccivenewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[Countryname]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+2025-10-25 16:50:05.474 +03:00 [INF] Time of GetFilteredPersons in PersonService completed in 93.6 ms
+2025-10-25 16:50:05.481 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-25 16:50:05.482 +03:00 [INF] PersonsListActionFilter.OnActionExecuted
+2025-10-25 16:50:05.486 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-25 16:50:05.486 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync-after
+2025-10-25 16:50:05.488 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-before
+2025-10-25 16:50:05.489 +03:00 [INF] Executing ViewResult, running view Index.
+2025-10-25 16:50:05.536 +03:00 [INF] Executed ViewResult - view Index executed in 47.6598ms.
+2025-10-25 16:50:05.538 +03:00 [INF] PersonsListResultFilter.OnResultExecutionAsync-after

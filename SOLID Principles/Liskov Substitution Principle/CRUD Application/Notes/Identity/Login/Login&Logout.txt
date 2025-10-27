@@ -1,0 +1,12 @@
+﻿the PasswordSignInAsync needs 4 paramaters 
+
+1-Email from DTO
+2-Password from DTO
+3-IsPersistent for cookies 
+4-LockoutonFailture --> if the user triesto make more than 3 attempts of failture 
+if you made it true-->ou will lock this account from logiun for a while 
+
+
+Q:what is happeneing?
+Answer-->it goes through DB and make a query through User Store that it has to fetch correspoding
+users info based on the particular email and password , if exists-->result willbesucceed

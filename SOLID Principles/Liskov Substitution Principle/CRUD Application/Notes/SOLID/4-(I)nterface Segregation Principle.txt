@@ -1,0 +1,24 @@
+﻿(*)I --> Interface Segregation Principle [ISP] --> instead of making large interface with
+multiple methods(interface for all CRUD apps), you will create the same as smaller
+and simple interfaces (create 1 interface for 1 specific functionality)
+
+-->instead of creating 1 large interface with so many methods ,,you will group them
+into multiple interfaces with fewer methods
+
+-->PROBLEM--> if you made 1 large interface , and you try to make multiple services,
+there is service that will be forced to implement method that it don't need 
+
+-->but instead ,, a service can have multiple methods that interface don't have
+
+-->you have to separate the inteface baed on opeation or purpose not Table
+										[Idea]
+--> look at IPersonService interface that we did , it have GetPersons() and also
+have AddPerson() --> violating the ISP!!!!!!!!!!!!!!!
+,,instead of creating both methods in single interface , create
+them as 2 diff interfaces --> IPersonGetter , IPeronAdder
+										[Why]
+-->imagine the PersonService , a client asks for an edit , we already said never change
+the business logic , just create a new interface , now requiremnet is to return the data
+in the form of XML in GetPersons() , so when you create a new service for that , 
+you only need to implement the getting functionality , but unfortunatley , IPersonsInterface
+have also the method for adding and we don't want it

@@ -1,0 +1,15 @@
+﻿(*)S--> Single Responsibility Principle -->class have only 1 reason to Change (1 class do
+only 1 task)
+
+-->each class should implement only 1 functionality
+-->you have to make each functionality into a separate class
+
+ex: 1 class for data acess , 1 class for validaiton , 1 class for manipulate cookies
+
+so -->class become independent & easy to design , easy to test, easy to understand
+
+for ex: look at the code of Add Person , its okay that all code is business code ,
+but look when we come to make validations , we made a separate class for it 
+
+also , when you wanted to access the database , you didnt acess it in the class ,
+you already made this with a separate repo and you called it

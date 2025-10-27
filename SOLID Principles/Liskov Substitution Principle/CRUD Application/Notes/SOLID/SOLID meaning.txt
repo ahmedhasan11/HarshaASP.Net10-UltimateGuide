@@ -1,0 +1,20 @@
+﻿										[SOLID] 
+(*)S--> Single Responsibility Principle -->class have only 1 reason to Change (1 class do
+only 1 task)
+
+(*)O--> Open-Closed Principle --> if you want to implement a new funcionality OR change the 
+existing functionality by changing the source code,,instead of making change for the
+existing code base -->it's advisable to implement the same as a separate class
+	(because you may reuse the codethrough inheritance or interfaces)
+	(you should never make any changes the code unless you want to fix bugs)
+
+(*)L--> Liskov Subsitution Principle -->the subtypes shouldnever overrides any existing
+methods of the base class,,if they already override -->then the exisitng functionality
+of the base class should not be changed(method signature & return value & Exceptions)
+
+(*)I --> Interface Segregation Principle --> instead of making large interface with
+multiple methods(interface for all CRUD apps), you will create the same as smaller
+and simple interfaces (create 1 interface for 1 specific functionality)
+
+(*)D --> Dependency Inversion Principle -->the high level modules should not depened on the
+low level modules

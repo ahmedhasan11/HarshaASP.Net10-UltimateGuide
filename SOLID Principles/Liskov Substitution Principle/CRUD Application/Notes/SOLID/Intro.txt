@@ -1,0 +1,12 @@
+﻿SOOOOOO IMPORTANT IN REAL-WORLD PROJECTS
+
+
+-->not specific to asp.net core , they are general purpose design that are
+implementable in almost all popular languages
+
+-->makes classes as independent as it can, for ex you can call class 2 inside class 1
+but both
+1- can be developed independently
+2- must be flexible 
+3- must be adaptable to the changes without affecting the existing app functionality
+4- should be maintainable
